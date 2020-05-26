@@ -1,9 +1,12 @@
 # Introduction {#intro}
 
-Robotics Engineering specific description goes here. Discuss the various tools we will use in the course.  Have students navigate to the tools to prepare for a short quiz on day 2.
-
+<p> <b>Remember that engineers spend a majority of their time debugging their designs.  You will too.  It is not because this course is made too hard for you...it is just the way engineering works.</b></p>
 
 <img src="https://www.nasa.gov/sites/default/files/styles/ubernode_alt_horiz/public/thumbnails/image/df-20457_rv2.jpg">
 <p><i>"They say that no plan survives first contact with implementation.  I'd have to agree."</i> -- Mark Watney, Sol 40</p>
 
-<p> <b>Remember that engineers spend a majority of their time debugging their designs.  You will too.  It is not because this course is made too hard for you...it is just the way programming works.</b></p>
+During this class students will explore the field of mechatronics using a variety of hands-on activities. Students begin the semester with an introduction to basic history and theory of robotics, the engineering process and tools and processes used to create robotic devices. We will introduce basic electronics concepts. Moving forward programming becomes an essential and vital element.  Students program the onboard micro-processor found on a Raspberry Pi 3B+.  This control board will use the Raspian OS which is a version of Linux.  While students will work within the Linux shell, the programming language of this course is Python.  Students work individually and in teams to design and build simple drive trains capable of meeting a variety of criteria including climbing, pushing, attaining maximum speed, etc. Sensors are introduced to allow robotic devices to interact with the environment.  Actuator design is discussed and different manipulator designs are introduced. As an essential part of mechanical design, students will be exposed to CAD concepts using OnShape.
+
+Tips for remote learning here.
+
+Find a dedicated work space.

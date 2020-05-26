@@ -1,0 +1,13 @@
+# Electrical Concepts
+
+Description of the electronics part of the course.
+
+## Circuits
+
+## Resistance, Voltage and Current
+
+## Ohm's Law
+
+## Using a Digital Multimeter
+
+## Basic Soldering

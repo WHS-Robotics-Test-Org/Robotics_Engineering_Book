@@ -1,0 +1,9 @@
+# Robotic Types
+
+Discuss types of robotic systems.
+
+## DataBot
+
+## MobileBot
+
+## SolarBot

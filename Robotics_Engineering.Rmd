@@ -1,0 +1,116 @@
+--- 
+title: "Robotics Engineering"
+author: "Steve Cline"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+output: bookdown::gitbook
+documentclass: book
+bibliography: [book.bib, packages.bib]
+biblio-style: apalike
+link-citations: yes
+github-repo: rstudio/bookdown-demo
+description: "During your particpation in the Robotics Engineering Course here at Windsor High School, you will use this online book as a guide through the content."
+---
+
+# Prerequisites
+
+For this course you will need to do the following to prepare to learn:
+
+<ol>
+  <li>Sign up for a GitHub account and fill out this form.</li>
+  <li>Find the <a href="https://greenteapress.com/wp/think-python-2e/" target="_blank"> Python textbook</a> for the course. <i>While this course includes more than just programming, we will dedicate quite a bit of time to learning Python</i>.</li>
+  <li>Subscribe to the course <a href="https://www.youtube.com/playlist?list=PLdzkJRGG1oi3xGaaHM44BkpW-bYuD9KQS" target="_blank">YouTube Channel</a>.</li>
+  <li>Complete the WHS Mechatronics Lab Code of Conduct Agreement.</li>
+
+<!--chapter:end:index.Rmd-->
+
+# Introduction {#intro}
+
+<p> <b>Remember that engineers spend a majority of their time debugging their designs.  You will too.  It is not because this course is made too hard for you...it is just the way engineering works.</b></p>
+
+<img src="https://www.nasa.gov/sites/default/files/styles/ubernode_alt_horiz/public/thumbnails/image/df-20457_rv2.jpg">
+<p><i>"They say that no plan survives first contact with implementation.  I'd have to agree."</i> -- Mark Watney, Sol 40</p>
+
+During this class students will explore the field of mechatronics using a variety of hands-on activities. Students begin the semester with an introduction to basic history and theory of robotics, the engineering process and tools and processes used to create robotic devices. We will introduce basic electronics concepts. Moving forward programming becomes an essential and vital element.  Students program the onboard micro-processor found on a Raspberry Pi 3B+.  This control board will use the Raspian OS which is a version of Linux.  While students will work within the Linux shell, the programming language of this course is Python.  Students work individually and in teams to design and build simple drive trains capable of meeting a variety of criteria including climbing, pushing, attaining maximum speed, etc. Sensors are introduced to allow robotic devices to interact with the environment.  Actuator design is discussed and different manipulator designs are introduced. As an essential part of mechanical design, students will be exposed to CAD concepts using OnShape.
+
+Tips for remote learning here.
+
+Find a dedicated work space.
+
+<!--chapter:end:01-intro.Rmd-->
+
+# Electrical Concepts
+
+Description of the electronics part of the course.
+
+## Circuits
+
+## Resistance, Voltage and Current
+
+## Ohm's Law
+
+## Using a Digital Multimeter
+
+## Basic Soldering
+
+<!--chapter:end:02-electrical.Rmd-->
+
+# Mechanical Design
+
+Need to teach them a few things.
+
+## Basic Mechanics?
+
+## Advanced Mechanics?
+
+## Computer Aided Design
+
+<!--chapter:end:03-mechanics.Rmd-->
+
+# Python Programming
+
+For this unit we will refer to the course text on 
+
+## Setting up the Raspberry Pi
+
+## Why Python?
+
+## Hello, World...and a Little More
+
+## Functions
+
+## Conditionals
+
+## Iteration
+
+## Sensing the Environment
+
+<!--chapter:end:04-programming.Rmd-->
+
+# Robotic Types
+
+Discuss types of robotic systems.
+
+## DataBot
+
+## MobileBot
+
+## SolarBot
+
+<!--chapter:end:05-robots.Rmd-->
+
+# Capstone Project
+
+<!--chapter:end:06-capstone.Rmd-->
+
+# Going Further with Robotics
+
+<!--chapter:end:07-further.Rmd-->
+
+`r if (knitr:::is_html_output()) '
+# References {-}
+'`
+
+
+<!--chapter:end:08-references.Rmd-->
+

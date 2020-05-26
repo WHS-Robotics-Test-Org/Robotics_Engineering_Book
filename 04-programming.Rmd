@@ -1,0 +1,17 @@
+# Python Programming
+
+For this unit we will refer to the course text on 
+
+## Setting up the Raspberry Pi
+
+## Why Python?
+
+## Hello, World...and a Little More
+
+## Functions
+
+## Conditionals
+
+## Iteration
+
+## Sensing the Environment
