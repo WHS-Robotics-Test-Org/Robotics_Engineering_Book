@@ -1,3 +1,33 @@
+--- 
+title: "Robotics Engineering"
+author: "Steve Cline"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+output: bookdown::gitbook
+documentclass: book
+bibliography: [book.bib, packages.bib]
+biblio-style: apalike
+link-citations: yes
+github-repo: rstudio/bookdown-demo
+description: "During your particpation in the Robotics Engineering Course here at Windsor High School, you will use this online book as a guide through the content."
+---
+
+# Prerequisites
+
+For this course you will need to do the following to prepare to learn:
+
+<ol>
+  <li>Locate the [Course Lecture Notes] section of this site.  Browse through the notes to gain an understanding of what we will be covering this year.</li>
+  <li>Sign up for a GitHub account and fill out this form.</li>
+  <li>Bookmark the course <a href="https://github.com/stcline/Robotics_Engineering_Course" target="_blank">GitHub Repository</a>.  This is where many of the programming resources will be found.  In addition, assignments will be submitted here.</li>
+  <li>Find the <a href="https://greenteapress.com/wp/think-python-2e/" target="_blank"> Python textbook</a> for the course. <i>While this course includes more than just programming, we will dedicate quite a bit of time to learning Python</i>.</li>
+  <li>Subscribe to the course <a href="https://www.youtube.com/playlist?list=PLdzkJRGG1oi3xGaaHM44BkpW-bYuD9KQS" target="_blank">YouTube Channel</a>.</li>  Directions for how to do this are found in the [Follow the Course YouTube Channel] section of this site.</li>
+  <li>Log on to the class Jupyter Notebook server</li>
+  <li>Sign up for an OnShape account by following the instructions in the [OnShape Account Setup] section of this site.</li>
+  <li>Complete the WHS Mechatronics Lab Code of Conduct Agreement.</li>
+
+<!--chapter:end:index.Rmd-->
+
 # Introduction {#intro}
 
 ## A brief Overview of the Course
@@ -55,3 +85,115 @@ There is very little doubt today about both how essential programming is to robo
 The earliest robots as we know them were created in the early 1950s by George C. Devol, an inventor from Louisville, Kentucky.  He invented and patented a reprogrammable manipulator called "Unimate," from "Universal Automation."  For the next decade, he attempted to sell his product in the industry, but did not succeed.  In the late 1960s, businessman/engineer Joseph Engleberger acquired Devol's robot patent and was able to modify it into an industrial robot and form a company called Unimation to produce and market the robots.  For his efforts and successes, Engleberger is known in the industry as "the Father of Robotics."
 
 Academia also made much progress in the creation new robots.  In 1958 at the Stanford Research Institute, Charles Rosen led a research team in developing a robot called "Shakey."  Shakey was far more advanced than the original Unimate, which was designed for specialized, industrial applications.  Shakey could wheel around the room, observe the scene with his television "eyes," move across unfamiliar surroundings, and to a certain degree, respond to his environment.  He was given his name because of his wobbly and clattering movements.
+
+<!--chapter:end:01-intro.Rmd-->
+
+# Electrical Concepts
+
+Description of the electronics part of the course.
+
+## Circuits
+
+## Resistance, Voltage and Current
+
+## Ohm's Law
+
+## Using a Digital Multimeter
+
+## Basic Soldering
+
+<!--chapter:end:02-electrical.Rmd-->
+
+# Mechanical Design
+
+Need to teach them a few things.
+
+## Basic Mechanics?
+
+## Advanced Mechanics?
+
+## Computer Aided Design
+
+<!--chapter:end:03-mechanics.Rmd-->
+
+# Python Programming
+
+Finally!  We are going to start learning how to make the Raspberry Pi control components like lights and motors and receive input from sensors.  This is what will make your creations become real robots.  For this unit we will refer to the course text quite often.  Many of the programming problems come from here as well.  For all of your assignments in this section you will start here.  Learn the basic concepts of that assignment, read more about it on the course text, go to GitHub Classroom to practice the program and finally, transfer what you have learned to the Raspberry Pi.
+
+Let's get started by setting up the Pi and learning more about Python and it's wide range of applications.
+
+## Setting up the Raspberry Pi
+
+(This section might get moved up if we start using the Pi earlier as a power supply.)
+
+## The parts of the RPi and Pinout
+
+
+
+## Why Python?
+
+## Hello, World...and a Little More
+
+## Functions
+
+## Conditionals
+
+## Iteration
+
+## Sensing the Environment
+
+<!--chapter:end:04-programming.Rmd-->
+
+# Robotic Types
+
+Discuss types of robotic systems.
+
+## DataBot
+
+## MobileBot
+
+## SolarBot
+
+<!--chapter:end:05-robots.Rmd-->
+
+# Capstone Project
+
+<!--chapter:end:06-capstone.Rmd-->
+
+# Going Further with Robotics
+
+<h3>Tools used in Robotics Engineering</h3>
+
+## Course Lecture Notes
+
+## Python Textbook
+
+## Course YouTube Channel
+
+## GitHub Repositories
+
+## Jupyter Notebooks
+
+## Course Programming Environment
+
+## CAD with OnShape
+
+## Robotics in Higher Education
+
+<!--chapter:end:07-further.Rmd-->
+
+# Course Materials and Instructions
+
+## Course Lecture Notes
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQzhnnscrH02bQAozIj_FHZNBvhkXvO4Ve8OCXYbl47CArRmwCx6anKxsnaLkvEWUpUF5yvsiDHXwwJ/embed?start=false&loop=false&delayms=3000" frameborder="1" width="670" height="398" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+## Follow the Course YouTube Channel
+
+## Create a GitHub Account
+
+## Download and Install PyCharm
+
+## OnShape Account Setup
+
+<!--chapter:end:08-materials.Rmd-->
+

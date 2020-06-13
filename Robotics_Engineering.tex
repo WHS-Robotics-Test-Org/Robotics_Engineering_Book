@@ -1,0 +1,305 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{book}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  pdftitle={Robotics Engineering},
+  pdfauthor={Steve Cline},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\usepackage{longtable,booktabs}
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx,grffile}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
+\usepackage{booktabs}
+\usepackage{amsthm}
+\makeatletter
+\def\thm@space@setup{%
+  \thm@preskip=8pt plus 2pt minus 4pt
+  \thm@postskip=\thm@preskip
+}
+\makeatother
+\usepackage[]{natbib}
+\bibliographystyle{apalike}
+
+\title{Robotics Engineering}
+\author{Steve Cline}
+\date{2020-06-13}
+
+\begin{document}
+\maketitle
+
+{
+\setcounter{tocdepth}{1}
+\tableofcontents
+}
+\hypertarget{prerequisites}{%
+\chapter{Prerequisites}\label{prerequisites}}
+
+For this course you will need to do the following to prepare to learn:
+
+Locate the \protect\hyperlink{course-lecture-notes-1}{Course Lecture Notes} section of this site. Browse through the notes to gain an understanding of what we will be covering this year.
+
+Sign up for a GitHub account and fill out this form.
+
+Bookmark the course GitHub Repository. This is where many of the programming resources will be found. In addition, assignments will be submitted here.
+
+Find the Python textbook for the course. While this course includes more than just programming, we will dedicate quite a bit of time to learning Python.
+
+Subscribe to the course YouTube Channel.
+
+Directions for how to do this are found in the \protect\hyperlink{follow-the-course-youtube-channel}{Follow the Course YouTube Channel} section of this site.
+
+Log on to the class Jupyter Notebook server
+
+Sign up for an OnShape account by following the instructions in the \protect\hyperlink{onshape-account-setup}{OnShape Account Setup} section of this site.
+
+Complete the WHS Mechatronics Lab Code of Conduct Agreement.
+
+\hypertarget{intro}{%
+\chapter{Introduction}\label{intro}}
+
+\hypertarget{a-brief-overview-of-the-course}{%
+\section{A brief Overview of the Course}\label{a-brief-overview-of-the-course}}
+
+Remember that engineers spend a majority of their time debugging their designs. You will too. It is not because this course is made too hard for you\ldots it is just the way engineering works.
+
+``They say that no plan survives first contact with implementation. I'd have to agree.'' -- Mark Watney, Sol 40
+
+Why begin with this quote? One of my favorite books and movies of all time is The Martian. The struggles of the main character, Mark Whatney, demonstrate the challenges facing engineers. While we will not be risking our lives on another planet, our solutions to the problems in this course, follow the same pattern as his. Where he sought to survive being the only human on another planet by engineering his way out, we will survive this course by learning to attack problems in the same way and remember not to give up. We must keep in mind, no plan will work the first time.
+
+During this class students will explore the field of mechatronics using a variety of hands-on activities. Students begin the semester with an introduction to basic history and theory of robotics, the engineering process and tools and processes used to create robotic devices. We will introduce basic electronics concepts. Moving forward programming becomes an essential and vital element. Students program the onboard micro-processor found on a Raspberry Pi 3B+. This control board will use the Raspian OS which is a version of Linux. While students will work within the Linux shell, the programming language of this course is Python. Students work individually and in teams to design and build simple and comples mechatronic systems capable of meeting a variety of criteria including driving, pushing, controlling speed, etc. Sensors are introduced to allow robotic devices to interact with the environment. Actuator design is discussed and different manipulator systems are introduced. As an essential part of mechanical design, students will be exposed to CAD concepts using OnShape.
+
+As you can see from this Euler diagram here, Mechatronics is a complicated field of engineering that combines many areas of study. This is the more technical name for robotics and was created by Tetsuro Mori in 1971 and has served as the name for this field since. In this course, you will be introduced to several of the areas on this diagram.
+
+Since much of this course will be delivered remotely, be sure that you consider creating a good remote learning environment by doing the following:
+
+Create a dedicated workspace for yourself that you can keep neat and organized throughout the year. Pick a place that is as quiet as possible so that you can concentrate. Do not use this space for anything else. In this course that space should include a place for your computer as well as an area to work on electronics projects - preferable with a hard surface like a desktop or workbench.
+
+Manage your sleep schedule. You will need to be able to concentrate and stay focused since you do not have a teacher hovering over your workspace to keep you focused. If you go to bed at a consistent time and wake up at a consistent time, you will be able to learn more effectively.
+
+Make sure you know how to log on to every account needed for the course. See the \protect\hyperlink{prerequisites}{Prerequisites} for all of the details for this course. Be sure to ask questions if you encounter any difficulties.
+
+\hypertarget{history-of-robotics}{%
+\section{History of Robotics}\label{history-of-robotics}}
+
+Adapted from Robotics: A Brief History, Stanford University
+
+Origins of ``Robot'' and ``Robotics''
+
+The word ``robot'' conjures up a variety of images, from R2D2 and C3PO of Star Wars fame; to human-like machines that exist to serve their creators (perhaps in the form of the cooking and cleaning Rosie in the popular cartoon series the Jetsons); to the Rover Sojourner, which explored the Martian landscape as part of the Mars Pathfinder mission. Some people may alternatively perceive robots as dangerous technological ventures that will someday lead to the demise of the human race, either by outsmarting or outmuscling us and taking over the world, or by turning us into completely technology-dependent beings who passively sit by and program robots to do all of our work. In fact, the first use of the word ``robot'' occurred in a play about mechanical men that are built to work on factory assembly lines and that rebel against their human masters. These machines in R.U.R. (Rossum's Universal Robots), written by Czech playwright Karl Capek in 1921, got their name from the Czech word for slave.
+
+The word ``robotics'' was also coined by a writer. Russian-born American science-fiction writer Isaac Asimov first used the word in 1942 in his short story ``Runabout.'' Asimov had a much brighter and more optimistic opinion of the robot's role in human society than did Capek. He generally characterized the robots in his short stories as helpful servants of man and viewed robots as ``a better, cleaner race.'' Asimov also proposed three ``Laws of Robotics'' that his robots, as well as sci-fi robotic characters of many other stories, followed:
+
+A robot may not injure a human being or, through inaction, allow a human being to come to harm.
+
+A robot must obey the orders given it by human beings except where such orders would conflict with the First Law.
+
+A robot must protect its own existence as long as such protection does not conflict with the First or Second Law.
+
+Early Conceptions of Robots
+
+One of the first instances of a mechanical device built to regularly carry out a particular physical task occurred around 3000 B.C.: Egyptian water clocks used human figurines to strike the hour bells. In 400 B.C., Archytus of Taremtum, inventor of the pulley and the screw, also invented a wooden pigeon that could fly. Hydraulically-operated statues that could speak, gesture, and prophecy were commonly constructed in Hellenic Egypt during the second century B.C.
+
+In the first century A.D., Petronius Arbiter made a doll that could move like a human being. Giovanni Torriani created a wooden robot that could fetch the Emperor's daily bread from the store in 1557. Robotic inventions reached a relative peak (before the 20th century) in the 1700s; countless ingenius, yet impractical, automata (i.e.~robots) were created during this time period. The 19th century was also filled with new robotic creations, such as a talking doll by Edison and a steam-powered robot by Canadians. Although these inventions throughout history may have planted the first seeds of inspiration for the modern robot, the scientific progress made in the 20th century in the field of robotics surpass previous advancements a thousandfold.
+
+The First Programmable System
+
+There is very little doubt today about both how essential programming is to robotics and who the earliest computer programmer was. While many would immediately think of modern computer scientists like Steve Wozniak or earlier programmers like Alan Turing, the first person to successfully put forth the idea of a programmable system like a computer was Ada Lovelace. In her article of 1842 (Yes, during the John Tyler administration) she proposed that numbers and objects could be used to ``express abstract scientific operations'' and create action based on rules. This was the first time anyone had proposed programming a device to act on inputs based on rules. This is the very heart of what it is to be a robot. Despite the great disadvantage of being born a woman in a very male dominated 19th century, she founded the field which would become the backbone of mechatronics.
+
+The First Modern Robots
+
+The earliest robots as we know them were created in the early 1950s by George C. Devol, an inventor from Louisville, Kentucky. He invented and patented a reprogrammable manipulator called ``Unimate,'' from ``Universal Automation.'' For the next decade, he attempted to sell his product in the industry, but did not succeed. In the late 1960s, businessman/engineer Joseph Engleberger acquired Devol's robot patent and was able to modify it into an industrial robot and form a company called Unimation to produce and market the robots. For his efforts and successes, Engleberger is known in the industry as ``the Father of Robotics.''
+
+Academia also made much progress in the creation new robots. In 1958 at the Stanford Research Institute, Charles Rosen led a research team in developing a robot called ``Shakey.'' Shakey was far more advanced than the original Unimate, which was designed for specialized, industrial applications. Shakey could wheel around the room, observe the scene with his television ``eyes,'' move across unfamiliar surroundings, and to a certain degree, respond to his environment. He was given his name because of his wobbly and clattering movements.
+
+\hypertarget{electrical-concepts}{%
+\chapter{Electrical Concepts}\label{electrical-concepts}}
+
+Description of the electronics part of the course.
+
+\hypertarget{circuits}{%
+\section{Circuits}\label{circuits}}
+
+\hypertarget{resistance-voltage-and-current}{%
+\section{Resistance, Voltage and Current}\label{resistance-voltage-and-current}}
+
+\hypertarget{ohms-law}{%
+\section{Ohm's Law}\label{ohms-law}}
+
+\hypertarget{using-a-digital-multimeter}{%
+\section{Using a Digital Multimeter}\label{using-a-digital-multimeter}}
+
+\hypertarget{basic-soldering}{%
+\section{Basic Soldering}\label{basic-soldering}}
+
+\hypertarget{mechanical-design}{%
+\chapter{Mechanical Design}\label{mechanical-design}}
+
+Need to teach them a few things.
+
+\hypertarget{basic-mechanics}{%
+\section{Basic Mechanics?}\label{basic-mechanics}}
+
+\hypertarget{advanced-mechanics}{%
+\section{Advanced Mechanics?}\label{advanced-mechanics}}
+
+\hypertarget{computer-aided-design}{%
+\section{Computer Aided Design}\label{computer-aided-design}}
+
+\hypertarget{python-programming}{%
+\chapter{Python Programming}\label{python-programming}}
+
+Finally! We are going to start learning how to make the Raspberry Pi control components like lights and motors and receive input from sensors. This is what will make your creations become real robots. For this unit we will refer to the course text quite often. Many of the programming problems come from here as well. For all of your assignments in this section you will start here. Learn the basic concepts of that assignment, read more about it on the course text, go to GitHub Classroom to practice the program and finally, transfer what you have learned to the Raspberry Pi.
+
+Let's get started by setting up the Pi and learning more about Python and it's wide range of applications.
+
+\hypertarget{setting-up-the-raspberry-pi}{%
+\section{Setting up the Raspberry Pi}\label{setting-up-the-raspberry-pi}}
+
+(This section might get moved up if we start using the Pi earlier as a power supply.)
+
+\hypertarget{the-parts-of-the-rpi-and-pinout}{%
+\section{The parts of the RPi and Pinout}\label{the-parts-of-the-rpi-and-pinout}}
+
+\hypertarget{why-python}{%
+\section{Why Python?}\label{why-python}}
+
+\hypertarget{hello-worldand-a-little-more}{%
+\section{Hello, World\ldots and a Little More}\label{hello-worldand-a-little-more}}
+
+\hypertarget{functions}{%
+\section{Functions}\label{functions}}
+
+\hypertarget{conditionals}{%
+\section{Conditionals}\label{conditionals}}
+
+\hypertarget{iteration}{%
+\section{Iteration}\label{iteration}}
+
+\hypertarget{sensing-the-environment}{%
+\section{Sensing the Environment}\label{sensing-the-environment}}
+
+\hypertarget{robotic-types}{%
+\chapter{Robotic Types}\label{robotic-types}}
+
+Discuss types of robotic systems.
+
+\hypertarget{databot}{%
+\section{DataBot}\label{databot}}
+
+\hypertarget{mobilebot}{%
+\section{MobileBot}\label{mobilebot}}
+
+\hypertarget{solarbot}{%
+\section{SolarBot}\label{solarbot}}
+
+\hypertarget{capstone-project}{%
+\chapter{Capstone Project}\label{capstone-project}}
+
+\hypertarget{going-further-with-robotics}{%
+\chapter{Going Further with Robotics}\label{going-further-with-robotics}}
+
+Tools used in Robotics Engineering
+
+\hypertarget{course-lecture-notes}{%
+\section{Course Lecture Notes}\label{course-lecture-notes}}
+
+\hypertarget{python-textbook}{%
+\section{Python Textbook}\label{python-textbook}}
+
+\hypertarget{course-youtube-channel}{%
+\section{Course YouTube Channel}\label{course-youtube-channel}}
+
+\hypertarget{github-repositories}{%
+\section{GitHub Repositories}\label{github-repositories}}
+
+\hypertarget{jupyter-notebooks}{%
+\section{Jupyter Notebooks}\label{jupyter-notebooks}}
+
+\hypertarget{course-programming-environment}{%
+\section{Course Programming Environment}\label{course-programming-environment}}
+
+\hypertarget{cad-with-onshape}{%
+\section{CAD with OnShape}\label{cad-with-onshape}}
+
+\hypertarget{robotics-in-higher-education}{%
+\section{Robotics in Higher Education}\label{robotics-in-higher-education}}
+
+\hypertarget{course-materials-and-instructions}{%
+\chapter{Course Materials and Instructions}\label{course-materials-and-instructions}}
+
+\hypertarget{course-lecture-notes-1}{%
+\section{Course Lecture Notes}\label{course-lecture-notes-1}}
+
+\hypertarget{follow-the-course-youtube-channel}{%
+\section{Follow the Course YouTube Channel}\label{follow-the-course-youtube-channel}}
+
+\hypertarget{create-a-github-account}{%
+\section{Create a GitHub Account}\label{create-a-github-account}}
+
+\hypertarget{download-and-install-pycharm}{%
+\section{Download and Install PyCharm}\label{download-and-install-pycharm}}
+
+\hypertarget{onshape-account-setup}{%
+\section{OnShape Account Setup}\label{onshape-account-setup}}
+
+  \bibliography{book.bib,packages.bib}
+
+\end{document}

@@ -1,0 +1,25 @@
+# Python Programming
+
+Finally!  We are going to start learning how to make the Raspberry Pi control components like lights and motors and receive input from sensors.  This is what will make your creations become real robots.  For this unit we will refer to the course text quite often.  Many of the programming problems come from here as well.  For all of your assignments in this section you will start here.  Learn the basic concepts of that assignment, read more about it on the course text, go to GitHub Classroom to practice the program and finally, transfer what you have learned to the Raspberry Pi.
+
+Let's get started by setting up the Pi and learning more about Python and it's wide range of applications.
+
+## Setting up the Raspberry Pi
+
+(This section might get moved up if we start using the Pi earlier as a power supply.)
+
+## The parts of the RPi and Pinout
+
+
+
+## Why Python?
+
+## Hello, World...and a Little More
+
+## Functions
+
+## Conditionals
+
+## Iteration
+
+## Sensing the Environment

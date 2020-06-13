@@ -1,0 +1,12 @@
+# Course Materials and Instructions
+
+## Course Lecture Notes
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQzhnnscrH02bQAozIj_FHZNBvhkXvO4Ve8OCXYbl47CArRmwCx6anKxsnaLkvEWUpUF5yvsiDHXwwJ/embed?start=false&loop=false&delayms=3000" frameborder="1" width="670" height="398" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+## Follow the Course YouTube Channel
+
+## Create a GitHub Account
+
+## Download and Install PyCharm
+
+## OnShape Account Setup

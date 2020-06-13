@@ -1,0 +1,19 @@
+# Going Further with Robotics
+
+<h3>Tools used in Robotics Engineering</h3>
+
+## Course Lecture Notes
+
+## Python Textbook
+
+## Course YouTube Channel
+
+## GitHub Repositories
+
+## Jupyter Notebooks
+
+## Course Programming Environment
+
+## CAD with OnShape
+
+## Robotics in Higher Education

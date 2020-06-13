@@ -4,7 +4,7 @@ bookdown::gitbook:
     toc:
       before: |
         <div>  </div>
-        <img src="WHSROBO.png" style="width:200px;height:200px;" class="center" class="imgpad">
+        <img src="WHSROBO.png" style="width:230px;height:260px;" class="center">
       after: |
         <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
     edit: https://github.com/rstudio/bookdown-demo/edit/master/%s
