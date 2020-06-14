@@ -1,0 +1,25 @@
+Instructional Videos
+
+Prerequisites
+- Course Materials Overview and Assignments
+
+Introduction
+- Course Introduction
+
+Electronics
+- Important Safety Concepts
+- Circuit Lab Setup
+- Assignment Submission on GitHub
+- Using the RPi for power
+
+Mechanics
+
+Programming
+- Setting up the Raspberry Pi
+- Parts of the Raspberry Pi and Pinout
+- Hello World
+- Functions
+- Conditionals
+- Iteration
+- Inputs
+
