@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Section 3 Electrical Concepts | Robotics Engineering</title>
   <meta name="description" content="During your particpation in the Robotics Engineering Course here at Windsor High School, you will use this online book as a guide through the content." />
-  <meta name="generator" content="bookdown 0.18 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.19 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Section 3 Electrical Concepts | Robotics Engineering" />
   <meta property="og:type" content="book" />
@@ -24,7 +24,7 @@
 <meta name="author" content="Steve Cline" />
 
 
-<meta name="date" content="2020-06-13" />
+<meta name="date" content="2020-06-14" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -77,10 +77,11 @@
 </ul></li>
 <li class="chapter" data-level="3" data-path="electrical-concepts.html"><a href="electrical-concepts.html"><i class="fa fa-check"></i><b>3</b> Electrical Concepts</a><ul>
 <li class="chapter" data-level="3.1" data-path="electrical-concepts.html"><a href="electrical-concepts.html#circuits"><i class="fa fa-check"></i><b>3.1</b> Circuits</a></li>
-<li class="chapter" data-level="3.2" data-path="electrical-concepts.html"><a href="electrical-concepts.html#resistance-voltage-and-current"><i class="fa fa-check"></i><b>3.2</b> Resistance, Voltage and Current</a></li>
-<li class="chapter" data-level="3.3" data-path="electrical-concepts.html"><a href="electrical-concepts.html#ohms-law"><i class="fa fa-check"></i><b>3.3</b> Ohm’s Law</a></li>
-<li class="chapter" data-level="3.4" data-path="electrical-concepts.html"><a href="electrical-concepts.html#using-a-digital-multimeter"><i class="fa fa-check"></i><b>3.4</b> Using a Digital Multimeter</a></li>
-<li class="chapter" data-level="3.5" data-path="electrical-concepts.html"><a href="electrical-concepts.html#basic-soldering"><i class="fa fa-check"></i><b>3.5</b> Basic Soldering</a></li>
+<li class="chapter" data-level="3.2" data-path="electrical-concepts.html"><a href="electrical-concepts.html#voltage-and-current"><i class="fa fa-check"></i><b>3.2</b> Voltage and Current</a></li>
+<li class="chapter" data-level="3.3" data-path="electrical-concepts.html"><a href="electrical-concepts.html#resistance"><i class="fa fa-check"></i><b>3.3</b> Resistance</a></li>
+<li class="chapter" data-level="3.4" data-path="electrical-concepts.html"><a href="electrical-concepts.html#ohms-law"><i class="fa fa-check"></i><b>3.4</b> Ohm’s Law</a></li>
+<li class="chapter" data-level="3.5" data-path="electrical-concepts.html"><a href="electrical-concepts.html#using-a-digital-multimeter"><i class="fa fa-check"></i><b>3.5</b> Using a Digital Multimeter</a></li>
+<li class="chapter" data-level="3.6" data-path="electrical-concepts.html"><a href="electrical-concepts.html#basic-soldering"><i class="fa fa-check"></i><b>3.6</b> Basic Soldering</a></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="mechanical-design.html"><a href="mechanical-design.html"><i class="fa fa-check"></i><b>4</b> Mechanical Design</a><ul>
 <li class="chapter" data-level="4.1" data-path="mechanical-design.html"><a href="mechanical-design.html#basic-mechanics"><i class="fa fa-check"></i><b>4.1</b> Basic Mechanics?</a></li>
@@ -173,14 +174,32 @@ Keep your work area clean and uncluttered. Do not keep beverages on your worksta
 <p>Circuit lab setup</p>
 <div id="circuits" class="section level2">
 <h2><span class="header-section-number">3.1</span> Circuits</h2>
-<p>For the first section of the course, we will begin using our online textbook. Please keep in mind that, in order to begin using the Raspberry Pi (i.e. receiving the power supply) you will need to pass all of the required quizzes with at least a 70%.</p>
-<p><b>Electrical Circuits</b></p>
-<p>Rather than me trying to do a better job than our textbook, you are going to read the <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/electric-circuits/" target="_blank">short section on circuits</a> and complete the <a href="https://www.allaboutcircuits.com/worksheets/elementary-circuits/online" target="_blank">worksheet</a>. These questions will be similar to those that you will see on your unit exam (The one you need at least a 70% on to move on). So…that means that you are not completing this worksheet for a grade. Instead, you are trying to measure how well you learned the concepts in the reading. Much of this year’s content will be delivered this way. Get your head around the idea of learning for the sake of learning.</p>
+<p>A basic understanding of circuit electricity is essential going forward. For this section of the course, we will begin using our online textbook. It gives us an excellent overview of electrons, circuits and polarity. Please keep in mind that, in order to begin using the Raspberry Pi (i.e. receiving the power supply) you will need to pass all of the required quizzes with at least a 70%.</p>
+<p><b>Key Concepts of Section 3.1</b></p>
+<ul>
+<li>
+A circuit is a loop of conductive material.
+</li>
+<li>
+In order for electrons to flow a <i>closed circuit</i> is required.
+</li>
+<li>
+A circuit is <i>open</i> or <i>broken</i> if a complete path for the electrons to flow no longer exists.
+</li>
+</ul>
+<p>Rather than me trying to do a better job than our textbook, you are going to read the <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/electric-circuits/" target="_blank">short section on circuits</a>. These questions will be similar to those that you will see on your unit exam (The one you need at least a 70% on to move on). So…that means that you are not completing this worksheet for a grade. Instead, you are trying to measure how well you learned the concepts in the reading. Much of this year’s content will be delivered this way. Get your head around the idea of learning for the sake of learning.</p>
 <p>To help you understand this concept, here is an excellent video from SparkFun Electronics on the topic.</p>
 <iframe width="420" height="315" src="https://www.youtube.com/embed/kYwNj9uauJ4">
 </iframe>
 <br>
-<u>Assignment</u>: Using (tool for this), design a closed circuit with the following components:
+<u>Assignments for section 3.1</u>:
+<ol>
+<li>
+After reading the section on circuits, complete the <a href="https://www.allaboutcircuits.com/worksheets/elementary-circuits/online" target="_blank">worksheet</a>
+</li>
+<li>
+Using (tool for this), design a closed circuit with the following components:
+</li>
 <ul>
 <li>
 5V DC power supply
@@ -192,20 +211,25 @@ Red LED
 330 Ohm resistor
 </li>
 </ul>
+</ol>
 <p>Submit the (method of submission) here.</p>
 </div>
-<div id="resistance-voltage-and-current" class="section level2">
-<h2><span class="header-section-number">3.2</span> Resistance, Voltage and Current</h2>
+<div id="voltage-and-current" class="section level2">
+<h2><span class="header-section-number">3.2</span> Voltage and Current</h2>
+<p>The movement of electrons from one pole to another is what we use in robotics to make our robots work. By altering the volume of electrons moving through the wires connected to a motor we can alter the speed of the wheel attached to the motor. The potential energy coming in to our microprocessor pin over a wire attached to a photoresistor tells us the level of brightness or lumosity in a room. Putting these two concepts together we could create a robotic system that opens the blinds on our lab when the sun sets in the west. That is, of course, if we can program our system to make that decision on its own. We will get to the programming part later. For now, we will examine the concepts of voltage and current which allow us, along with resistance, to receive information through sensor and send information out to an actuation device like a motor.</p>
+</div>
+<div id="resistance" class="section level2">
+<h2><span class="header-section-number">3.3</span> Resistance</h2>
 </div>
 <div id="ohms-law" class="section level2">
-<h2><span class="header-section-number">3.3</span> Ohm’s Law</h2>
+<h2><span class="header-section-number">3.4</span> Ohm’s Law</h2>
 </div>
 <div id="using-a-digital-multimeter" class="section level2">
-<h2><span class="header-section-number">3.4</span> Using a Digital Multimeter</h2>
+<h2><span class="header-section-number">3.5</span> Using a Digital Multimeter</h2>
 <p>This section will become active in the event that we are not using remote instruction.</p>
 </div>
 <div id="basic-soldering" class="section level2">
-<h2><span class="header-section-number">3.5</span> Basic Soldering</h2>
+<h2><span class="header-section-number">3.6</span> Basic Soldering</h2>
 <p>This section will become active in the event that we are not using remote instruction.</p>
 
 </div>
