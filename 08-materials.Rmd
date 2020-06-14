@@ -5,8 +5,14 @@
 
 ## Follow the Course YouTube Channel
 
-## Create a GitHub Account
+## Using GitHub
+
+## Think Python Textbook
+
+## All About Circuits Textbook
 
 ## Download and Install PyCharm
+
+## Jupyter Notebooks
 
 ## OnShape Account Setup
