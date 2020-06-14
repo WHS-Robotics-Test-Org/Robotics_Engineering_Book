@@ -24,7 +24,20 @@ For the first section of the course, we will begin using our online textbook.  P
 
 <b>Electrical Circuits</b>
 
-Rather than try to do a better job than our textbook, you are going to read the <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/electric-circuits/" target="_blank">short section on circuits</a> and complete the online worksheet.  These questions will be similar to those that you will see on your unit exam (The one you need at least a 70% on to move on).
+Rather than me trying to do a better job than our textbook, you are going to read the <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/electric-circuits/" target="_blank">short section on circuits</a> and complete the <a href="https://www.allaboutcircuits.com/worksheets/elementary-circuits/online" target="_blank">worksheet</a>.  These questions will be similar to those that you will see on your unit exam (The one you need at least a 70% on to move on).  So...that means that you are not completing this worksheet for a grade.  Instead, you are trying to measure how well you learned the concepts in the reading.  Much of this year's content will be delivered this way.  Get your head around the idea of learning for the sake of learning.
+
+To help you understand this concept, here is an excellent video from SparkFun Electronics on the topic.
+
+<iframe width="420" height="315"
+src="https://www.youtube.com/embed/kYwNj9uauJ4">
+</iframe>
+<br>
+<u>Assignment</u>: Using (tool for this), design a closed circuit with the following components:
+<ul><li>5V DC power supply</li>
+<li>Red LED</li>
+<li>330 Ohm resistor</li>
+</ul>
+Submit the (method of submission) here.
 
 ## Resistance, Voltage and Current
 
@@ -32,4 +45,8 @@ Rather than try to do a better job than our textbook, you are going to read the 
 
 ## Using a Digital Multimeter
 
+This section will become active in the event that we are not using remote instruction.
+
 ## Basic Soldering
+
+This section will become active in the event that we are not using remote instruction.

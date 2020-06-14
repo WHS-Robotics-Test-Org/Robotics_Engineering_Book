@@ -22,7 +22,7 @@ For this course you will need to do the following to prepare to learn:
   <li>Locate the [Course Lecture Notes] section of this site.  Browse through the notes to gain an understanding of what we will be covering this year.</li>
   <li>Sign up for a GitHub account and fill out this form.</li>
   <li>Bookmark the course <a href="https://github.com/stcline/Robotics_Engineering_Course" target="_blank">GitHub Repository</a>.  This is where many of the programming resources will be found.  In addition, assignments will be submitted here.</li>
-  <li>Find the <a href="https://greenteapress.com/wp/think-python-2e/" target="_blank"> Python textbook</a> for the course. <i>While this course includes more than just programming, we will dedicate quite a bit of time to learning Python</i>.</li>
+  <li>Locate our two textbooks for the course.  They are both online and free.  The first is an electronics textbook called <a href="https://www.allaboutcircuits.com/textbook/" target ="_blank"><i>Lessons in Electric Circuits</i></a>.  The second is a programming textbook called <a href="https://greenteapress.com/wp/think-python-2e/" target="_blank"><i>Think Python</i></a>.</li>
   <li>Subscribe to the course <a href="https://www.youtube.com/playlist?list=PLdzkJRGG1oi3xGaaHM44BkpW-bYuD9KQS" target="_blank">YouTube Channel</a>.</li>  Directions for how to do this are found in the [Follow the Course YouTube Channel] section of this site.</li>
   <li>Log on to the class Jupyter Notebook server</li>
   <li>Sign up for an OnShape account by following the instructions in the [OnShape Account Setup] section of this site.</li>
@@ -116,7 +116,20 @@ For the first section of the course, we will begin using our online textbook.  P
 
 <b>Electrical Circuits</b>
 
-Rather than try to do a better job than our textbook, you are going to read the <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/electric-circuits/" target="_blank">short section on circuits</a> and complete the online worksheet.  These questions will be similar to those that you will see on your unit exam (The one you need at least a 70% on to move on).
+Rather than me trying to do a better job than our textbook, you are going to read the <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/electric-circuits/" target="_blank">short section on circuits</a> and complete the <a href="https://www.allaboutcircuits.com/worksheets/elementary-circuits/online" target="_blank">worksheet</a>.  These questions will be similar to those that you will see on your unit exam (The one you need at least a 70% on to move on).  So...that means that you are not completing this worksheet for a grade.  Instead, you are trying to measure how well you learned the concepts in the reading.  Much of this year's content will be delivered this way.  Get your head around the idea of learning for the sake of learning.
+
+To help you understand this concept, here is an excellent video from SparkFun Electronics on the topic.
+
+<iframe width="420" height="315"
+src="https://www.youtube.com/embed/kYwNj9uauJ4">
+</iframe>
+<br>
+<u>Assignment</u>: Using (tool for this), design a closed circuit with the following components:
+<ul><li>5V DC power supply</li>
+<li>Red LED</li>
+<li>330 Ohm resistor</li>
+</ul>
+Submit the (method of submission) here.
 
 ## Resistance, Voltage and Current
 
@@ -124,7 +137,11 @@ Rather than try to do a better job than our textbook, you are going to read the 
 
 ## Using a Digital Multimeter
 
+This section will become active in the event that we are not using remote instruction.
+
 ## Basic Soldering
+
+This section will become active in the event that we are not using remote instruction.
 
 <!--chapter:end:02-electrical.Rmd-->
 
