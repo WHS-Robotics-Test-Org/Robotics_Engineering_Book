@@ -11,6 +11,10 @@ link-citations: yes
 github-repo: rstudio/bookdown-demo
 description: "During your particpation in the Robotics Engineering Course here at Windsor High School, you will use this online book as a guide through the content."
 ---
+```
+options(tinytex.verbose = TRUE)
+
+--- 
 
 # Prerequisites
 
