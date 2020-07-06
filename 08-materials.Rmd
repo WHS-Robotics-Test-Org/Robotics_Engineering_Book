@@ -16,3 +16,7 @@
 ## Jupyter Notebooks
 
 ## OnShape Account Setup
+
+## Controlling the Raspberry Pi Remotely
+
+Using a remote shell, you can control your Raspberry Pi with another computer.  You can do this through the linux command line or with a GUI using a service like Tight VNC.  Learning how to do this will allo 

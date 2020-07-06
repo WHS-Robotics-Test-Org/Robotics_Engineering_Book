@@ -1,16 +1,58 @@
 # Python Programming
 
-Finally!  We are going to start learning how to make the Raspberry Pi control components like lights and motors and receive input from sensors.  This is what will make your creations become real robots.  For this unit we will refer to the course text quite often.  Many of the programming problems come from here as well.  For all of your assignments in this section you will start here.  Learn the basic concepts of that assignment, read more about it on the course text, go to GitHub Classroom to practice the program and finally, transfer what you have learned to the Raspberry Pi.
+Finally!  We are going to start learning how to make the Raspberry Pi control components like lights and motors and receive input from sensors.  This is what will make your creations become real robots.  For this unit we will refer to the <a href="https://greenteapress.com/wp/think-python-2e/" target="_blank">course programming text</a> quite often.  Many of the programming problems come from the Downey text as well.  For all of your assignments in this section you will start here though.  Learn the basic concepts of that assignment, read more about it on the course text, go to GitHub Classroom to practice the program and finally, transfer what you have learned to the Raspberry Pi.
 
 Let's get started by setting up the Pi and learning more about Python and it's wide range of applications.
 
 ## Setting up the Raspberry Pi
 
-(This section might get moved up if we start using the Pi earlier as a power supply.)
+These procedures are for students in the <i>Robotics Engineering</i> course at Windsor High School.  As such, some of the initial steps required in setting up a Raspberry Pi have already been completed.  If you are using a new, out of the box, Pi refer to one of the many tutorials online.
+
+<b>Equipment Needed:</b>
+<ul>
+  <li>Raspberry Pi 3B+</li>
+  <li>5V | 2.5A power supply</li>
+  <li>32GB Micro SD card with pre-installed Linux based OS</li>
+  <li>Monitor</li>
+  <li>HDMI cable</li>
+  <li>Keyboard</li>
+  <li>Mouse</li>
+  <li>Optional: Windows, iOS or Linux Computer (not a Chromebook)</li>
+  <li>Connection to a LAN.  In the lab this is "Mechlab".  At home it is your router.</li>
+</ul><br>
+NOTE: For the initial setup we will use the monitor, keyboard and mouse.  Eventually, we will only use the command line functions which will allow you to eliminate those components and control the Pi from your laptop remotely if you choose.  If not, you can use the Pi as a computer itself but just enter the command line controls of the Linux terminal.  Eventually, you will need to be able to do this though as we will disconnect the Pi from all physical I/O devices and make it the brains of a self-sufficient robotic system.<br>
+
+### Putting the Pi Together
+
+To begin, assemble the Pi by putting the SD card in the slot.  Connect the monitor to the HDMI port, and the keyboard and mouse to the USB ports.  Plug in the power cord and turn it on.<br>
+<img src="https://3.bp.blogspot.com/-7aGWj6uh2I8/XFFgToODzUI/AAAAAAAACy4/l_Myo4644BIpb8N7r_c2Fr0TTt6I2XZTQCLcBGAs/s1600/raspberry-pi%2B-%2BHardware%2Binstallation.png"><br>
+
+(Create a custom background for the RPi and install all of the programs needed for the class.)
 
 ## The parts of the RPi and Pinout
 
+Let's examine the parts of this tiny computer that you will be using for the rest of the year...it is really quite amazing how much can be packed on the small device.
+<br>
+<img src="https://raw.githubusercontent.com/stcline/Hosted_Images/master/Robotics_Engineering/RPi3_basic.png"><br>
 
+There are several things worth noting here about the Pi:
+<ul>
+  <li>While it is possible to power the device with a micro USB power supply that provides only 1A of current (older Android phones use this), it is best to use the full 2-2.5A power supply, especially when we start hooking up components to the GPIO pins</li>
+  <li>Be careful not to short two GPIO pins together or connect an external DC power supply incorrectly to one of the GPIO pins.  These actions can damage essential components of the Pi.</li>
+  <li>TBC</li>
+</ul>
+<br>
+A powerful feature of the Raspberry Pi is the row of GPIO (general-purpose input/output) pins along the top edge of the board.  There are 40 pins which we can use for a wide range of robotics applications.
+<img src="https://github.com/stcline/Hosted_Images/blob/master/Robotics_Engineering/GPIO-Pinout-Diagram-2.png?raw=true">
+<br>
+It is important to remember which pins are which as the locations do not represent the GPIO labels.  If you forget or cannot find this diagram, use the command line in the terminal.  This is as good a place as any to start using the terminal.  With the Raspberry Pi powered on press CTRL+ALT+T to open a terminal session.  Before the Apple Lisa's introduction, all computers used something like the terminal as the interface with humans.  All computers still contain a terminal.  The Raspberry Pi OS we are using is based on the Linux Kernal so we will use Linux commands but the procedure is similar for other systems such as Windows and iOS.
+
+
+After the terminal opens, type the following command: ```pinout```
+
+You should see something like this in the terminal:
+
+<img src="https://github.com/stcline/Hosted_Images/blob/master/Robotics_Engineering/gpiozero-pinout.png?raw=true">
 
 ## Why Python?
 
