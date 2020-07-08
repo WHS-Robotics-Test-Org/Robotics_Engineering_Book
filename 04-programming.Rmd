@@ -80,6 +80,8 @@ There are other advantages to the switch to the Pi.  The first advantage that th
 
 ## Hello, World...and a Little More
 
+To begin programming in Python...
+
 ## Functions
 
 ## Conditionals

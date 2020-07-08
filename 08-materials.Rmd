@@ -23,6 +23,8 @@ Using a remote shell, one can control a Raspberry Pi with another computer.  You
 
 In all three of the cases listed below one thing is assumed.  The Raspberry Pi and the device using the Secure Shell are connected to the same router.  In our lab, we will use the MechLab wifi network.  At home, students will need to make sure to connect the pi to their home router which the computer is using.
 
+This process will work for a computer running Windows, MacOS or Linux.  <b>It will not work for a Chromebook.</b>
+
 ### Setting up SSH for Windows
 
 <b>Complete the following steps to create a secure shell connection with a computer running Windows:</b>
