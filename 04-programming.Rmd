@@ -25,7 +25,7 @@ NOTE: For the initial setup we will use the monitor, keyboard and mouse.  Eventu
 ### Putting the Pi Together
 
 To begin, assemble the Pi by putting the SD card in the slot.  Connect the monitor to the HDMI port, and the keyboard and mouse to the USB ports.  Plug in the power cord and turn it on.<br>
-<img src="https://3.bp.blogspot.com/-7aGWj6uh2I8/XFFgToODzUI/AAAAAAAACy4/l_Myo4644BIpb8N7r_c2Fr0TTt6I2XZTQCLcBGAs/s1600/raspberry-pi%2B-%2BHardware%2Binstallation.png"><br>
+<img src="https://github.com/stcline/Hosted_Images/blob/master/Robotics_Engineering/raspberry-pi%20-%20Hardware%20installation.png?raw=true"><br>
 
 (Create a custom background for the RPi and install all of the programs needed for the class.)
 
@@ -47,7 +47,7 @@ A powerful feature of the Raspberry Pi is the row of GPIO (general-purpose input
 <br>
 It is important to remember which pins are which as the locations do not represent the GPIO labels.  If you forget or cannot find this diagram, use the command line in the terminal.  
 
-This is as good a place as any to start using the terminal.  With the Raspberry Pi powered on press CTRL+ALT+T to open a terminal session.  Before the introduction of the Apple Lisa with a graphical user interface (GUI), all computers used something like the terminal as the interface with humans.  All computers still contain a terminal.  The Raspberry Pi OS we are using is based on the Linux kernel so we will use Linux commands but the procedure is similar for other systems such as Windows and iOS.
+This is as good a place as any to start using the terminal.  Before the introduction of the Apple Lisa with a graphical user interface (GUI), all computers used something like the terminal as the interface with humans.  All computers still contain a terminal.  The Raspberry Pi OS we are using is based on the Linux kernel so we will use Linux commands but the procedure is similar for other systems such as Windows and macOS.  With the Raspberry Pi powered on press CTRL+ALT+T to open a terminal session. 
 
 
 After the terminal opens, type the following command: ```pinout```
@@ -63,6 +63,14 @@ A GPIO pin designated as an output pin can be set to high (3V3) or low (0V).  In
 It is possible to control GPIO pins using a number of programming languages and tools.  For this course we will use Bash, the scripting language of Linux, and Python.
 
 ## Why Python?
+
+It is worth spending a little time discussing the reasons why Python will be the chosen operating system for this course.  Prior to Fall 2020, the course utilized the Arduino UNO as the microprocessor for the robotics systems.  The Arduino is also a versatile, fully programmable microcomputer with input and output pins capable of producing and detecting low DC voltages. It utilizes the C++ programming language.  There were a few limitations, however, with the Arduino UNO.  
+
+The biggest advantage of the Pi is the programming interface.  Since the Pi is essentially a small Linux computer, applications and environments that function on Linux also function on the Pi.  The default scripting language on Linux is called Bash.  When you called up the ```pinout``` for the Raspberry Pi earlier, you were using Bash.  It is a powerful command line interface.  Why not just use Bash instead of learning another language within the Linux shell?  The main reason for this is Python's usefulness outside of this class.  We know from past experience that almost all of our Robotics Engineering students will go on to some kind of technical field of study in college.  While those do not all go in to robotics, they all need to learn new languages.  Python is about the most useful language one can learn in high school if planning to go on to a technical degree in college like engineering, computer science, data science or machine learning as well as almost any natural science field of study.  It is powerful, easy to learn and widely used.  The most recent StackOverflow survey ranked Python 3rd most popular among users.  By learning this language, you will be more prepared to take on the challenges of a field of study in college related to robotics.  Since one of the main objectives of our program is to help students prepare for post-secondary STEM fields of study, Python is an easy choice.
+
+Python is also an interpreted language instead of a compiled language.  What is the difference?  In order to get a compiled language to run on a computer, the additional step of compiling it into machine code must take place before the device will run the commands of the program.  With an interpreted language, a program or virtual machine running on the device (In this case, the Python environment installed on the Raspberry Pi OS) interprets the script written by the programmer directly into machine code.  This is a faster process than running a compiled language like C++.  Other interpreted languages include Ruby, Java and Perl and good old BASIC (Which many of us adult programmers learned when we were younger on our Commodore 64 or Apple IIe computers).  This structure makes Python faster to learn.
+
+There are other advantages to the switch to the Pi.  The first advantage that the Pi has over the UNO is an onboard wireless internet connection.  The Pi can connect to other devices using either 2.4GHz or 5GHz frequencies as well as Bluetooth.  The current version also includes a Power over Ethernet (PoE) capability.  Making the switch to the Raspberry Pi will allow for more seamless IOT (Internet of Things) activities without the need for an additional board.  Second, the Raspberry Pi can actually function like a computer.  We can modify the OS easily by modifying the micro SD card used as RAM on the computer.  
 
 ## Hello, World...and a Little More
 
