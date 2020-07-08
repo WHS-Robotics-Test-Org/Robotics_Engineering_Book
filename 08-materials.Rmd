@@ -19,4 +19,28 @@
 
 ## Controlling the Raspberry Pi Remotely
 
-Using a remote shell, you can control your Raspberry Pi with another computer.  You can do this through the linux command line or with a GUI using a service like Tight VNC.  Learning how to do this will allo 
+Using a remote shell, one can control a Raspberry Pi with another computer.  You can do this through the linux command line or with a GUI using a service like Tight VNC.  Learning how to do this will allow our robots to become less tethered to a specific location.  This concept, more broadly is known as the Internet of Things (IoT).  Devices with internet connections can interact with one another over that connection.  Many of you probably already have some IoT devices in your homes like thermostats that interact with each other to maintain the most energy-efficient comfort in your house to security cameras that may be accessed on a mobile device from anywhere.  In short, our robots will not be fully robots until we learn to do this.  As a result, the Capstone project for this course in semester two requires this.
+
+In all three of the cases listed below one thing is assumed.  The Raspberry Pi and the device using the Secure Shell are connected to the same router.  In our lab, we will use the MechLab wifi network.  At home, students will need to make sure to connect the pi to their home router which the computer is using.
+
+### Setting up SSH for Windows
+
+<b>Complete the following steps to create a secure shell connection with a computer running Windows:</b>
+<ol>
+  <li>Be sure the Raspberry Pi is turned on and connected to router.</li>
+  <li>Be sure the computer is connected to the same network.</li>
+  <li>Open a terminal window on the Pi and type ```ip address show```.</li>
+  You will see something like this:
+  
+  <li>Make a note of this address, this is the address of the Pi on the network.  The computer will also have an ip address on the network.  To see that address open Windows PowerShell and type ```ipconfig```.  The "IPv4 Address" is the address of the computer.  If both are on the same network, the first three numbers should be the same.  If not, they are not connected to the same network and a SSH connection cannot be made.</li>
+  <li>Download and install <a href="https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html" target=_blank>Putty</a> (Most will choose the 64 bit Windows Installer file).</li>
+  <li>Open Putty.</li>
+  <li>In the "Host Name (IP address)" box, type in the address of the Raspberry Pi.</li>
+  <li>Click "Yes" at the warning.</li>
+  <li>Enter the username and password for the device.</li>
+</ol>
+You are now connected to the Pi via SSH to the command line.
+
+### Setting up SSH for Mac
+
+### Setting up SSH for Linux

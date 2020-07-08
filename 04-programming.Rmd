@@ -29,6 +29,12 @@ To begin, assemble the Pi by putting the SD card in the slot.  Connect the monit
 
 (Create a custom background for the RPi and install all of the programs needed for the class.)
 
+### Controlling the Pi with SSH
+
+For many, it may be easiest just to use the Raspberry Pi as a standalone computer.  In order to do this one just needs to keep the Pi connected to a monitor, keyboard and mouse.  One of the main advantages of this is that one can just turn on the Pi, wait for the boot sequence to finish and start programming using the terminal.  Another advantage is that other programming interfaces may be used such as Notepad++ which has built in code highlighting and markup functions that make programming in Python, and other languages, easier.  More advanced users might even choose to install an interface like PyCharm which has even more functions aimed at enhancing the programming experience and may be connected to Git or an online code repository like GitHub.  Maybe the biggest advantage of programming from the Pi desktop environment is that a web browser may be easily used alongside the command line terminal or programming interface.
+
+Eventually though, we will all need to sever our connection to the peripherals.  Imagine trying to test out a mobile robot system with the monitor still attached.  When we make the switch we start interacting with the Pi through SSH (Secure Shell).  This concept is not as difficult to understand as one might think.  Essentially you are accessing the terminal window for the Pi through another computer using a piece of software like Putty.  When both devices are connected to the same router, this is a fairly simple process.   While we will not require this yet, it is strongly recommended that every student go over this process which is detailed in the section titled [Controlling the Raspberry Pi Remotely] in the last chapter of this book sometime in the first semester.  The Capstone project will require this so we might as well get used to it now.  Most will probably switch back and forth between using the Pi as a desktop computer and accessing it via SSH.
+
 ## The parts of the RPi and Pinout
 
 Let's examine the parts of this tiny computer that you will be using for the rest of the year...it is really quite amazing how much can be packed on the small device.

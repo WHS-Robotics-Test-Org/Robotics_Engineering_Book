@@ -91,6 +91,7 @@
 <li class="chapter" data-level="5" data-path="python-programming.html"><a href="python-programming.html"><i class="fa fa-check"></i><b>5</b> Python Programming</a><ul>
 <li class="chapter" data-level="5.1" data-path="python-programming.html"><a href="python-programming.html#setting-up-the-raspberry-pi"><i class="fa fa-check"></i><b>5.1</b> Setting up the Raspberry Pi</a><ul>
 <li class="chapter" data-level="5.1.1" data-path="python-programming.html"><a href="python-programming.html#putting-the-pi-together"><i class="fa fa-check"></i><b>5.1.1</b> Putting the Pi Together</a></li>
+<li class="chapter" data-level="5.1.2" data-path="python-programming.html"><a href="python-programming.html#controlling-the-pi-with-ssh"><i class="fa fa-check"></i><b>5.1.2</b> Controlling the Pi with SSH</a></li>
 </ul></li>
 <li class="chapter" data-level="5.2" data-path="python-programming.html"><a href="python-programming.html#the-parts-of-the-rpi-and-pinout"><i class="fa fa-check"></i><b>5.2</b> The parts of the RPi and Pinout</a></li>
 <li class="chapter" data-level="5.3" data-path="python-programming.html"><a href="python-programming.html#why-python"><i class="fa fa-check"></i><b>5.3</b> Why Python?</a></li>
@@ -119,7 +120,11 @@
 <li class="chapter" data-level="9.6" data-path="course-materials-and-instructions.html"><a href="course-materials-and-instructions.html#download-and-install-pycharm"><i class="fa fa-check"></i><b>9.6</b> Download and Install PyCharm</a></li>
 <li class="chapter" data-level="9.7" data-path="course-materials-and-instructions.html"><a href="course-materials-and-instructions.html#jupyter-notebooks"><i class="fa fa-check"></i><b>9.7</b> Jupyter Notebooks</a></li>
 <li class="chapter" data-level="9.8" data-path="course-materials-and-instructions.html"><a href="course-materials-and-instructions.html#onshape-account-setup"><i class="fa fa-check"></i><b>9.8</b> OnShape Account Setup</a></li>
-<li class="chapter" data-level="9.9" data-path="course-materials-and-instructions.html"><a href="course-materials-and-instructions.html#controlling-the-raspberry-pi-remotely"><i class="fa fa-check"></i><b>9.9</b> Controlling the Raspberry Pi Remotely</a></li>
+<li class="chapter" data-level="9.9" data-path="course-materials-and-instructions.html"><a href="course-materials-and-instructions.html#controlling-the-raspberry-pi-remotely"><i class="fa fa-check"></i><b>9.9</b> Controlling the Raspberry Pi Remotely</a><ul>
+<li class="chapter" data-level="9.9.1" data-path="course-materials-and-instructions.html"><a href="course-materials-and-instructions.html#setting-up-ssh-for-windows"><i class="fa fa-check"></i><b>9.9.1</b> Setting up SSH for Windows</a></li>
+<li class="chapter" data-level="9.9.2" data-path="course-materials-and-instructions.html"><a href="course-materials-and-instructions.html#setting-up-ssh-for-mac"><i class="fa fa-check"></i><b>9.9.2</b> Setting up SSH for Mac</a></li>
+<li class="chapter" data-level="9.9.3" data-path="course-materials-and-instructions.html"><a href="course-materials-and-instructions.html#setting-up-ssh-for-linux"><i class="fa fa-check"></i><b>9.9.3</b> Setting up SSH for Linux</a></li>
+</ul></li>
 </ul></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
@@ -185,6 +190,11 @@ NOTE: For the initial setup we will use the monitor, keyboard and mouse. Eventua
 <p>To begin, assemble the Pi by putting the SD card in the slot. Connect the monitor to the HDMI port, and the keyboard and mouse to the USB ports. Plug in the power cord and turn it on.<br>
 <img src="https://github.com/stcline/Hosted_Images/blob/master/Robotics_Engineering/raspberry-pi%20-%20Hardware%20installation.png?raw=true"><br></p>
 <p>(Create a custom background for the RPi and install all of the programs needed for the class.)</p>
+</div>
+<div id="controlling-the-pi-with-ssh" class="section level3">
+<h3><span class="header-section-number">5.1.2</span> Controlling the Pi with SSH</h3>
+<p>For many, it may be easiest just to use the Raspberry Pi as a standalone computer. In order to do this one just needs to keep the Pi connected to a monitor, keyboard and mouse. One of the main advantages of this is that one can just turn on the Pi, wait for the boot sequence to finish and start programming using the terminal. Another advantage is that other programming interfaces may be used such as Notepad++ which has built in code highlighting and markup functions that make programming in Python, and other languages, easier. More advanced users might even choose to install an interface like PyCharm which has even more functions aimed at enhancing the programming experience and may be connected to Git or an online code repository like GitHub. Maybe the biggest advantage of programming from the Pi desktop environment is that a web browser may be easily used alongside the command line terminal or programming interface.</p>
+<p>Eventually though, we will all need to sever our connection to the peripherals. Imagine trying to test out a mobile robot system with the monitor still attached. When we make the switch we start interacting with the Pi through SSH (Secure Shell). This concept is not as difficult to understand as one might think. Essentially you are accessing the terminal window for the Pi through another computer using a piece of software like Putty. When both devices are connected to the same router, this is a fairly simple process. While we will not require this yet, it is strongly recommended that every student go over this process which is detailed in the section titled <a href="course-materials-and-instructions.html#controlling-the-raspberry-pi-remotely">Controlling the Raspberry Pi Remotely</a> in the last chapter of this book sometime in the first semester. The Capstone project will require this so we might as well get used to it now. Most will probably switch back and forth between using the Pi as a desktop computer and accessing it via SSH.</p>
 </div>
 </div>
 <div id="the-parts-of-the-rpi-and-pinout" class="section level2">

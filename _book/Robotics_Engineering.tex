@@ -322,6 +322,13 @@ To begin, assemble the Pi by putting the SD card in the slot. Connect the monito
 
 (Create a custom background for the RPi and install all of the programs needed for the class.)
 
+\hypertarget{controlling-the-pi-with-ssh}{%
+\subsection{Controlling the Pi with SSH}\label{controlling-the-pi-with-ssh}}
+
+For many, it may be easiest just to use the Raspberry Pi as a standalone computer. In order to do this one just needs to keep the Pi connected to a monitor, keyboard and mouse. One of the main advantages of this is that one can just turn on the Pi, wait for the boot sequence to finish and start programming using the terminal. Another advantage is that other programming interfaces may be used such as Notepad++ which has built in code highlighting and markup functions that make programming in Python, and other languages, easier. More advanced users might even choose to install an interface like PyCharm which has even more functions aimed at enhancing the programming experience and may be connected to Git or an online code repository like GitHub. Maybe the biggest advantage of programming from the Pi desktop environment is that a web browser may be easily used alongside the command line terminal or programming interface.
+
+Eventually though, we will all need to sever our connection to the peripherals. Imagine trying to test out a mobile robot system with the monitor still attached. When we make the switch we start interacting with the Pi through SSH (Secure Shell). This concept is not as difficult to understand as one might think. Essentially you are accessing the terminal window for the Pi through another computer using a piece of software like Putty. When both devices are connected to the same router, this is a fairly simple process. While we will not require this yet, it is strongly recommended that every student go over this process which is detailed in the section titled \protect\hyperlink{controlling-the-raspberry-pi-remotely}{Controlling the Raspberry Pi Remotely} in the last chapter of this book sometime in the first semester. The Capstone project will require this so we might as well get used to it now. Most will probably switch back and forth between using the Pi as a desktop computer and accessing it via SSH.
+
 \hypertarget{the-parts-of-the-rpi-and-pinout}{%
 \section{The parts of the RPi and Pinout}\label{the-parts-of-the-rpi-and-pinout}}
 
@@ -436,7 +443,42 @@ Shakey:Experiments in Robotic Planning and Learning (1972)
 \hypertarget{controlling-the-raspberry-pi-remotely}{%
 \section{Controlling the Raspberry Pi Remotely}\label{controlling-the-raspberry-pi-remotely}}
 
-Using a remote shell, you can control your Raspberry Pi with another computer. You can do this through the linux command line or with a GUI using a service like Tight VNC. Learning how to do this will allo
+Using a remote shell, one can control a Raspberry Pi with another computer. You can do this through the linux command line or with a GUI using a service like Tight VNC. Learning how to do this will allow our robots to become less tethered to a specific location. This concept, more broadly is known as the Internet of Things (IoT). Devices with internet connections can interact with one another over that connection. Many of you probably already have some IoT devices in your homes like thermostats that interact with each other to maintain the most energy-efficient comfort in your house to security cameras that may be accessed on a mobile device from anywhere. In short, our robots will not be fully robots until we learn to do this. As a result, the Capstone project for this course in semester two requires this.
+
+In all three of the cases listed below one thing is assumed. The Raspberry Pi and the device using the Secure Shell are connected to the same router. In our lab, we will use the MechLab wifi network. At home, students will need to make sure to connect the pi to their home router which the computer is using.
+
+\hypertarget{setting-up-ssh-for-windows}{%
+\subsection{Setting up SSH for Windows}\label{setting-up-ssh-for-windows}}
+
+Complete the following steps to create a secure shell connection with a computer running Windows:
+
+Be sure the Raspberry Pi is turned on and connected to router.
+
+Be sure the computer is connected to the same network.
+
+Open a terminal window on the Pi and type \texttt{ip\ address\ show}.
+
+You will see something like this:
+
+Make a note of this address, this is the address of the Pi on the network. The computer will also have an ip address on the network. To see that address open Windows PowerShell and type \texttt{ipconfig}. The ``IPv4 Address'' is the address of the computer. If both are on the same network, the first three numbers should be the same. If not, they are not connected to the same network and a SSH connection cannot be made.
+
+Download and install Putty (Most will choose the 64 bit Windows Installer file).
+
+Open Putty.
+
+In the ``Host Name (IP address)'' box, type in the address of the Raspberry Pi.
+
+Click ``Yes'' at the warning.
+
+Enter the username and password for the device.
+
+You are now connected to the Pi via SSH to the command line.
+
+\hypertarget{setting-up-ssh-for-mac}{%
+\subsection{Setting up SSH for Mac}\label{setting-up-ssh-for-mac}}
+
+\hypertarget{setting-up-ssh-for-linux}{%
+\subsection{Setting up SSH for Linux}\label{setting-up-ssh-for-linux}}
 
   \bibliography{book.bib,packages.bib}
 
