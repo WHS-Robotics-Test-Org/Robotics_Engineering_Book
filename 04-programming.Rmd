@@ -80,7 +80,37 @@ There are other advantages to the switch to the Pi.  The first advantage that th
 
 ## Hello, World...and a Little More
 
-To begin programming in Python...
+It is a tradition in in programming to test out one's ability to program in any language by creating a program called "Hello, World!".  This dates back to 1974 at Bell Labs.  The actual C language code that was written was:
+
+```main( ) {
+        printf("hello, world\n");
+}```
+
+In our case, we will do something very similiar.  The first program we write will do the same as that one written in 1974.  Open a terminal window by pressing CTRL+ALT+T.  This will open a window that looks like this:
+
+<img src="https://github.com/stcline/Hosted_Images/blob/master/Robotics_Engineering/terminal.png?raw=true">
+
+In order to run a command in Python through the terminal we need to set up the Python environment.  Type this command into the terminal:
+
+```python3```
+
+This will show a message like this:
+
+<img src="https://github.com/stcline/Hosted_Images/blob/master/Robotics_Engineering/pyprompt.PNG?raw=true">
+
+You know that you are able use Python commands when you get the ```>>>``` prompt.  This is universal for all Python editors and the specific prompt for Python.  We will try two methods of the "Hello, World!" program.  First, we will use the print command.  Type the following command into the interpreter:
+
+```print ("Hello, World!")```
+
+The quotation marks signify that we want to literally display what is directed by the ```print``` statement.  Try it without the quotes to see what happens.  This should produce something like this:
+
+<img src="https://github.com/stcline/Hosted_Images/blob/master/Robotics_Engineering/synerror.PNG?raw=true">
+
+This is your first error message.
+
+
+
+Read the section from our text titled, 
 
 ## Functions
 
