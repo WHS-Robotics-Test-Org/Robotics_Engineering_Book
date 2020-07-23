@@ -80,7 +80,7 @@
 
 \title{Robotics Engineering}
 \author{Steve Cline}
-\date{2020-07-12}
+\date{2020-07-23}
 
 \begin{document}
 \maketitle
@@ -357,6 +357,40 @@ A GPIO pin designated as an output pin can be set to high (3V3) or low (0V). In 
 
 It is possible to control GPIO pins using a number of programming languages and tools. For this course we will use Bash, the scripting language of Linux, and Python.
 
+NOTE: Before you start your first programming assignment realize that in order to progress in this course you must fully learn the information in the text. If you skim or rush through you might be able to get many answers on the chapter quiz correct but you will miss many of the points. Programming is hard and learning to program is as well. It does not mean it is impossible. It just requires work. Take your time and make sure you are understanding what you read. If not, do the following:
+
+Re-read the section.
+
+Ask someone else in the class for clarification.
+
+Google your question
+
+Ask your instructor
+
+This is good advice for all courses, especially the further you go in school. Many of you will go so far in college that you basically stop taking classes and just learn on your own for the sake of understanding something.
+
+Assignment 5.2
+For this assignment you will learn some basic commands and functions in Linux and how to find out how to use them.
+Open up a terminal on your Raspberry Pi as before.
+
+Type the following:
+\texttt{help}
+
+This is a list of all the built in functions that come with this version of Linux. As you add more packages and create your own functions this list will get larger. If you scroll to the top your see this message:
+\texttt{Type\ \textquotesingle{}help\ name\textquotesingle{}\ to\ find\ out\ more\ about\ the\ function\ \textquotesingle{}name\textquotesingle{}.}
+Let's try it. One of the functions you will use fairy often is \texttt{cd}.
+
+Type \texttt{help\ cd} and answer the following questions from the information on the screen:
+
+In your own words that you understand, what does this function do? (You may need to Google some of the terms like ``directory'' to understand what that term means in Linux)
+
+If you type \texttt{cd\ Desktop} what do you think will happen?
+
+Now call up the help information for the function \texttt{if}.
+Why would we ever use this function? Again, you might need to do a little research to understand the vocabulary here.
+
+Write down or type your answers so we can discuss them in class next time.
+
 \hypertarget{why-python}{%
 \section{Why Python?}\label{why-python}}
 
@@ -391,19 +425,95 @@ The quotation marks signify that we want to literally display what is directed b
 
 This is your first error message.
 
-Read the section from our text titled,
+Assignment 5.4
+Read the chapter from our text titled, ``Chapter 1 - The way of the program''. While you read the chapter open the Python environment through the Linux terminal on your Raspberry Pi as before. Follow along with the examples from the text as you go. This will help you learn Python more quickly. When you are done reading the chapter complete exercises 1 and 2 at the end of the chapter on your own to make sure you understand what you read. If not, see the Note above.
 
 \hypertarget{functions}{%
 \section{Functions}\label{functions}}
 
+As our text states,
+
+\begin{quote}
+In the context of programming, a function is a named sequence of statements that performs a computation. When you define a function, you specify the name and the sequence of statements. Later, you can ``call'' the function by name.
+\end{quote}
+
+Let's take a look at this sequentially:
+
+First, define a function. Second, call the function.
+
+What does this look like?
+
+Open the Python environment window and define your function like this:
+
+Then we call the function like this:
+
+So, what happened here? We defined the function \texttt{say\_hello()} . Then, we called the function and passed a parameter into the function. Can you tell what the parameter is?
+
+Why do we need to know how to use functions?
+
+The first reason is that the standard Python 3 library is filled with functions. When you type the command \texttt{print\ ("Hello,\ World!")} you are calling the built in Python \texttt{print()} function. As you read through the chapter on functions you will see that there are many other examples of useful functions packed into Python.
+
+The second reason is to make your programs easier to use. For example, let's say you make a robot that needs to follow this pattern as it drives alone a course. There are many reasons why you might need to do something like this. Maybe the problem to solve is navigating around obstacles. Maybe the robot needs to map a facility that humans cannot get into because of hazardous conditions like radiation. Maybe your robotics teacher just wants you to demonstrate you can use functions. At any rate, functions will make your job as a programmer eaiser. Here is the path the robot will take:
+
+How many times does the robot need to make a 90 degree left turn? (nine) Here is an example of how we could execute that turn using Python and our Raspberry Pi (Don't worry about the syntax now, we will get there.)
+
+As you will learn, there are other commands that need to be used to set up this program but these four lines are what actually make the Raspberry Pi control the left and right wheels of the robot so that the right wheel moves forward for two seconds while the left wheel stays fixed. This will make the robot turn left. If the two seconds is the correct amount of time, it will make a 90 degree turn.
+
+Think about writing the program to just make the robot drive around. You would need to replicate this code nine times. You probably would not retype it nine times. Instead you would copy and paste it. This is known as brute force programming. There are many reasons not to do this. The biggest reason has to do with the third line in our left turn program. What if two seconds is not exactly right? If that is a slight overturn then the robot will go off course with every turn which means we need to go back in and change that value on every \texttt{sleep()} function. What if the battery on the robot is at a different charge level from one day to the next? Again, we will need to change nine lines of code. Remember, we humans are not very good at repetitive tasks. That is what we use computers for - to do things over and over. Why not let the computer do the repetitive stuff?
+
+Instead, let's make a function called \texttt{left\_turn()} like this:
+
+And call it nine times throughout the program with the command \texttt{left\_turn(2)} . If we found that it actually takes three seconds instead of two to execute a 90 degree turn then we would just need to change the parameter we pass to the function, represented by the variable \texttt{sleep\_time}.
+
+In that case, the call would look like this: \texttt{sleep\_time(3)}. We could even make things simpler yet by defining a variable at the beginning of the program to represent the number of seconds we want to sleep during the turn - something like \texttt{turn\_sleep\_time\ =\ 2} . Then, we would call the function like this:
+
+\texttt{left\_turn(turn\_sleep\_time)}
+
+Now, every time we change the variable \texttt{turn\_sleep\_time} we are changing the parameter passed to the function everywhere in the program. We have gone from changing nine different lines of code to changing just one. This gets really impressive when we think about all the right turns we have to make as well. See how functions are an integral part of robotics? Every modern programming language uses functions. Once you learn it for Python you can use it in other languages as well with only minor changes to syntax.
+
+If we write programs that need to repeat a process nine times, functions save us a lot of work and potential errors. If we need our robot to do something nine hundred times or nine million times we have to use them. Now let's spend some time learning more about the functions built in to Python using our text:
+
+Assignment 5.5
+Read the chapter from our text titled, ``Chapter 3 - Functions''. While you read the chapter open the Python environment through the Linux terminal on your Raspberry Pi as before. Follow along with the examples from the text as you go. This will help you learn Python more quickly. When you are done reading the chapter complete exercises 1, 2 and 3 at the end of the chapter on your own to make sure you understand what you read. If not, see the Note above.
+
 \hypertarget{conditionals}{%
 \section{Conditionals}\label{conditionals}}
 
+Besides completing repetitive tasks for us humans, robots need to be able to make decisions based on the condition of their environment. Later, we will learn how to use sensors to understand what is happening in a robot's environment. First, we will learn how conditional statements work in Python. If you have not already done so, it might be helpful to get a little background on computer logic. The inventor of the logical system we use in robotics was George Boole. There is a video in the \protect\hyperlink{supplemental-videos}{Supplemental Videos} section of this book about his contributions to the field.
+
+For now, we will concern ourselves with some basic logical or Boolean operators. These are different than mathematical operators. When we write the following statement using mathematical operators:
+
+\texttt{x\ =\ 6}
+
+we are making a statement that the variable \texttt{x} is equal to the integer 6. By contrast, when we use the same operator (=) in logical math we are asking ``Is one equal to the other?'' We script that questions like this:
+
+\texttt{x\ ==\ 6}
+
+Notice that we use 2 = signs instead of one. This is not a typo. In fact, it is universal across many programming languages. Instead of declaring x is equal to 6, it is asking Is x equal to 6? What are the possible answers to this question? For the answer, read section 5.2 of our text.
+
+Notice that there are many other logical (aka relational) operators. We can use these operators which return a value of true or false to help our robots make decisions. To do this we use functions like the \texttt{if()} statement. Let's try it out using another Python function \texttt{len()}. We will create a function that determines if a word is longer than seven letters. If so, a message will be displayed saying so. If not, a different message will be displayed. Before you read how to do this, see if you can figure it out. Follow these steps using the textbook as a guide:
+
+Define your function and pass a parameter through that is the word you are going to test.
+
+Write a conditional statement using the \texttt{len()} Python function to determine the length of the word.
+
+Use the \texttt{print()} function to return a statement that says if it is or is not a long word (greater than seven letters long).
+
+See if you can include the word in the message returned by the function
+
+Here is one way to do it:
+
+Notice that we pass the word to the function by using the parameter \texttt{word} which then stores the string representing our word as a variable. The if statement checks the length of the word using the \texttt{len()} function which returns an integer equal to the number of alphanumeric characters in a string (our word). If that value is greater than or equal to nine, one message is printed. Since the only other possibility for the length of this word (if it is not greater than or equal to nine) is that it is less than nine letters, we can use the \texttt{else} function to print a different message. Try it out now by typing this function into the terminal under the Python environment and calling the function using different words. You will probably get some ``Traceback'' errors the first time you do but stick with it. When you are done compare your result to the results below:
+
+Think of the possibilities now. What could your robot do with this new power! If we go back to our example in the previous section in which our robot had to navigate around obstacles by turning 90 degrees at a time we can see some interesting solutions. If we could use a compass sensor to determine the angle of our robot in relation to magnetic north, we could use conditional statments to turn the robot. Instead of trying to figure out exactly how long it takes for the robot to turn 90 degrees, we could write a script that waited until the angle in relation to magnetic north changed by 90 degrees. We could even do this with one function. It might look something like this:
+
+This is a lot to take in for a new programmer so let's briefly go over this function. When it is called we put in a value for direction. The possible correct values are ``left'' and ``right''. If the direction is ``right'' the left wheel moves until the angle of the robot is equal to the desired angle. If ``right'' is passed to the function the opposite happens. Just in case the human mispells the word or puts something else in a third print statement is used to tell them that their input is not valid. We will get to this process later in the course.
+
+Assignment 5.6
+Read the chapter from our text titled, ``Chapter 5 - Conditionals''. While you read the chapter open the Python environment through the Linux terminal on your Raspberry Pi as before. Follow along with the examples from the text as you go. This will help you learn Python more quickly. When you are done reading the chapter complete exercises 1, 2 and 3 at the end of the chapter on your own to make sure you understand what you read. If not, see the Note above.
+
 \hypertarget{iteration}{%
 \section{Iteration}\label{iteration}}
-
-\hypertarget{sensing-the-environment}{%
-\section{Sensing the Environment}\label{sensing-the-environment}}
 
 \hypertarget{robotic-types}{%
 \chapter{Robotic Types}\label{robotic-types}}

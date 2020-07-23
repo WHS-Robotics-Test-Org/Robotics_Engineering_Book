@@ -24,7 +24,7 @@
 <meta name="author" content="Steve Cline" />
 
 
-<meta name="date" content="2020-07-12" />
+<meta name="date" content="2020-07-23" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -99,7 +99,6 @@
 <li class="chapter" data-level="5.5" data-path="python-programming.html"><a href="python-programming.html#functions"><i class="fa fa-check"></i><b>5.5</b> Functions</a></li>
 <li class="chapter" data-level="5.6" data-path="python-programming.html"><a href="python-programming.html#conditionals"><i class="fa fa-check"></i><b>5.6</b> Conditionals</a></li>
 <li class="chapter" data-level="5.7" data-path="python-programming.html"><a href="python-programming.html#iteration"><i class="fa fa-check"></i><b>5.7</b> Iteration</a></li>
-<li class="chapter" data-level="5.8" data-path="python-programming.html"><a href="python-programming.html#sensing-the-environment"><i class="fa fa-check"></i><b>5.8</b> Sensing the Environment</a></li>
 </ul></li>
 <li class="chapter" data-level="6" data-path="robotic-types.html"><a href="robotic-types.html"><i class="fa fa-check"></i><b>6</b> Robotic Types</a><ul>
 <li class="chapter" data-level="6.1" data-path="robotic-types.html"><a href="robotic-types.html#databot"><i class="fa fa-check"></i><b>6.1</b> DataBot</a></li>
@@ -226,6 +225,44 @@ It is important to remember which pins are which as the locations do not represe
 <p>Any of the GPIO pins can be designated (in software) as an input or output pin and used for a wide range of purposes. We will use them to send and receive electrical signals. Two 5V pins and two 3V3 pins are present on the board, as well as a number of ground pins (0V), which are unconfigurable. The remaining pins are all general purpose 3V3 pins, meaning outputs are set to 3V3 and inputs are 3V3-tolerant.</p>
 <p>A GPIO pin designated as an output pin can be set to high (3V3) or low (0V). In addition pins GPIO12, GPIO13, GPIO18, GPIO19 may also be used with Pulse Width Modulation (PWM). A GPIO pin designated as an input pin can be read as high (3V3) or low (0V). This is made easier with the use of internal pull-up or pull-down resistors. Pins GPIO2 and GPIO3 have fixed pull-up resistors, but for other pins this can be configured in software.</p>
 <p>It is possible to control GPIO pins using a number of programming languages and tools. For this course we will use Bash, the scripting language of Linux, and Python.</p>
+<b><i>NOTE: Before you start your first programming assignment realize that in order to progress in this course you must fully learn the information in the text. If you skim or rush through you might be able to get many answers on the chapter quiz correct but you will miss many of the points. Programming is hard and learning to program is as well. It does not mean it is impossible. It just requires work. Take your time and make sure you are understanding what you read. If not, do the following:
+<ol>
+<li>
+Re-read the section.
+</li>
+<li>
+Ask someone else in the class for clarification.
+</li>
+<li>
+Google your question
+</li>
+<li>
+Ask your instructor
+</li>
+</ol>
+<p>This is good advice for all courses, especially the further you go in school. Many of you will go so far in college that you basically stop taking classes and just learn on your own for the sake of understanding something.</b></i></p>
+<p><b>Assignment 5.2</b><br>
+For this assignment you will learn some basic commands and functions in Linux and how to find out how to use them.
+Open up a terminal on your Raspberry Pi as before.</p>
+<p>Type the following:
+<br><code>help</code><br></p>
+<p>This is a list of all the built in functions that come with this version of Linux. As you add more packages and create your own functions this list will get larger. If you scroll to the top your see this message:
+<code>Type 'help name' to find out more about the function 'name'.</code>
+Let’s try it. One of the functions you will use fairy often is <code>cd</code>.</p>
+Type <code>help cd</code> and answer the following questions from the information on the screen:
+<ol>
+<i>
+<li>
+In your own words that you understand, what does this function do? (You may need to Google some of the terms like “directory” to understand what that term means in Linux)
+</li>
+<li>
+If you type</i> <code>cd Desktop</code> <i>what do you think will happen?
+</li>
+</i>
+</ol>
+<p>Now call up the help information for the function <code>if</code>.<br>
+<i>Why would we ever use this function? Again, you might need to do a little research to understand the vocabulary here.</i></p>
+<p>Write down or type your answers so we can discuss them in class next time.</p>
 </div>
 <div id="why-python" class="section level2">
 <h2><span class="header-section-number">5.3</span> Why Python?</h2>
@@ -249,19 +286,79 @@ It is important to remember which pins are which as the locations do not represe
 <p>The quotation marks signify that we want to literally display what is directed by the <code>print</code> statement. Try it without the quotes to see what happens. This should produce something like this:</p>
 <p><img src="https://github.com/stcline/Hosted_Images/blob/master/Robotics_Engineering/synerror.PNG?raw=true"></p>
 <p>This is your first error message.</p>
-<p>Read the section from our text titled,</p>
+<p><b>Assignment 5.4</b><br>
+Read the chapter from <a href="https://greenteapress.com/wp/think-python-2e/" target="_blank">our text</a> titled, “Chapter 1 - The way of the program”. While you read the chapter open the Python environment through the Linux terminal on your Raspberry Pi as before. Follow along with the examples from the text as you go. This will help you learn Python more quickly. When you are done reading the chapter complete exercises 1 and 2 at the end of the chapter on your own to make sure you understand what you read. If not, see the Note above.</p>
 </div>
 <div id="functions" class="section level2">
 <h2><span class="header-section-number">5.5</span> Functions</h2>
+<p>As <a href="https://greenteapress.com/wp/think-python-2e/" target="_blank">our text</a> states,</p>
+<blockquote>
+<p>In the context of programming, a function is a named sequence of statements that performs a computation. When you define a function, you specify the name and the sequence of statements. Later, you can “call” the function by name.</p>
+</blockquote>
+<p>Let’s take a look at this sequentially:</p>
+<p><b>First</b>, <i>define</i> a function. <b>Second</b>, <i>call</i> the function.</p>
+<p>What does this look like?</p>
+<p>Open the Python environment window and <i>define</i> your function like this:</p>
+<p><img src="https://github.com/stcline/Hosted_Images/blob/master/Robotics_Engineering/function.png?raw=true"></p>
+<p>Then we <i>call</i> the function like this:</p>
+<p><img src="https://github.com/stcline/Hosted_Images/blob/master/Robotics_Engineering/function_call.png?raw=true"></p>
+<p>So, what happened here? We <i>defined</i> the function <code>say_hello()</code> . Then, we <i>called</i> the function and passed a <i>parameter</i> into the function. Can you tell what the parameter is?</p>
+<p><img src="https://github.com/stcline/Hosted_Images/blob/master/Robotics_Engineering/function_def_call.png?raw=true"></p>
+<p>Why do we need to know how to use functions?</p>
+<p>The first reason is that the standard Python 3 library is filled with functions. When you type the command <code>print ("Hello, World!")</code> you are calling the built in Python <code>print()</code> function. As you read through the chapter on functions you will see that there are many other examples of useful functions packed into Python.</p>
+<p>The second reason is to make your programs easier to use. For example, let’s say you make a robot that needs to follow this pattern as it drives alone a course. There are many reasons why you might need to do something like this. Maybe the problem to solve is navigating around obstacles. Maybe the robot needs to map a facility that humans cannot get into because of hazardous conditions like radiation. Maybe your robotics teacher just wants you to demonstrate you can use functions. At any rate, functions will make your job as a programmer eaiser. Here is the path the robot will take:</p>
+<p><img src="https://github.com/stcline/Hosted_Images/blob/master/Robotics_Engineering/COURSE.png?raw=true"></p>
+<p>How many times does the robot need to make a 90 degree left turn? (nine) Here is an example of how we could execute that turn using Python and our Raspberry Pi (Don’t worry about the syntax now, we will get there.)</p>
+<p><img src="https://github.com/stcline/Hosted_Images/blob/master/Robotics_Engineering/left_turn.png?raw=true"></p>
+<p>As you will learn, there are other commands that need to be used to set up this program but these four lines are what actually make the Raspberry Pi control the left and right wheels of the robot so that the right wheel moves forward for two seconds while the left wheel stays fixed. This will make the robot turn left. If the two seconds is the correct amount of time, it will make a 90 degree turn.</p>
+<p>Think about writing the program to just make the robot drive around. You would need to replicate this code nine times. You probably would not retype it nine times. Instead you would copy and paste it. This is known as <a href="https://www.pcmag.com/encyclopedia/term/brute-force-programming" target ="_blank">brute force programming</a>. There are many reasons not to do this. The biggest reason has to do with the third line in our left turn program. What if two seconds is not exactly right? If that is a slight overturn then the robot will go off course with every turn which means we need to go back in and change that value on every <code>sleep()</code> function. What if the battery on the robot is at a different charge level from one day to the next? Again, we will need to change nine lines of code. Remember, we humans are not very good at repetitive tasks. That is what we use computers for - to do things over and over. Why not let the computer do the repetitive stuff?</p>
+<p>Instead, let’s make a function called <code>left_turn()</code> like this:</p>
+<p><img src="https://github.com/stcline/Hosted_Images/blob/master/Robotics_Engineering/def_left_turn_.png?raw=true"></p>
+<p>And call it nine times throughout the program with the command <code>left_turn(2)</code> . If we found that it actually takes three seconds instead of two to execute a 90 degree turn then we would just need to change the parameter we pass to the function, represented by the variable <code>sleep_time</code>.</p>
+<p>In that case, the call would look like this: <code>sleep_time(3)</code>. We could even make things simpler yet by defining a variable at the beginning of the program to represent the number of seconds we want to sleep during the turn - something like <code>turn_sleep_time = 2</code> . Then, we would call the function like this:</p>
+<p><code>left_turn(turn_sleep_time)</code></p>
+<p>Now, every time we change the variable <code>turn_sleep_time</code> we are changing the parameter passed to the function everywhere in the program. We have gone from changing nine different lines of code to changing just one. This gets really impressive when we think about all the right turns we have to make as well. See how functions are an integral part of robotics? Every modern programming language uses functions. Once you learn it for Python you can use it in other languages as well with only minor changes to syntax.</p>
+<p>If we write programs that need to repeat a process nine times, functions save us a lot of work and potential errors. If we need our robot to do something nine <i>hundred</i> times or nine <i>million</i> times we have to use them. Now let’s spend some time learning more about the functions built in to Python using <a href="https://greenteapress.com/wp/think-python-2e/" target="_blank">our text</a>:</p>
+<p><b>Assignment 5.5</b><br>
+Read the chapter from <a href="https://greenteapress.com/wp/think-python-2e/" target="_blank">our text</a> titled, “Chapter 3 - Functions”. While you read the chapter open the Python environment through the Linux terminal on your Raspberry Pi as before. Follow along with the examples from the text as you go. This will help you learn Python more quickly. When you are done reading the chapter complete exercises 1, 2 and 3 at the end of the chapter on your own to make sure you understand what you read. If not, see the Note above.</p>
 </div>
 <div id="conditionals" class="section level2">
 <h2><span class="header-section-number">5.6</span> Conditionals</h2>
+<p>Besides completing repetitive tasks for us humans, robots need to be able to make decisions based on the condition of their environment. Later, we will learn how to use sensors to understand what is happening in a robot’s environment. First, we will learn how conditional statements work in Python. If you have not already done so, it might be helpful to get a little background on computer logic. The inventor of the logical system we use in robotics was George Boole. There is a video in the <a href="going-further-with-robotics.html#supplemental-videos">Supplemental Videos</a> section of this book about his contributions to the field.</p>
+<p>For now, we will concern ourselves with some basic <i>logical</i> or <i>Boolean</i> operators. These are different than mathematical operators. When we write the following statement using mathematical operators:</p>
+<p><code>x = 6</code></p>
+<p>we are making a statement that the variable <code>x</code> is <i>equal to</i> the integer 6. By contrast, when we use the same operator (=) in logical math we are <i>asking</i> “Is one equal to the other?” We script that questions like this:</p>
+<p><code>x == 6</code></p>
+<p>Notice that we use 2 = signs instead of one. This is not a typo. In fact, it is universal across many programming languages. Instead of declaring <i>x is equal to 6</i>, it is asking <i>Is x equal to 6?</i> What are the possible answers to this question? For the answer, read section 5.2 of <a href="https://greenteapress.com/wp/think-python-2e/" target="_blank">our text</a>.</p>
+Notice that there are many other <i>logical (aka relational)</i> operators. We can use these operators which return a value of true or false to help our robots make decisions. To do this we use functions like the <code>if()</code> statement. Let’s try it out using another Python function <code>len()</code>. We will create a function that determines if a word is longer than seven letters. If so, a message will be displayed saying so. If not, a different message will be displayed. Before you read how to do this, see if you can figure it out. Follow these steps using the textbook as a guide:
+<ol>
+<li>
+Define your function and pass a parameter through that is the word you are going to test.
+</li>
+<li>
+Write a conditional statement using the <code>len()</code> Python function to determine the length of the word.
+</li>
+<li>
+Use the <code>print()</code> function to return a statement that says if it is or is not a long word (greater than seven letters long).
+</li>
+<li>
+See if you can include the word in the message returned by the function
+</li>
+</ol>
+<p>Here is one way to do it:</p>
+<p><img src="https://github.com/stcline/Hosted_Images/blob/master/Robotics_Engineering/conditional_long_word.png?raw=true"></p>
+<p>Notice that we pass the word to the function by using the parameter <code>word</code> which then stores the string representing our word as a variable. The if statement checks the length of the word using the <code>len()</code> function which returns an integer equal to the number of alphanumeric characters in a string (our word). If that value is <i>greater than or equal to</i> nine, one message is printed. Since the only other possibility for the length of this word (if it is not greater than or equal to nine) is that it is less than nine letters, we can use the <code>else</code> function to print a different message. Try it out now by typing this function into the terminal under the Python environment and calling the function using different words. You will probably get some “Traceback” errors the first time you do but stick with it. When you are done compare your result to the results below:</p>
+<p><img src="https://github.com/stcline/Hosted_Images/blob/master/Robotics_Engineering/long_word_call.png?raw=true"></p>
+<p>Think of the possibilities now. What could your robot do with this new power! If we go back to our example in the previous section in which our robot had to navigate around obstacles by turning 90 degrees at a time we can see some interesting solutions. If we could use a compass sensor to determine the angle of our robot in relation to magnetic north, we could use conditional statments to turn the robot. Instead of trying to figure out exactly how long it takes for the robot to turn 90 degrees, we could write a script that waited until the angle in relation to magnetic north changed by 90 degrees. We could even do this with one function. It might look something like this:</p>
+<!-- This needs to be fixed for logical errors -->
+<p><img src="https://github.com/stcline/Hosted_Images/blob/master/Robotics_Engineering/turn_90_deg.PNG?raw=true"></p>
+<p>This is a lot to take in for a new programmer so let’s briefly go over this function. When it is called we put in a value for direction. The possible correct values are “left” and “right”. If the direction is “right” the left wheel moves until the angle of the robot is equal to the desired angle. If “right” is passed to the function the opposite happens. Just in case the human mispells the word or puts something else in a third print statement is used to tell them that their input is not valid. We will get to this process later in the course.</p>
+<p><b>Assignment 5.6</b><br>
+Read the chapter from <a href="https://greenteapress.com/wp/think-python-2e/" target="_blank">our text</a> titled, “Chapter 5 - Conditionals”. While you read the chapter open the Python environment through the Linux terminal on your Raspberry Pi as before. Follow along with the examples from the text as you go. This will help you learn Python more quickly. When you are done reading the chapter complete exercises 1, 2 and 3 at the end of the chapter on your own to make sure you understand what you read. If not, see the Note above.</p>
 </div>
 <div id="iteration" class="section level2">
 <h2><span class="header-section-number">5.7</span> Iteration</h2>
-</div>
-<div id="sensing-the-environment" class="section level2">
-<h2><span class="header-section-number">5.8</span> Sensing the Environment</h2>
+<!-- ## Sensing the Environment -->
 
 </div>
 </div>
