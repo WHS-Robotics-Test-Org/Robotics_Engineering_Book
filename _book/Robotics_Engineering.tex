@@ -80,7 +80,7 @@
 
 \title{Robotics Engineering}
 \author{Steve Cline}
-\date{2020-07-23}
+\date{2020-07-28}
 
 \begin{document}
 \maketitle
@@ -108,12 +108,6 @@ Sign up for a GitHub account and fill out this form.
 Bookmark the course GitHub Repository. This is where many of the programming resources will be found. In addition, assignments will be submitted here.
 
 Locate our two textbooks for the course. They are both online and free. The first is an electronics textbook called Lessons in Electric Circuits. The second is a programming textbook called Think Python.
-
-Subscribe to the course YouTube Channel.
-
-Directions for how to do this are found in the \protect\hyperlink{follow-the-course-youtube-channel}{Follow the Course YouTube Channel} section of this site.
-
-Log on to the class Jupyter Notebook server
 
 Sign up for an OnShape account by following the instructions in the \protect\hyperlink{onshape-account-setup}{OnShape Account Setup} section of this site.
 
@@ -213,7 +207,35 @@ Only use the components listed in the laboratory activity on which you are worki
 
 Keep your work area clean and uncluttered. Do not keep beverages on your workstation.
 
-Circuit lab setup
+Using EasyEDA for circuit design
+
+There are many useful tools available to help with circuit design. During this course we will need to learn to use some of them. Circuit schematics make it easy for us to design and interpret circuits to communicate our project. For this class we will use EasyEDA. We can run it in a web browser. It allows us to save projects to a free account and share them for submission. If you learn how to use it well enough you may also use it to design your own printed circuit boards (PCB) to make your own components.
+
+Go to the EasyEDA editor website. Create an account. While you may be able to just start using it and learn through trial and error, here are a few tutorials that will become useful which may be found in the Tutorials section of the app:
+
+Introduction to EasyEDA
+
+UI Introduction
+
+Create a New Project or File
+
+Schematic Capture
+
+Basic Skills
+
+You should spend some time learning how to use this app. We will begin using it soon and you will learn how to read an electronics schematic, by designing them yourself. Once you have set up your account and learned some basics, complete the following assignment:
+
+Assignment 3.0
+
+Using your newly discovered schematic design skills, you will make your own basic schematic. Watch this short tutorial explaining schematics. Create and save a schematic in EasyEDA with the following components in a circuit:
+
+5V power supply
+
+220 Ohm Resistor
+
+Blue LED
+
+Ground
 
 \hypertarget{circuits}{%
 \section{Circuits}\label{circuits}}
@@ -232,30 +254,57 @@ Rather than me trying to do a better job than our textbook, you are going to rea
 
 To help you understand this concept, here is an excellent video from SparkFun Electronics on the topic.
 
-Assignments for section 3.1:
+Assignment 3.1
 
 After reading the section on circuits, complete the worksheet
 
-Using (tool for this), design a closed circuit with the following components:
+Using EasyEDA, design a closed circuit with the following components:
 
-5V DC power supply
+5V power supply
 
-Red LED
+220 Ohm Resistor
 
-330 Ohm resistor
+Blue LED
 
-Submit the (method of submission) here.
+Ground
+
+Submit the your work on GitHub through Assignment 3.1.
 
 \hypertarget{voltage-and-current}{%
 \section{Voltage and Current}\label{voltage-and-current}}
 
 The movement of electrons from one pole to another is what we use in robotics to make our robots work. By altering the volume of electrons moving through the wires connected to a motor we can alter the speed of the wheel attached to the motor. The potential energy coming in to our microprocessor pin over a wire attached to a photoresistor tells us the level of brightness or lumosity in a room. Putting these two concepts together we could create a robotic system that opens the blinds on our lab when the sun sets in the west. That is, of course, if we can program our system to make that decision on its own. We will get to the programming part later. For now, we will examine the concepts of voltage and current which allow us, along with resistance, to receive information through sensor and send information out to an actuation device like a motor.
 
+Read short section on voltage and current. Be sure to review the concepts at the bottom of the page for understanding.
+
+To help you understand this concept, here is an excellent video from SparkFun Electronics on the topic.
+
 \hypertarget{resistance}{%
 \section{Resistance}\label{resistance}}
 
+The final concept needed to understand how electricity in a DC circuit may be used to control devices is resistance. One day last year I was sitting in my office upstairs. I had just come from the mechatronics lab and had packed a bunch of supplies from the lab into my backpack so I could do a little work on a demonstration I would be giving later in the week. All of a sudden I smelled smoke. I looked down and it was coming from my backpack! After digging around a bit I found the culprit. I had put a battery pack in my bag like the one here:
+
+Can you see the problem? I had left all of the batteries in the pack. When I threw it in my bag, the red and black leads touched and starte what is know as a short circuit. With no resistance on the flow of electrons through the wires. The by product of this rapid flow was heat which began to melt the inside of my backpack and start it smoking. Remember this example and always pull one battery out of your battery packs when not connected to your device. Also, never connect two poles of a power source without any resistance. It can cause serious injury.
+
+This problem is prevented by placing a resistive force on the circuit. Small electrical components like LEDs and sensors cannot handle even the two amperes of current available from the Raspberry Pi's 5V pin. A reisistor is used to prevent the LED from burning up. In order to understand how resistance works, read short section on resistance.
+
+Assignment 3.3
+
+After reading the section on circuits, complete the worksheet
+
 \hypertarget{ohms-law}{%
 \section{Ohm's Law}\label{ohms-law}}
+
+All three of these concepts come together in Ohm's Law. In the 19th century many scientists were experimenting with electricity in an attempt to understand it. One of these scientists, Georg Ohm, determined that there was a relationship between Voltage, Current and Resistance. This is why an LED burns up (receives too much current) when no resistance is placed on the circuit. If we create resistance on the circuit with a resistor the voltage, or potential energy, remains constant but the current decreases. Ohm's law is represented by this simple formula:
+
+\[V = I * R\]
+As we will see, this formula is quite handy. It may be rearranged to solve for any one of the three possible outputs (V-voltage, I-current, R-resistance). In order to understand how resistance works, read short section on Ohm's Law.
+
+To help you understand this concept, here is an excellent video from SparkFun Electronics on the topic.
+
+Assignment 3.4
+
+After reading the section on circuits, complete the worksheet
 
 \hypertarget{using-a-digital-multimeter}{%
 \section{Using a Digital Multimeter}\label{using-a-digital-multimeter}}
@@ -270,16 +319,124 @@ This section will become active in the event that we are not using remote instru
 \hypertarget{mechanical-design}{%
 \chapter{Mechanical Design}\label{mechanical-design}}
 
-Need to teach them a few things.
+The inspiration for this course at Windsor High School is actually a course in the Engineering College at Colorado State Unversity called Mechatronics and Measurement Systems. That course is meant to be one of the capstone courses in the mechanical engineering degree at CSU. In order to complete our capstone project, we will all need to have a solid understanding of the parts of a mechatronic or robotic system.
 
-\hypertarget{basic-mechanics}{%
-\section{Basic Mechanics?}\label{basic-mechanics}}
+\hypertarget{parts-of-a-robotic-system}{%
+\section{Parts of a Robotic System}\label{parts-of-a-robotic-system}}
 
-\hypertarget{advanced-mechanics}{%
-\section{Advanced Mechanics?}\label{advanced-mechanics}}
+We need to be able to determine what components will be necessary in our robot design. To do this, an overview of the various part types is necessary. At the end of this chapter, you will create a design on OnShape which will serve as the basis for your capstone project next semester. Use this as an opportunity to start thinking about what you will do in creating a robotic system.
+
+Steps to prepare for this work
+
+Start thinking about a problem you might like to solve. Is there something at home that could be improved? For example, last year I built a solar powered Raspberry Pi controlled garden watering system. Something like that has a definite use and provides a solution for my wife and I. Now that it works, when we go on vacation we don't worry that our garden gets watered.
+
+Look for other examples. A good place to start is the Student Examples from the MECH 307 Course at CSU. Another good source is SparkFun Projects Examples. In additon, there are many websites that have Raspberry Pi ideas.
+
+Think about what makes you excited to do this project. What would you have fun doing for four months next semester?
+
+Write down some ideas so that, you may come back to them later as you learn more
+
+Now that we have some ideas, let's learn about the various types of parts available to us.
+
+\hypertarget{power-supply}{%
+\subsection{Power Supply}\label{power-supply}}
+
+A major consideration is power. Most of the systems we design need to be efficient in their use of power. We are not always able to connect to an outlet. For example, home surveillance cameras are small and easy to install in many different locations. However, if we had to connect them to an AC power source, the list of possible locations for installation could be greatly reduced. The solution is a battery pack. How do we decide which battery though? A surveillance camera might need to run for weeks at a time without changing the battery. As a result, a high quality lithium ion source would probably make the most sense. The drawback to this compact and powerful design is, of course, price. These are the types of trade-offs we must consider.
+
+Power Supplies include:
+
+DC Wall adapters
+
+Battery packs for rechargable NiMH batteries
+
+Pre-built battery packs
+
+Solar panels
+
+As we see, there are many options and considerations. Only by determining total power needs, space and weight constraints and budget can we select the correct source. For now, consider power needs first. As you get closer to the start of your project you can narrow down your choices.
+
+\hypertarget{actuators}{%
+\subsection{Actuators}\label{actuators}}
+
+Most robots move and interact with the physical world. We will not make that distinction here although there are many who believe that this is a requirement. A robotic car system has many actuation systems. The most notable of these is the drive system. Through the wheels and transmission the motor interacts with the surface the robot is on to propel the robot. Any device creating motion in this way is an actuator. Like power supplies, actuator selection meets many criteria. A look at the RobotShop Actuator Page reveals hundreds of possibilities.
+
+DC Motors
+
+Stepper Motors
+
+Servos
+
+Linear Slides
+
+From these fours types of actuators, most robotic systems may develop a way of interacting with the environment.
+
+\hypertarget{sensors}{%
+\subsection{Sensors}\label{sensors}}
+
+There are even more sensor types than there are actuator types. If we brows the Adafruit Sensor Page we see how limitless these possibilities are. For any type of sensor application there is, someone has though of a way to build it.
+
+As excerpt from a robotics text explains, sensors are either proprioceptive or exteroceptive and, at the same time, either passive or active. This chart is taken from that text:
+
+\hypertarget{microprocessors}{%
+\subsection{Microprocessors}\label{microprocessors}}
+
+For most students in this course, the Raspberry Pi will function as the microprocessor for the course. Students learn to interact with the Pi using the command line and Python. In addition, the Raspberry Pi offers many advantages over other microprocessors like Arduinos. One of the main advantages is the built in wifi capabilities. This allows for remote programming and true Internet of Things (IoT) capabilites. Still, some may choose a different processor, maybe even a different version of the Pi.
+
+A Raspberry Pi Zero W is an extremely compact and low cost alternative to the Rapberry Pi 3 we use in class. It is made for low-power, compact IoT applicaitons and should be considered. While the processor speed is slower than larger Pis, it might be just the fit for your project. Compact versions of other processors are available as well. This list is quite extensive and should be considered.
+
+\hypertarget{structural-parts}{%
+\subsection{Structural Parts}\label{structural-parts}}
+
+The skeleton of the robotic system determines the physical constraints on the design. For years now, our robotics team has dealth with this issue. Several years ago they were presented with a challenge in the competition which required their robot to climb a mountain:
+
+As we can see from the photograph, the mountain was quite daunting. The previous year, the team had advanced to the world championships and found that their robot, while the best design in Colorado, was not suited to compete with the heavier robots beyond the state. As a result they had been pushed around a bit and not been very successful. The solution to this was to weld a steel frame together and build the robot off of that. The result was a 70 pound robot! Without thinking more deeply about the design of the current year, they had hampered themselves by dealing with the previous yesr's challenge in mind. The robot was robust and strong but could not climb the mountain. Instead, every tread system they tried to use to climb was under so much strain that it eventually broke. They would even 3D print treads made out of high strength plastics that still could not hold up to the strain. In this case, the structural parts let them down. What a great learning experience that was. All three of those students in the photo are in science and engineering programs currently in college. The one on the right, Mitchell Watson, is literally going to be a rocket scientist when he graduates for Cal Tech. Understanding these concepts of mechanical design are not only fundamental to robotics, they can lead to many great opportunities.
+
+There are many options for structural parts. Over the years, we have accumulated a wealth of parts in our program which may be checked out. In addition, we have plenty of scrap material (we hated that mountain so much that we cut it up at the end of the season and have been using it for scrap since then). After you learn how to use CAD in the next section, you will be able to design and print your own custom parts as well.
+
+The type of material matters. Begin with this materials guide in selecting your parts. Consider using pre-built kits or components. Here is a list of companies that provide robotics parts:
+
+Pitsco Education: Many different types of parts from a long-time vendor
+
+REV Robotics: Higher quality aluminum and high grade plastic parts
+
+GoBilda: Awesome parts for large applications
+
+80/20 Inc.: Incredibly versitile structural systems
+
+RobotShop: If you are looking for a kit, to get started
+
+SparkFun: Based in Niwot, you can go visit them and pick up your parts or take the tour to get some ideas
+
+NOTE: For any vendors, check before you buy. We have educational discounts with most all of them.
+
+Assignment 4.2
+On graph paper draw a design for your expected capstone project. You should include at least three different angles for your drawing (two sides and a top). You should include dimensions and labels of each part. On a Google spreadsheet, make a list of all parts you think you might need. In a one-page typed summary describe your design.
 
 \hypertarget{computer-aided-design}{%
 \section{Computer Aided Design}\label{computer-aided-design}}
+
+Once you have your design down on paper, it is time to create it like a real mechatronics engineer. For this section you will learn to use OnShape, a modern and full-scale computer aided design (CAD) system. OnShape was founded by two engineers at SolidWorks which is still considered the gold standard of CAD. SolidWorks comes with a hefty price tag, even for students. OnShape is free to secondary schools. As a result, we will use it. Once year learn this tool, switching to other CAD software will be relatively painless. In addition, it is entirely web based so you can use it as long as you have an internet connection and a web browser.
+
+If you have not done so already, head to the \protect\hyperlink{onshape-account-setup}{OnShape Account Setup} section of the course book. Follow those instructions. After you have done this, log on to your account and follow these instructions:
+
+Click on the ``Learning Center Button''
+
+Select ``Self-Paced Courses \textgreater{} Learning Pathways''
+
+Select ``OnShape Fundamentals: CAD''
+
+Assignment 4.2
+Complete the first five courses in this learning pathway:
+
+Navigating Onshape
+
+Introduction to Sketching
+
+Part Design Using Part Studios
+
+Multi-Part Part Studios
+
+Onshape Assemblies
 
 \hypertarget{python-programming}{%
 \chapter{Python Programming}\label{python-programming}}
@@ -515,28 +672,130 @@ Read the chapter from our text titled, ``Chapter 5 - Conditionals''. While you r
 \hypertarget{iteration}{%
 \section{Iteration}\label{iteration}}
 
+There are many reasons to use iteration in programming. The most straightforward reason is to do a spedified action a certain number of times. Imagine you are designing a robotic NASCAR driver. This would be the perfect place for iteration. In a NASCAR race the driver makes the same left turns hundreds of times. Considering one of the advantages of robots is that they can perform tasks that humans find boring or too repetitive, our robot NASCAR driver would thrive in this environment making the same left turns over and over for hours.
+
+We will approach iteration by learning two programming concepts: \texttt{for} loops and \texttt{while} statements. Each is useful in various situations. Sometimes they are interchangable depending on the problem being solved. One uses Boolean logic and the other does not. Let's start with the \texttt{for} loop.
+
+\hypertarget{for-loops}{%
+\subsection{\texorpdfstring{\texttt{for} Loops}{for Loops}}\label{for-loops}}
+
+Unitl now, everything we have done, we have done once. Most of the time though, our robots will need to do things repeatedly until a desired outcome is reached. An example could be that our robots collect data from a website over the course of several hours. One of my home automation projects was to build a solar powered garden watering system for my wife's garden. This is very much a robotics application as we wanted to make sure water is delivered consistently every day even when we were gone on vacation. One of the challenges though was that sometimes it rains in the summer, ususally at night. If it rains enough the night before there is no need to water the next morning. As humans we would just think, ``How much did it rain yesterday (if it did at all)?'' and make our decision to water that morning. A robot needs clear rules though to follow. In this case, after a lot of trial and error, I decided that it was best to check the weather conditions between 4:00 pm and the time the watering system came on in the morning. That way, if enough rain had fallen there was no need to water the garden. I decided to check the weather forcast using openweathermap.org. Every 15 minutes between 4:00 pm and 8:00 am the Raspberry Pi would ``scrape'' the current weather data off the website, ``parse'' out the current weather condition and record it in a csv file. To do this I used something that looked like this:
+
+Don't worry too much about the details of this function called \texttt{collect\_weather()}. Instead focus on the line that begins with the word \texttt{for}. This is one way to use a \texttt{for} loop to iterate a process (checking the weather). I know that I want to check the weather over the course of 15 hours every 15 minutes (four times an hour). This loop will start at 4:00 pm and run 60 times. During the loop, the Pi checks the weather and records the data in a file then sleeps for 15 minutes (900 seconds). This is a very complicated script so let's try something simpler using our Raspberry Pi and the Python environment.
+
+Open a ternminal and start the Python environment as before. Type the following lines:
+
+This \texttt{for} loop will count to five, updating the value of \texttt{x} each time and print \texttt{x}. Try it out by hitting enter to get this result:
+
+Notice that, while the loop ran five times, the value of \texttt{x} was not five at the end. You can see why. In computer science we generally start counting at zero instead of one. As a result the \texttt{range()} function used in a \texttt{for} loop ends its final iteration at one less than the value passed to the function, in this case four instead of five. Remember this for future scripts.
+
+There are other ways to use \texttt{for} like iterating over lists. We will get to those later in our course. For now, explore this method by completing the next assignment.
+
+Assignment 5.7.1
+Read sections 1-3 of chapter 4 from our text. While you read the chapter open the Python environment through the Linux terminal on your Raspberry Pi as before. Follow along with the examples from the text as you go. This will help you learn Python more quickly. When you are done reading the chapter complete exercises in section 4.3 on your own to make sure you understand what you read. If not, see the Note above.
+
+\hypertarget{while-loops}{%
+\subsection{\texorpdfstring{\texttt{while} Loops}{while Loops}}\label{while-loops}}
+
+Our last introductory programming concept is a different kind of loop. Sometimes, the programmer does not know how many iterations will be necessary to solve the problem. For example, from the previous description of a Raspberry Pi based watering system for a garden, I did not know when I would stop using the system. At the end of the season after the first freeze we would have no more need to water. At that point, we would just shut it down and take the electronics in for the winter. Until then, I needed it to keep going. As a result, I used one of the simplest loops which is written like this:
+
+\texttt{while\ True:}
+
+\texttt{while} loops run as long as the condition being tested is true. In this case, I am saying do everything in the loop as long as true is true. This will be true forever (or until I unplug the Raspberry Pi for the season). There are many other ways to use \texttt{while} loops but the basic concept is the same - keep doing these things until the condition is no longer true. For example, let's say you are building that robotic NASCAR system mentioned earlier. If you wanted to keep the car going until the end of the race you could say something like this:
+
+This extremely oversimplified script basically says, we start the race at zero laps. \texttt{if} we do something that means we have completed a lap, add one to the total laps. So, after the finish line is crossed the first time, laps gets increased by one. \texttt{while} laps is less than or equal to 500 (the end) keep driving.
+
+To understand this more, complete the next assignment.
+
+Assignment 5.7.2
+Read the chapter from our text titled, ``Chapter 7 - Iteration''. While you read the chapter open the Python environment through the Linux terminal on your Raspberry Pi as before. Follow along with the examples from the text as you go. This will help you learn Python more quickly. When you are done reading the chapter complete exercises 1 and 2 at the end of the chapter on your own to make sure you understand what you read. If not, see the Note above.
+
 \hypertarget{robotic-types}{%
 \chapter{Robotic Types}\label{robotic-types}}
 
-Discuss types of robotic systems.
+A fundamental qustion in mechatronics is, ``what is a robot?'' Over the course of this year, you should be able to come up with some answers for this question. This short section is aimed at helping us understand that before moving on to our final project. Now that you have learned basics of electronics, mechanics and programming, you may begin to explore the larger field of robotics applications. For this assignment we will begin with background from some experts to supplement what you have already learned.
 
-\hypertarget{databot}{%
-\section{DataBot}\label{databot}}
+To begin, let's take a look at some of the most recent robotics development using a very thorough BBC documentary:
 
-\hypertarget{mobilebot}{%
-\section{MobileBot}\label{mobilebot}}
+Make a list of your own criteria that make something a robot. This list may include anything you like. Give a justification for each criteria.
 
-\hypertarget{solarbot}{%
-\section{SolarBot}\label{solarbot}}
+Read this page from the IEEE which attempts to help us decide what a robot is and is not. How does this change your list? Be sure to listen to the speakers on the page.
+
+Assignment 6.0
+Choose one of the robot types from this page. Conduct your own reaserch and create a 5-10 minute presentation demonstrating the characteristics and applications of your chosen robot type. Provide video descriptions of these real-world robots as well as the educational pathways needed to work with these robot types.
 
 \hypertarget{capstone-project}{%
 \chapter{Capstone Project}\label{capstone-project}}
+
+The stone placed at the very top of an archway which holds the rest of the arch in place is known as the capstone. Just like mason placing that last stone, you are ready to demonstrate your learning. For the last four months of this course you will complete a capstone project.
+
+You, and a partner if you choose, will complete a complex robotics project using everything you have learned this year.
+
+Overview:
+
+Each group/person must design, build, test, and demonstrate a device controlled by one or more microcontrollers (e.g.~Arduino, Raspberry Pi, ESP 8266, etc.). The device should have functioning elements in all five categories listed below. The device will be rated (graded) based on the level of functionality achieved in each category. There will also be grading adjustments for qualitative attributes.
+
+You are allowed to use circuits and code you find on the Internet or in other books, but make sure you have a full understanding of what the code or circuit does. You should also ``add value'' to what you use by incorporating it into your system creatively and effectively. Also, make sure you cite in your report, your poster and in your final code sketches any sources of any code or circuits you use.
+
+The materials used for this project must meet the following requirements:
+
+Any materials from the Arduino Super Starter kit for class may be used including sensors, motors, wires, lights, displays and resistive devices
+
+Any approved components available in the lab (i.e.~sensors on loan, stepper motors, structural parts, etc.)
+
+Up to 200g of ABS filament (for entire project, including prototypes).
+
+Up to \$75 in pre-approved student purchased parts (per project, not per student). It is up to the student to order these components although I will help you find them, if needed. Be careful here, qualitative deductions will be made for expensive and/or unnecessary component selection (i.e.~using a Raspberry Pi where an Arduino UNO will work, etc.)
+
+NOTE - the choice of your project concept could have a large impact on the grade you receive; so please evaluate your alternative concepts carefully, based on the grading criteria below.
+
+Each of you will receive a detailed set of instructions for this project.
 
 \hypertarget{going-further-with-robotics}{%
 \chapter{Going Further with Robotics}\label{going-further-with-robotics}}
 
 \hypertarget{robotics-in-higher-education}{%
 \section{Robotics in Higher Education}\label{robotics-in-higher-education}}
+
+You are taking this course because you are interested in learning about robots, obviously. You may want to pursue this subject after you leave high school as well. What does it mean to be a robotic engineer or roboticist? This is more than having an enthusiasm for the field. It means pursuing an educational path that prepares you for a profession in robotics. It also looks different depending on what you want to do with robotics. Robotics engineering is a standalone field within mechatronics. However, many fields benefit from this area of study even if it not the primare goal. One of our recent alumns, Katie Schutt, summs up her path through robotics at Windsor High School and how it helped her get to Aeronautical Engineering:
+
+\begin{quote}
+WHS robotics was the high school program that probably best prepared me for life and education in college, especially as an incoming engineering student. I learned technical skills around designing and testing under the pressure of requirements and a deadline, and the necessary programming logic and proficiency. Equally important, I developed skills in public speaking, documenting the proposals and then progress of my projects, and the ability to constructively work with a team. All of these skills were heavily emphasized and required to succeed in my first semester at CU, and robotics provided the foundation for those skills to be built upon.
+\end{quote}
+
+Katie is working to become an astronaut with the goal of traveling to other planets in our solar system. The technical skills she is building will give her opportunities like this. It began in her robotics classroom at WHS.
+
+You may not know where you want to take robotics yet. There are hundred of branches of robotics. All of them have some common threads. In high school some of these skills may be learned to prepare students for university level robotics:
+
+Math
+
+Algebra
+
+Geometry
+
+Trigonometry
+
+Calculus
+
+Physics
+
+Dynamics
+
+Kinematics
+
+Computer Science
+
+Programming languages
+
+Computation logic
+
+Cloud Computing
+
+Engineering
+
+Language Arts
+
+To get on this path be sure to talk to your counselor about your goals. Feel free to ask me about this as well. We have many former students who have pursued this field and are attending colleges all over the United States. An excellent way to learn more is to attend an engineering day at Colorado State University or the University of Colorado in Boulder. Most high school students find that a visit to campus makes the potential college experience more attainable and realistic.
 
 \hypertarget{supplemental-videos}{%
 \section{Supplemental Videos}\label{supplemental-videos}}
@@ -545,39 +804,65 @@ The Genius of George Boole
 
 Shakey:Experiments in Robotic Planning and Learning (1972)
 
+BBC Documentary - Hyper Evolution : Rise Of The Robots (Part 1)
+
+BBC Documentary - Hyper Evolution : Rise Of The Robots (Part 2)
+
+BBC Documentary - Hyper Evolution : Rise Of The Robots (Part 3)
+
+Robots that fly \ldots{} and cooperate \textbar{} Vijay Kumar
+
 \hypertarget{course-materials-and-instructions}{%
 \chapter{Course Materials and Instructions}\label{course-materials-and-instructions}}
 
 \hypertarget{course-lecture-notes}{%
 \section{Course Lecture Notes}\label{course-lecture-notes}}
 
-\hypertarget{follow-the-course-youtube-channel}{%
-\section{Follow the Course YouTube Channel}\label{follow-the-course-youtube-channel}}
+\hypertarget{introduction}{%
+\subsection{Introduction}\label{introduction}}
+
+\hypertarget{electronics}{%
+\subsection{Electronics}\label{electronics}}
+
+\hypertarget{programming}{%
+\subsection{Programming}\label{programming}}
+
+\hypertarget{robotics-concepts}{%
+\subsection{Robotics Concepts}\label{robotics-concepts}}
 
 \hypertarget{using-github}{%
 \section{Using GitHub}\label{using-github}}
 
+For this couse we will store all Python and Bash scripts on GitHub. This will alllow us to utilize the version control system Git and work from an online repository instead of storing all code on a single device. In doing so, you will be able to collaborate with others more easily and use multible devices on the same project such as a PC at school, a Mac at home and a Raspberry Pi that travels with you.
+
+Sign up for a GitHub account
+Go to GitHub and choose ``Sign up''. Create and verify your account. Be sure to record your credentials somewhere for later.
+
+To understand what GitHub is and how we can use it with any programming language complete the Hello World Tutorial. You should also watch this introductory video as well:
+
 \hypertarget{think-python-textbook}{%
 \section{Think Python Textbook}\label{think-python-textbook}}
+
+Our course programming text is called Think Python by Allen B. Downey. It will most likely be easiest to use the HTML version but there is also a PDF download at the site as well.
 
 \hypertarget{all-about-circuits-textbook}{%
 \section{All About Circuits Textbook}\label{all-about-circuits-textbook}}
 
-\hypertarget{download-and-install-pycharm}{%
-\section{Download and Install PyCharm}\label{download-and-install-pycharm}}
-
-\hypertarget{jupyter-notebooks}{%
-\section{Jupyter Notebooks}\label{jupyter-notebooks}}
+Our course electronics text is Volume I of All About Circuits. This online text will focus on Direct Current (DC) electricity.
 
 \hypertarget{onshape-account-setup}{%
 \section{OnShape Account Setup}\label{onshape-account-setup}}
+
+OnShape offers a powerful online CAD solution. Students in secondary education can receive a free student account which includes all of the features of the paid account and the learning center. This makes it an outstanding CAD alternative.
+
+Go to the OnShape website to sign up for a free account. Be sure to use your school email address in the process.
 
 \hypertarget{controlling-the-raspberry-pi-remotely}{%
 \section{Controlling the Raspberry Pi Remotely}\label{controlling-the-raspberry-pi-remotely}}
 
 Using a remote shell, one can control a Raspberry Pi with another computer. You can do this through the linux command line or with a GUI using a service like Tight VNC. Learning how to do this will allow our robots to become less tethered to a specific location. This concept, more broadly is known as the Internet of Things (IoT). Devices with internet connections can interact with one another over that connection. Many of you probably already have some IoT devices in your homes like thermostats that interact with each other to maintain the most energy-efficient comfort in your house to security cameras that may be accessed on a mobile device from anywhere. In short, our robots will not be fully robots until we learn to do this. As a result, the Capstone project for this course in semester two requires this.
 
-In all three of the cases listed below one thing is assumed. The Raspberry Pi and the device using the Secure Shell are connected to the same router. In our lab, we will use the MechLab wifi network. At home, students will need to make sure to connect the pi to their home router which the computer is using.
+In all cases one thing is assumed. The Raspberry Pi and the device using the Secure Shell are connected to the same router. In our lab, we will use the MechLab wifi network. At home, students will need to make sure to connect the pi to their home router which the computer is using.
 
 This process will work for a computer running Windows, MacOS or Linux. It will not work for a Chromebook.
 
@@ -608,11 +893,12 @@ Enter the username and password for the device.
 
 You are now connected to the Pi via SSH to the command line.
 
-\hypertarget{setting-up-ssh-for-mac}{%
-\subsection{Setting up SSH for Mac}\label{setting-up-ssh-for-mac}}
+If you would like to set up a graphical user interface (GUI) for use with SSH you can try using TightVNC. This HowToGeek Guide shows you how to do it.
 
-\hypertarget{setting-up-ssh-for-linux}{%
-\subsection{Setting up SSH for Linux}\label{setting-up-ssh-for-linux}}
+\hypertarget{setting-up-ssh-for-mac-or-linux}{%
+\subsection{Setting up SSH for Mac or Linux}\label{setting-up-ssh-for-mac-or-linux}}
+
+In case you need to use Mac or Linux for your host computer, the process is very similar for each. Follow this guide to set it up.
 
   \bibliography{book.bib,packages.bib}
 

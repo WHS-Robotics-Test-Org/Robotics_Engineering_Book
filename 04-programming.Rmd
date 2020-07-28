@@ -1,4 +1,5 @@
-<!-- For the examples here I am using two different terminals.  Since the students will at least start programming using the Linux termanal running the Python environment, all of the direct examples that they are expected to complete will use that.  GIMP can create screenshots which may then be directly exported to PNG format and uploaded to the hosted images repository on GitHub.  For those which may just be examples of ideas I am using PyCharm since it color codes the text.  At some point, it might be worth exploring other ways of doing this. -->
+<!-- For the examples here I am using two different terminals.  Since the students will at least start programming using the Linux termanal running the Python environment, all of the direct examples that they are expected to complete will use that.  GIMP can create screenshots which may t
+hen be directly exported to PNG format and uploaded to the hosted images repository on GitHub.  For those which may just be examples of ideas I am using PyCharm since it color codes the text.  At some point, it might be worth exploring other ways of doing this. -->
 
 # Python Programming
 
@@ -243,5 +244,49 @@ This is a lot to take in for a new programmer so let's briefly go over this func
 Read the chapter from <a href="https://greenteapress.com/wp/think-python-2e/" target="_blank">our text</a> titled, "Chapter 5 - Conditionals".  While you read the chapter open the Python environment through the Linux terminal on your Raspberry Pi as before.  Follow along with the examples from the text as you go.  This will help you learn Python more quickly.   When you are done reading the chapter complete exercises 1, 2 and 3 at the end of the chapter on your own to make sure you understand what you read.  If not, see the Note above.
 
 ## Iteration
+
+There are many reasons to use iteration in programming.  The most straightforward reason is to do a spedified action a certain number of times.  Imagine you are designing a robotic NASCAR driver.  This would be the perfect place for iteration.  In a NASCAR race the driver makes the same left turns hundreds of times.  Considering one of the advantages of robots is that they can perform tasks that humans find boring or too repetitive, our robot NASCAR driver would thrive in this environment making the same left turns over and over for hours.
+
+We will approach iteration by learning two programming concepts: ```for``` loops and ```while``` statements.  Each is useful in various situations.  Sometimes they are interchangable depending on the problem being solved.  One uses Boolean logic and the other does not.  Let's start with the ```for``` loop.
+
+### ```for``` Loops
+
+Unitl now, everything we have done, we have done once.  Most of the time though, our robots will need to do things repeatedly until a desired outcome is reached.  An example could be that our robots collect data from a website over the course of several hours.  One of my home automation projects was to build a solar powered garden watering system for my wife's garden.  This is very much a robotics application as we wanted to make sure water is delivered consistently every day even when we were gone on vacation.  One of the challenges though was that sometimes it rains in the summer, ususally at night.  If it rains enough the night before there is no need to water the next morning.  As humans we would just think, "How much did it rain yesterday (if it did at all)?" and make our decision to water that morning.  A robot needs clear rules though to follow.  In this case, after a lot of trial and error, I decided that it was best to check the weather conditions between 4:00 pm and the time the watering system came on in the morning.  That way, if enough rain had fallen there was no need to water the garden.  I decided to check the weather forcast using <a href="https://openweathermap.org/" target ="_blank">openweathermap.org</a>.  Every 15 minutes between 4:00 pm and 8:00 am the Raspberry Pi would "scrape" the current weather data off the website, "parse" out the current weather condition and record it in a csv file.  To do this I used something that looked like this:
+
+<img src="https://github.com/stcline/Hosted_Images/blob/master/Robotics_Engineering/collect_weather.PNG?raw=true">
+
+Don't worry too much about the details of this function called ```collect_weather()```.  Instead focus on the line that begins with the word ```for```.  This is one way to use a ```for``` loop to iterate a process (checking the weather).  I know that I want to check the weather over the course of 15 hours every 15 minutes (four times an hour).  This loop will start at 4:00 pm and run 60 times.  During the loop, the Pi checks the weather and records the data in a file then sleeps for 15 minutes (900 seconds). This is a very complicated script so let's try something simpler using our Raspberry Pi and the Python environment.
+
+Open a ternminal and start the Python environment as before.  Type the following lines:
+
+<img src="https://github.com/stcline/Hosted_Images/blob/master/Robotics_Engineering/for_loop.png?raw=true">
+
+This ```for``` loop will count to five, updating the value of ```x``` each time and print ```x```.  Try it out by hitting enter to get this result:
+
+<img src="https://github.com/stcline/Hosted_Images/blob/master/Robotics_Engineering/for_loop_result.png?raw=true">
+
+Notice that, while the loop ran five times, the value of ```x``` was not five at the end.  You can see why.  In computer science we generally start counting at zero instead of one.  As a result the ```range()``` function used in a ```for``` loop ends its final iteration at one less than the value passed to the function, in this case four instead of five.  Remember this for future scripts.
+
+There are other ways to use ```for``` like iterating over lists.  We will get to those later in our course.  For now, explore this method by completing the next assignment.
+
+<b>Assignment 5.7.1</b><br>
+Read sections 1-3 of chapter 4 from <a href="https://greenteapress.com/wp/think-python-2e/" target="_blank">our text</a>.  While you read the chapter open the Python environment through the Linux terminal on your Raspberry Pi as before.  Follow along with the examples from the text as you go.  This will help you learn Python more quickly.   When you are done reading the chapter complete exercises in section 4.3 on your own to make sure you understand what you read.  If not, see the Note above.
+
+### ```while``` Loops
+
+Our last introductory programming concept is a different kind of loop.  Sometimes, the programmer does not know how many iterations will be necessary to solve the problem.  For example, from the previous description of a Raspberry Pi based watering system for a garden, I did not know when I would stop using the system.  At the end of the season after the first freeze we would have no more need to water.  At that point, we would just shut it down and take the electronics in for the winter.  Until then, I needed it to keep going.  As a result, I used one of the simplest loops which is written like this:
+
+```while True:```
+
+```while``` loops run as long as the condition being tested is true.  In this case, I am saying do everything in the loop as long as true is true.  This will be true forever (or until I unplug the Raspberry Pi for the season).  There are many other ways to use ```while``` loops but the basic concept is the same - keep doing these things until the condition is no longer true.  For example, let's say you are building that robotic NASCAR system mentioned earlier.  If you wanted to keep the car going until the end of the race you could say something like this:
+
+<img src="https://github.com/stcline/Hosted_Images/blob/master/Robotics_Engineering/while_NASCAR.png?raw=true">
+
+This extremely oversimplified script basically says, we start the race at zero laps.  ```if``` we do something that means we have completed a lap, add one to the total laps.  So, after the finish line is crossed the first time, laps gets increased by one.  ```while``` laps is less than or equal to 500 (the end) keep driving.
+
+To understand this more, complete the next assignment.
+
+<b>Assignment 5.7.2</b><br>
+Read the chapter from <a href="https://greenteapress.com/wp/think-python-2e/" target="_blank">our text</a> titled, "Chapter 7 - Iteration".  While you read the chapter open the Python environment through the Linux terminal on your Raspberry Pi as before.  Follow along with the examples from the text as you go.  This will help you learn Python more quickly.   When you are done reading the chapter complete exercises 1 and 2 at the end of the chapter on your own to make sure you understand what you read.  If not, see the Note above.
 
 <!-- ## Sensing the Environment -->

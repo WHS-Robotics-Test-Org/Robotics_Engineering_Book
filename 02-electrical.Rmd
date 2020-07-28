@@ -16,7 +16,32 @@ Video here
 <li>Keep your work area clean and uncluttered.  Do not keep beverages on your workstation.</li>
 </ol>
 
-Circuit lab setup
+<b>Using EasyEDA for circuit design</b>
+
+There are many useful tools available to help with circuit design.  During this course we will need to learn to use some of them.  Circuit schematics make it easy for us to design and interpret circuits to communicate our project.  For this class we will use EasyEDA.  We can run it in a web browser.  It allows us to save projects to a free account and share them for submission.  If you learn how to use it well enough you may also use it to design your own printed circuit boards (PCB) to make your own components.
+
+Go to the <a href="https://easyeda.com/editor" target ="_blank">EasyEDA editor website</a>.  Create an account.  While you may be able to just start using it and learn through trial and error, here are a few tutorials that will become useful which may be found in the <a href="https://docs.easyeda.com/en/FAQ/Editor/index.html" target ="_blank">Tutorials</a> section of the app:
+
+<ul>
+  <li>Introduction to EasyEDA</li>
+  <li>UI Introduction</li>
+  <li>Create a New Project or File</li>
+  <li>Schematic Capture</li>
+  <li>Basic Skills</li>
+</ul>
+
+You should spend some time learning how to use this app.  We will begin using it soon and you will learn how to read an electronics schematic, by designing them yourself.  Once you have set up your account and learned some basics, complete the following assignment:
+
+<b>Assignment 3.0</b><br>
+
+Using your newly discovered schematic design skills, you will make your own basic schematic.  Watch this <a href="https://www.youtube.com/watch?v=9cps7Q_IrX0" target ="_blank">short tutorial explaining schematics</a>.  Create and save a schematic in EasyEDA with the following components in a circuit:
+
+<ul>
+  <li>5V power supply</li>
+  <li>220 Ohm Resistor</li>
+  <li>Blue LED</li>
+  <li>Ground</li>
+</ul>
 
 ## Circuits
 
@@ -38,27 +63,63 @@ To help you understand this concept, here is an excellent video from SparkFun El
 src="https://www.youtube.com/embed/kYwNj9uauJ4">
 </iframe>
 <br>
-<u>Assignments for section 3.1</u>: 
+<b>Assignment 3.1</b><br> 
 <ol>
   <li>After reading the section on circuits, complete the <a href="https://www.allaboutcircuits.com/worksheets/elementary-circuits/online" target="_blank">worksheet</a></li>
-  <li>Using (tool for this), design a closed circuit with the following components:</li>
+  <li>Using EasyEDA, design a closed circuit with the following components:</li>
     <ul>
-      <li>5V DC power supply</li>
-      <li>Red LED</li>
-      <li>330 Ohm resistor</li>
+      <li>5V power supply</li>
+      <li>220 Ohm Resistor</li>
+      <li>Blue LED</li>
+      <li>Ground</li>
     </ul>
 </ol>    
-Submit the (method of submission) here.
+Submit the your work on GitHub through Assignment 3.1.
 
 ## Voltage and Current
 
 The movement of electrons from one pole to another is what we use in robotics to make our robots work.  By altering the volume of electrons moving through the wires connected to a motor we can alter the speed of the wheel attached to the motor.  The potential energy coming in to our microprocessor pin over a wire attached to a photoresistor tells us the level of brightness or lumosity in a room.  Putting these two concepts together we could create a robotic system that opens the blinds on our lab when the sun sets in the west.  That is, of course, if we can program our system to make that decision on its own.  We will get to the programming part later.  For now, we will examine the concepts of voltage and current which allow us, along with resistance, to receive information through sensor and send information out to an actuation device like a motor.
 
+Read <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/voltage-current/" target="_blank">short section on voltage and current</a>.  Be sure to review the concepts at the bottom of the page for understanding.
 
+To help you understand this concept, here is an excellent video from SparkFun Electronics on the topic.
+
+<iframe width="420" height="315"
+src="https://www.youtube.com/embed/z8qfhFXjsrw">
+</iframe>
+<br>
 
 ## Resistance
 
+The final concept needed to understand how electricity in a DC circuit may be used to control devices is resistance.  One day last year I was sitting in my office upstairs.  I had just come from the mechatronics lab and had packed a bunch of supplies from the lab into my backpack so I could do a little work on a demonstration I would be giving later in the week.  All of a sudden I smelled smoke.  I looked down and it was coming from my backpack!  After digging around a bit I found the culprit.  I had put a battery pack in my bag like the one here:
+
+<img src="https://github.com/stcline/Hosted_Images/blob/master/Robotics_Engineering/battery_pack_full.jpg?raw=true">
+
+Can you see the problem?  I had left all of the batteries in the pack.  When I threw it in my bag, the red and black leads touched and starte what is know as a <a href="https://en.wikipedia.org/wiki/Short_circuit" target ="_blank">short circuit</a>.  With no resistance on the flow of electrons through the wires.  The by product of this rapid flow was heat which began to melt the inside of my backpack and start it smoking.  Remember this example and always pull one battery out of your battery packs when not connected to your device.  Also, never connect two poles of a power source without any resistance.  It can cause serious injury.
+
+This problem is prevented by placing a resistive force on the circuit.  Small electrical components like LEDs and sensors cannot handle even the two amperes of current available from the Raspberry Pi's 5V pin.  A reisistor is used to prevent the LED from burning up.  In order to understand how resistance works, read <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/resistance/" target="_blank">short section on resistance</a>.  
+
+<b>Assignment 3.3</b><br> 
+<ol>
+  <li>After reading the section on circuits, complete the <a href="https://www.allaboutcircuits.com/worksheets/voltage-current-and-resistance" target="_blank">worksheet</a></li>
+
 ## Ohm's Law
+
+All three of these concepts come together in Ohm's Law.  In the 19th century many scientists were experimenting with electricity in an attempt to understand it.  One of these scientists, Georg Ohm, determined that there was a relationship between Voltage, Current and Resistance.  This is why an LED burns up (receives too much current) when no resistance is placed on the circuit.  If we create resistance on the circuit with a resistor the voltage, or potential energy, remains constant but the current decreases.  Ohm's law is represented by this simple formula:
+
+$$V = I * R$$
+As we will see, this formula is quite handy.  It may be rearranged to solve for any one of the three possible outputs (V-voltage, I-current, R-resistance).  In order to understand how resistance works, read <a href="https://www.allaboutcircuits.com/textbook/direct-current/chpt-1/voltage-current-resistance-relate/" target="_blank">short section on Ohm's Law</a>.  
+
+To help you understand this concept, here is an excellent video from SparkFun Electronics on the topic.
+
+<iframe width="420" height="315"
+src="https://www.youtube.com/embed/8jB6hDUqN0Y">
+</iframe>
+<br>
+
+<b>Assignment 3.4</b><br> 
+<ol>
+  <li>After reading the section on circuits, complete the <a href="https://www.allaboutcircuits.com/worksheets/ohms-law" target="_blank">worksheet</a></li>
 
 ## Using a Digital Multimeter
 

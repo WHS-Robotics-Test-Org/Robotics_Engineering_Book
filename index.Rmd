@@ -27,7 +27,7 @@ For this course you will need to do the following to prepare to learn:
   <li>Sign up for a GitHub account and fill out this form.</li>
   <li>Bookmark the course <a href="https://github.com/stcline/Robotics_Engineering_Course" target="_blank">GitHub Repository</a>.  This is where many of the programming resources will be found.  In addition, assignments will be submitted here.</li>
   <li>Locate our two textbooks for the course.  They are both online and free.  The first is an electronics textbook called <a href="https://www.allaboutcircuits.com/textbook/" target ="_blank"><i>Lessons in Electric Circuits</i></a>.  The second is a programming textbook called <a href="https://greenteapress.com/wp/think-python-2e/" target="_blank"><i>Think Python</i></a>.</li>
-  <li>Subscribe to the course <a href="https://www.youtube.com/playlist?list=PLdzkJRGG1oi3xGaaHM44BkpW-bYuD9KQS" target="_blank">YouTube Channel</a>.</li>  Directions for how to do this are found in the [Follow the Course YouTube Channel] section of this site.</li>
-  <li>Log on to the class Jupyter Notebook server</li>
+  <!-- <li>Subscribe to the course <a href="https://www.youtube.com/playlist?list=PLdzkJRGG1oi3xGaaHM44BkpW-bYuD9KQS" target="_blank">YouTube Channel</a>.</li>  Directions for how to do this are found in the [Follow the Course YouTube Channel] section of this site.</li> -->
+  <!-- <li>Log on to the class Jupyter Notebook server</li> -->
   <li>Sign up for an OnShape account by following the instructions in the [OnShape Account Setup] section of this site.</li>
-  <li>Complete the WHS Mechatronics Lab Code of Conduct Agreement.</li>
+  <li>Complete the <a href="https://docs.google.com/document/d/1GyzqmEnwxi8B-1l7OLEiFR7GuWuK1Wd5o3fenj8jpm8/edit?usp=sharing" target ="_blank">WHS Mechatronics Lab Code of Conduct Agreement</a>.</li>

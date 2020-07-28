@@ -1,9 +1,113 @@
 # Mechanical Design
 
-Need to teach them a few things.
+The inspiration for this course at Windsor High School is actually a course in the Engineering College at Colorado State Unversity called <a href="https://www.engr.colostate.edu/~dga/courses/mech307/" target ="_blank">Mechatronics and Measurement Systems</a>.  That course is meant to be one of the capstone courses in the mechanical engineering degree at CSU.  In order to complete our capstone project, we will all need to have a solid understanding of the parts of a mechatronic or robotic system.
 
-## Basic Mechanics?
+## Parts of a Robotic System
 
-## Advanced Mechanics?
+We need to be able to determine what components will be necessary in our robot design.  To do this, an overview of the various part types is necessary.  At the end of this chapter, you will create a design on <a href="https://www.onshape.com/" target ="_blank">OnShape</a> which will serve as the basis for your capstone project next semester.  Use this as an opportunity to start thinking about what you will do in creating a robotic system.
+
+<u>Steps to prepare for this work</u>
+<ol>
+  <li>Start thinking about a problem you might like to solve.  Is there something at home that could be improved?  For example, last year I built a solar powered Raspberry Pi controlled garden watering system.  Something like that has a definite use and provides a solution for my wife and I.  Now that it works, when we go on vacation we don't worry that our garden gets watered.</li>
+  <li>Look for other examples.  A good place to start is the <a href="https://video-demos.colostate.edu/robotics-controls/mechatronics/projects/" target ="_blank">Student Examples from the MECH 307 Course at CSU</a>.  Another good source is <a href="https://www.sparkfun.com/tutorials/category/4" target ="_blank">SparkFun Projects Examples</a>.  In additon, there are many websites that have Raspberry Pi ideas.</li>
+  <li>Think about what makes you excited to do this project.  What would you have fun doing for four months next semester?</li>
+</ol>  
+
+Write down some ideas so that, you may come back to them later as you learn more
+
+Now that we have some ideas, let's learn about the various types of parts available to us.
+
+### Power Supply
+
+A major consideration is power.  Most of the systems we design need to be efficient in their use of power.  We are not always able to connect to an outlet.  For example, home surveillance cameras are small and easy to install in many different locations.  However, if we had to connect them to an AC power source, the list of possible locations for installation could be greatly reduced.  The solution is a battery pack.  How do we decide which battery though?  A surveillance camera might need to run for weeks at a time without changing the battery.  As a result, a high quality lithium ion source would probably make the most sense.  The drawback to this compact and powerful design is, of course, price.  These are the types of trade-offs we must consider.
+
+<u>Power Supplies include:</u>
+<ul>
+  <li><a href="https://www.amazon.com/Raspberry-Power-Supply-Adapter-Charger/dp/B0719SX3GC/ref=sxts_sxwds-bia-wc-drs1_0?cv_ct_cx=raspberry+pi+power+supply&dchild=1&keywords=raspberry+pi+power+supply&pd_rd_i=B0719SX3GC&pd_rd_r=cfe19aaa-1ab3-4e25-a2bb-71db90ddbdd2&pd_rd_w=UmEqs&pd_rd_wg=lWUzP&pf_rd_p=055f7364-94db-4b93-80d6-346300592c66&pf_rd_r=TX0AEE71D4WXCBYK3ZSB&psc=1&qid=1595873393&sr=1-1-f7123c3d-6c2e-4dbe-9d7a-6185fb77bc58" target ="_blank">DC Wall adapters</a></li>
+  <li><a hfer ="https://www.amazon.com/Battery-Holder-Barrel-Connector-Arduino/dp/B07T65WWCR/ref=sr_1_4?crid=SN27799GVMQI&dchild=1&keywords=aa+battery+pack+arduino&qid=1595873477&s=electronics&sprefix=aa+battery+pack+ardui%2Celectronics%2C177&sr=1-4" target ="_blank">Battery packs for rechargable NiMH batteries</a></li>
+  <li><a href="https://www.robotshop.com/en/nimh-2000mah-battery-pack-hitec-connector.html" target ="_blank">Pre-built battery packs</a></li>
+  <li><a href="https://www.amazon.com/Adafruit-Medium-Volt-Solar-Panel/dp/B01BKA1YSK" target = "_blank">Solar panels</a></li>
+</ul>
+
+As we see, there are many options and considerations.  Only by determining total power needs, space and weight constraints and budget can we select the correct source.  For now, consider power needs first.  As you get closer to the start of your project you can narrow down your choices.
+
+### Actuators
+
+Most robots move and interact with the physical world.  We will not make that distinction here although there are many who believe that this is a requirement.  A robotic car system has many actuation systems.  The most notable of these is the drive system.  Through the wheels and transmission the motor interacts with the surface the robot is on to propel the robot.  Any device creating motion in this way is an actuator.  Like power supplies, actuator selection meets many criteria.  A look at the <a href="https://www.robotshop.com/en/motors-actuators.html" target =_blank">RobotShop Actuator Page</a> reveals hundreds of possibilities.
+
+<ul>
+  <li>DC Motors</li>
+  <li>Stepper Motors</li>
+  <li>Servos</li>
+  <li>Linear Slides</li>
+</ul>
+
+From these fours types of actuators, most robotic systems may develop a way of interacting with the environment.
+
+### Sensors
+
+There are even more sensor types than there are actuator types.  If we brows the <a href="https://www.adafruit.com/category/35" target ="_blank">Adafruit Sensor Page</a> we see how limitless these possibilities are.  For any type of sensor application there is, someone has though of a way to build it.
+
+As <a href="http://www.cs.cmu.edu/~rasc/Download/AMRobots4.pdf" target = "_blank">excerpt from a robotics text</a> explains, sensors are either proprioceptive or exteroceptive and, at the same time, either passive or active.  This chart is taken from that text:
+
+<img src="https://github.com/stcline/Hosted_Images/blob/master/Robotics_Engineering/Sensor%20Classifications.png?raw=true">
+
+### Microprocessors
+
+For most students in this course, the Raspberry Pi will function as the microprocessor for the course.  Students learn to interact with the Pi using the command line and Python.  In addition, the Raspberry Pi offers many advantages over other microprocessors like Arduinos.  One of the main advantages is the built in wifi capabilities.  This allows for remote programming and true Internet of Things (IoT) capabilites.  Still, some may choose a different processor, maybe even a different version of the Pi.
+
+A <a href="https://www.raspberrypi.org/products/raspberry-pi-zero-w/" target ="_blank">Raspberry Pi Zero W</a> is an extremely compact and low cost alternative to the Rapberry Pi 3 we use in class.  It is made for low-power, compact IoT applicaitons and should be considered.  While the processor speed is slower than larger Pis, it might be just the fit for your project.  Compact versions of other processors are available as well.  <a href="https://en.wikipedia.org/wiki/Comparison_of_single-board_microcontrollers" target ="_blank">This list</a> is quite extensive and should be considered.
+
+### Structural Parts
+
+The skeleton of the robotic system determines the physical constraints on the design.  For years now, our robotics team has dealth with this issue.  Several years ago they were presented with a challenge in the competition which required their robot to climb a mountain:
+
+<img src="https://lh3.googleusercontent.com/pw/ACtC-3cmpHSRe6rGTt-MiIm45DNvdX5LnQPqjeFoMLTcRDMEe-jTS-R-VCHQpOXHaIDewV3isya2OqOclK3ttuJrw_SZFTdhtLex9lYP1k0KlGzc5bqn2ezhGXwOkCdMWfAII_uaL7MYbPUcI6blbrHRMNBy=w787-h904-no?authuser=0">
+
+As we can see from the photograph, the mountain was quite daunting.  The previous year, the team had advanced to the world championships and found that their robot, while the best design in Colorado, was not suited to compete with the heavier robots beyond the state.  As a result they had been pushed around a bit and not been very successful.  The solution to this was to weld a steel frame together and build the robot off of that.  The result was a 70 pound robot!  Without thinking more deeply about the design of the current year, they had hampered themselves by dealing with the previous yesr's challenge in mind.  The robot was robust and strong but could not climb the mountain.  Instead, every tread system they tried to use to climb was under so much strain that it eventually broke.  They would even 3D print treads made out of high strength plastics that still could not hold up to the strain.  In this case, the structural parts let them down.  What a great learning experience that was.  All three of those students in the photo are in science and engineering programs currently in college.  The one on the right, Mitchell Watson, is literally going to be a rocket scientist when he graduates for Cal Tech.  Understanding these concepts of mechanical design are not only fundamental to robotics, they can lead to many great opportunities.
+
+There are many options for structural parts.  Over the years, we have accumulated a wealth of parts in our program which may be checked out.  In addition, we have plenty of scrap material (we hated that mountain so much that we cut it up at the end of the season and have been using it for scrap since then).  After you learn how to use CAD in the next section, you will be able to design and print your own custom parts as well.  
+
+The type of material matters.  Begin with <a href="http://www.robotoid.com/howto/materials-for-robot-building-an-introduction.html" target="_blank">this materials guide</a> in selecting your parts.  Consider using pre-built kits or components.  Here is a list of companies that provide robotics parts:
+
+<ul>
+  <li><a href="https://www.pitsco.com/" target = "_blank">Pitsco Education</a>: Many different types of parts from a long-time vendor</li>
+  <li><a href="https://www.revrobotics.com/" target = "_blank">REV Robotics</a>: Higher quality aluminum and high grade plastic parts</li>
+  <li><a href="https://www.gobilda.com/" target = "_blank">GoBilda</a>: Awesome parts for large applications</li>
+  <li><a href="https://8020.net/?SID=0iar947e93r0f4tpr4p5dd79g5/" target = "_blank">80/20 Inc.</a>: Incredibly versitile structural systems</li>
+  <li><a href="https://www.robotshop.com/en/robot-kits.html" target = "_blank">RobotShop</a>: If you are looking for a kit, to get started</li>
+  <li><a href="https://www.sparkfun.com/categories/31?filter_option%5Bsubcategory%5D%5B%5D=category_155&filter_price_floor=&filter_price_ceil=" target = "_blank">SparkFun</a>: Based in Niwot, you can go visit them and pick up your parts or take the tour to get some ideas</li>
+</ul>
+
+<br><b><i>NOTE: For any vendors, check before you buy.  We have educational discounts with most all of them.</b></i>
+
+<b>Assignment 4.2</b><br>
+On graph paper draw a design for your expected capstone project.  You should include at least three different angles for your drawing (two sides and a top).  You should include dimensions and labels of each part.  On a Google spreadsheet, make a list of all parts you think you might need.  In a one-page typed summary describe your design. 
 
 ## Computer Aided Design
+
+Once you have your design down on paper, it is time to create it like a real mechatronics engineer.  For this section you will learn to use <a href="https://www.onshape.com/" target ="_blank">OnShape</a>, a modern and full-scale computer aided design (CAD) system.  OnShape was founded by two engineers at SolidWorks which is still considered the gold standard of CAD.  SolidWorks comes with a hefty price tag, even for students.  OnShape is free to secondary schools.  As a result, we will use it.  Once year learn this tool, switching to other CAD software will be relatively painless.  In addition, it is entirely web based so you can use it as long as you have an internet connection and a web browser.
+
+If you have not done so already, head to the [OnShape Account Setup] section of the course book.  Follow those instructions.  After you have done this, log on to your account and follow these instructions:
+
+<u>Click on the "Learning Center Button"</u>
+
+<img src="https://github.com/stcline/Hosted_Images/blob/master/Robotics_Engineering/onshape_lc.PNG?raw=true">
+
+<u>Select "Self-Paced Courses > Learning Pathways"</u>
+
+<img src="https://github.com/stcline/Hosted_Images/blob/master/Robotics_Engineering/onshape_lp.PNG?raw=true">
+
+<u>Select "OnShape Fundamentals: CAD"</u>
+
+<img src="https://github.com/stcline/Hosted_Images/blob/master/Robotics_Engineering/onshape_fun.PNG?raw=true">
+
+<b>Assignment 4.2</b><br>
+Complete the first five courses in this learning pathway:
+<ol>
+  <li>Navigating Onshape</li>
+  <li>Introduction to Sketching</li>
+  <li>Part Design Using Part Studios</li>
+  <li>Multi-Part Part Studios</li>
+  <li>Onshape Assemblies</li>
+</ol>

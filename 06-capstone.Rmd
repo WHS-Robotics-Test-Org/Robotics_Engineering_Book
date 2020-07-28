@@ -1,1 +1,23 @@
 # Capstone Project
+
+The stone placed at the very top of an archway which holds the rest of the arch in place is known as the <a href="https://commons.wikimedia.org/wiki/File:Arch_voussoirs.svg" target ="_blank">capstone</a>.  Just like mason placing that last stone, you are ready to demonstrate your learning.  For the last four months of this course you will complete a capstone project.
+
+You, and a partner if you choose, will complete a complex robotics project using everything you have learned this year.  
+
+<b>Overview:</b>
+
+Each group/person must design, build, test, and demonstrate a device controlled by one or more microcontrollers (e.g. Arduino, Raspberry Pi, ESP 8266, etc.).  The device should have functioning elements in all five categories listed below. The device will be rated (graded) based on the level of functionality achieved in each category. There will also be grading adjustments for qualitative attributes.
+
+You are allowed to use circuits and code you find on the Internet or in other books, but make sure you have a full understanding of what the code or circuit does. You should also "add value" to what you use by incorporating it into your system creatively and effectively.  Also, make sure you cite in your report, your poster and in your final code sketches any sources of any code or circuits you use.
+
+<u>The materials used for this project must meet the following requirements:</u>
+<ul>
+<li>Any materials from the Arduino Super Starter kit for class may be used including sensors, motors, wires, lights, displays and resistive devices</li>
+<li>Any approved components available in the lab (i.e. sensors on loan, stepper motors, structural parts, etc.)</li>
+<li>Up to 200g of ABS filament (for entire project, including prototypes).</li>
+<li>Up to $75 in pre-approved student purchased parts (per project, not per student).  It is up to the student to order these components although I will help you find them, if needed.  Be careful here, qualitative deductions will be made for expensive and/or unnecessary component selection (i.e. using a Raspberry Pi where an Arduino UNO will work, etc.)</li>
+</ul>
+
+NOTE - the choice of your project concept could have a large impact on the grade you receive; so please evaluate your alternative concepts carefully, based on the grading criteria below.
+
+Each of you will receive a <a href="https://docs.google.com/document/d/1Ap9XnDHmlUpDhtRLOVqSsqf3xh5cZPlc8qJfAl380MQ/edit?usp=sharing" target ="_blank">detailed set of instructions</a> for this project.

@@ -1,27 +1,80 @@
 # Course Materials and Instructions
 
-## Course Lecture Notes
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQzhnnscrH02bQAozIj_FHZNBvhkXvO4Ve8OCXYbl47CArRmwCx6anKxsnaLkvEWUpUF5yvsiDHXwwJ/embed?start=false&loop=false&delayms=3000" frameborder="1" width="670" height="398" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<!-- Needs big overhaul next year: -->
+<!-- - Modify all slides for new design including Python -->
 
-## Follow the Course YouTube Channel
+## Course Lecture Notes
+
+### Introduction
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vT4jnAHDMRO-QzWOQ3x5Es62wg_Em63Fihhex3J7k6oLnMfuzETdQE5RT96Vfx1456XSIMQWC8wMLoE/embed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSw1VXOK7r--gGSLi7eWLw8EaB2y7StapOXW0rm9UOlSKL7r51209oeqbIxmJlz2TnY7Ma_ZxqrlMbT/embed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+### Electronics
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSEjxyPxzFJU6y28LAbj3HSnTGe9CXTa3c5JQG9q6oBjkdYUtCY7hozz7Gnva8QQ5crFKtlkHmc1NUk/embed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTdZs-DXUbMi11kVVFpqlkTi-hNSS_ei4Vk7HSFm6ybmo66IyNIr-6nZ7LQEnIl1ZSRIK6-v8h0DF71/embed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTkPybM5iIUJL6iby7RTB2c1rh57flGegr1XFNLteVu1HPehf-wCb-jrosMQpnKE8GXCuaj-Sr1s_4X/embed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+### Programming
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vT2nBB_vLg7bmY_dF2KbQs0j5YPt7vO8Ga3ub8TuNiKwVnMfjwvD4vIWgVfjzcNFSOpO_HEcKCqmvII/embed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSJ6q8VwyJ49YFMxVgykFavlL3WBofZFAKATJtRj2xTjz_h0KocZuu7uU7bOf_6LfSbx4lAlM-TfkRo/embed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTgOpTzaupnEeDpJyOju6giAvbsneuoxmH4XIeyft5NhjP4hNJ5g2PKnyQFFZrJk49ZEGmfkIM_WJ_j/embed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vS468nCHEwXvO1HEhBvfBjRSvpWs-Jr6OW7_Vzv7u82lq9EYrbC_-ucElIiWjiufG98yvG20XE9ZOGk/embed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQW7MxA_kZhqhW-GNN76RAHJQlCCR8N7dADHvNHtjJTUOaFqsFn8p_tZkM45fHmhWAIqgUsdFoaQXjN/embed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+### Robotics Concepts
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQjT6mVlWS4sknQALgTlLC27Iqtg3UH7lnU5AJcG1ngif1y9pa59Ox1QZursP2NqwJOjGxujYXnTDaH/embed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQjT6mVlWS4sknQALgTlLC27Iqtg3UH7lnU5AJcG1ngif1y9pa59Ox1QZursP2NqwJOjGxujYXnTDaH/embed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRyOy0qo61nh1nBiGR7Te1ZJg1_jYcwTz_SJv8A107ig1p8g3M3aL3i7gUAhHeIA0nYB8D-TCMcyyqT/embed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTGDZsK800Pdu97WIOdwa7Yvq3l5fUtTd7KHkZGIHRzZe-fdNgDFPC4zXmNuuh5UNH7jC_dx9zbat5d/embed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQ7Kn90aomOHNGlgSaUEKlkpYyU-_wu_3AZuITylFyWVLvSLeNuaua5Pr-hcen2S3CskRE8oTdJroYg/embed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSjHJ5k7iVgiohde9tW5e7vEW250xiYiemmFTYPmKSi2VD3aGSlHvv1MU6vVYxW_MNEzQvThDl95bwG/embed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+<!-- ## Follow the Course YouTube Channel -->
 
 ## Using GitHub
 
+For this couse we will store all Python and Bash scripts on GitHub.  This will alllow us to utilize the version control system Git and work from an online repository instead of storing all code on a single device.  In doing so, you will be able to collaborate with others more easily and use multible devices on the same project such as a PC at school, a Mac at home and a Raspberry Pi that travels with you.
+
+<u>Sign up for a GitHub account</u>
+Go to <a href="https://github.com/" target ="_blank">GitHub</a> and choose "Sign up".  Create and verify your account.  Be sure to record your credentials somewhere for later.
+
+To understand what GitHub is and how we can use it with any programming language complete <a href="https://guides.github.com/activities/hello-world/" target = "_blank">the Hello World Tutorial</a>.  You should also watch this introductory video as well:
+
+<iframe width="420" height="315"
+src="https://www.youtube.com/embed/sz6zfrQpCQg">
+</iframe>
+<br>
+
+
 ## Think Python Textbook
+Our course programming text is called <i><a href="https://greenteapress.com/wp/think-python-2e/" target ="_blank">Think Python</a></i> by Allen B. Downey.  It will most likely be easiest to use the HTML version but there is also a PDF download at the site as well.
+
+<img src="http://greenteapress.com/thinkpython2/think_python2_medium.jpg">
+
 
 ## All About Circuits Textbook
 
-## Download and Install PyCharm
+Our course electronics text is Volume I of <i><a href="https://www.allaboutcircuits.com/textbook/" target ="_blank">All About Circuits</a></i>.  This online text will focus on Direct Current (DC) electricity.
 
-## Jupyter Notebooks
+<img src="https://www.allaboutcircuits.com/images/site/AAClogo.png">
+
+<!-- ## Download and Install PyCharm -->
+
+<!-- ## Jupyter Notebooks -->
 
 ## OnShape Account Setup
+
+<a href="https://www.onshape.com" target ="_blank">OnShape</a> offers a powerful online CAD solution.  Students in secondary education can receive a free student account which includes all of the features of the paid account and the learning center.  This makes it an outstanding CAD alternative.
+
+<img src="https://www.xperdi.com/img/partners/onshape_1.png">
+
+Go to the <a href="https://www.onshape.com" target ="_blank">OnShape website</a> to sign up for a free account.  Be sure to use your school email address in the process.
 
 ## Controlling the Raspberry Pi Remotely
 
 Using a remote shell, one can control a Raspberry Pi with another computer.  You can do this through the linux command line or with a GUI using a service like Tight VNC.  Learning how to do this will allow our robots to become less tethered to a specific location.  This concept, more broadly is known as the Internet of Things (IoT).  Devices with internet connections can interact with one another over that connection.  Many of you probably already have some IoT devices in your homes like thermostats that interact with each other to maintain the most energy-efficient comfort in your house to security cameras that may be accessed on a mobile device from anywhere.  In short, our robots will not be fully robots until we learn to do this.  As a result, the Capstone project for this course in semester two requires this.
 
-In all three of the cases listed below one thing is assumed.  The Raspberry Pi and the device using the Secure Shell are connected to the same router.  In our lab, we will use the MechLab wifi network.  At home, students will need to make sure to connect the pi to their home router which the computer is using.
+In all cases one thing is assumed.  The Raspberry Pi and the device using the Secure Shell are connected to the same router.  In our lab, we will use the MechLab wifi network.  At home, students will need to make sure to connect the pi to their home router which the computer is using.
 
 This process will work for a computer running Windows, MacOS or Linux.  <b>It will not work for a Chromebook.</b>
 
@@ -43,6 +96,12 @@ This process will work for a computer running Windows, MacOS or Linux.  <b>It wi
 </ol>
 You are now connected to the Pi via SSH to the command line.
 
-### Setting up SSH for Mac
+If you would like to set up a graphical user interface (GUI) for use with SSH you can try using <a href="https://www.tightvnc.com/download.php" target ="_blank">TightVNC</a>.  This <a href="https://www.howtogeek.com/141157/how-to-configure-your-raspberry-pi-for-remote-shell-desktop-and-file-transfer/" target ="_blank">HowToGeek Guide</a> shows you how to do it.
 
-### Setting up SSH for Linux
+### Setting up SSH for Mac or Linux
+
+In case you need to use Mac or Linux for your host computer, the process is very similar for each.  Follow <a href="https://www.raspberrypi.org/documentation/remote-access/ssh/unix.md" target = "_blank">this guide</a> to set it up.
+
+<!-- ### Setting up SSH for Mac -->
+
+<!-- ### Setting up SSH for Linux -->
