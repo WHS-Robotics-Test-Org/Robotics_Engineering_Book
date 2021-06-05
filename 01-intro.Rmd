@@ -73,3 +73,5 @@ Academia also made much progress in the creation new robots.  In 1958 at the Sta
 In order to better understand the field of mechatronics, you will choose one person who has been foundational to the development of the field.  
 
 Assignment: The Innovators Project
+
+## The Metric System

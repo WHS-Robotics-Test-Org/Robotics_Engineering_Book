@@ -110,6 +110,8 @@ In order to better understand the field of mechatronics, you will choose one per
 
 Assignment: The Innovators Project
 
+## The Metric System
+
 <!--chapter:end:01-intro.Rmd-->
 
 # Electrical Concepts
@@ -297,11 +299,17 @@ There are even more sensor types than there are actuator types.  If we brows the
 
 As <a href="http://www.cs.cmu.edu/~rasc/Download/AMRobots4.pdf" target = "_blank">excerpt from a robotics text</a> explains, sensors are either proprioceptive or exteroceptive and, at the same time, either passive or active.  This chart is taken from that text:
 
-<img src="https://github.com/stcline/Hosted_Images/blob/master/Robotics_Engineering/Sensor%20Classifications.png?raw=true">
+<p>
+<figure>
+  <img src="https://github.com/stcline/Hosted_Images/blob/master/Robotics_Engineering/Sensor%20Classifications.png?raw=true" alt="Sensor Classification" style="width:80%">
+  <figcaption><b><i>Fig. 4.1 - Table Illustrating Classifications of Robotics Sensors.</b></i></figcaption>
+</figure>
+</p>
+
 
 ### Microprocessors
 
-For most students in this course, the Raspberry Pi will function as the microprocessor for the course.  Students learn to interact with the Pi using the command line and Python.  In addition, the Raspberry Pi offers many advantages over other microprocessors like Arduinos.  One of the main advantages is the built in wifi capabilities.  This allows for remote programming and true Internet of Things (IoT) capabilites.  Still, some may choose a different processor, maybe even a different version of the Pi.
+For most students, the Raspberry Pi will function as the microprocessor for the course.  Students learn to interact with the Pi using the command line and Python.  In addition, the Raspberry Pi offers many advantages over other microprocessors like Arduinos.  One of the main advantages is the built in wifi capabilities.  This allows for remote programming and true Internet of Things (IoT) capabilites.  Still, some may choose a different processor, maybe even a different version of the Pi.
 
 A <a href="https://www.raspberrypi.org/products/raspberry-pi-zero-w/" target ="_blank">Raspberry Pi Zero W</a> is an extremely compact and low cost alternative to the Rapberry Pi 3 we use in class.  It is made for low-power, compact IoT applicaitons and should be considered.  While the processor speed is slower than larger Pis, it might be just the fit for your project.  Compact versions of other processors are available as well.  <a href="https://en.wikipedia.org/wiki/Comparison_of_single-board_microcontrollers" target ="_blank">This list</a> is quite extensive and should be considered.
 
@@ -309,11 +317,16 @@ A <a href="https://www.raspberrypi.org/products/raspberry-pi-zero-w/" target ="_
 
 The skeleton of the robotic system determines the physical constraints on the design.  For years now, our robotics team has dealth with this issue.  Several years ago they were presented with a challenge in the competition which required their robot to climb a mountain:
 
-<img src="https://lh3.googleusercontent.com/pw/ACtC-3cmpHSRe6rGTt-MiIm45DNvdX5LnQPqjeFoMLTcRDMEe-jTS-R-VCHQpOXHaIDewV3isya2OqOclK3ttuJrw_SZFTdhtLex9lYP1k0KlGzc5bqn2ezhGXwOkCdMWfAII_uaL7MYbPUcI6blbrHRMNBy=w787-h904-no?authuser=0">
+<p>
+<figure>
+  <img src="https://lh3.googleusercontent.com/pw/ACtC-3cmpHSRe6rGTt-MiIm45DNvdX5LnQPqjeFoMLTcRDMEe-jTS-R-VCHQpOXHaIDewV3isya2OqOclK3ttuJrw_SZFTdhtLex9lYP1k0KlGzc5bqn2ezhGXwOkCdMWfAII_uaL7MYbPUcI6blbrHRMNBy=w787-h904-no?authuser=0" alt="Climbing a mountain" style="width:80%">
+  <figcaption><b><i>Fig. 4.2 - WHS Robotics Team members analyze the challenge in the 2015 season.</b></i></figcaption>
+</figure>
+</p>
 
 As we can see from the photograph, the mountain was quite daunting.  The previous year, the team had advanced to the world championships and found that their robot, while the best design in Colorado, was not suited to compete with the heavier robots beyond the state.  As a result they had been pushed around a bit and not been very successful.  The solution to this was to weld a steel frame together and build the robot off of that.  The result was a 70 pound robot!  Without thinking more deeply about the design of the current year, they had hampered themselves by dealing with the previous yesr's challenge in mind.  The robot was robust and strong but could not climb the mountain.  Instead, every tread system they tried to use to climb was under so much strain that it eventually broke.  They would even 3D print treads made out of high strength plastics that still could not hold up to the strain.  In this case, the structural parts let them down.  What a great learning experience that was.  All three of those students in the photo are in science and engineering programs currently in college.  The one on the right, Mitchell Watson, is literally going to be a rocket scientist when he graduates for Cal Tech.  Understanding these concepts of mechanical design are not only fundamental to robotics, they can lead to many great opportunities.
 
-There are many options for structural parts.  Over the years, we have accumulated a wealth of parts in our program which may be checked out.  In addition, we have plenty of scrap material (we hated that mountain so much that we cut it up at the end of the season and have been using it for scrap since then).  After you learn how to use CAD in the next section, you will be able to design and print your own custom parts as well.  
+There are many options for structural parts.  Over the years, we have accumulated a wealth of parts in our program which may be checked out.  In addition, we have plenty of scrap material (we hated that mountain so much that we cut it up at the end of the season and have been using it for scrap since then).  After you learn how to use CAD later in this unit, you will be able to design and print your own custom parts as well.  
 
 The type of material matters.  Begin with <a href="http://www.robotoid.com/howto/materials-for-robot-building-an-introduction.html" target="_blank">this materials guide</a> in selecting your parts.  Consider using pre-built kits or components.  Here is a list of companies that provide robotics parts:
 
@@ -331,7 +344,204 @@ The type of material matters.  Begin with <a href="http://www.robotoid.com/howto
 <b>Assignment 4.2</b><br>
 On graph paper draw a design for your expected capstone project.  You should include at least three different angles for your drawing (two sides and a top).  You should include dimensions and labels of each part.  On a Google spreadsheet, make a list of all parts you think you might need.  In a one-page typed summary describe your design. 
 
+## Mechanisms and Motion
+
+Mechanisms can be used to change the speed, direction or force required to do something. Mechanisms may be able to help you but they cannot do it on their own. 
+
+### Inputs and Outputs
+
+Machines need energy and someone or something to operate them. In mechatronics we utilze actuators attached to a control system for the source of the energy.  The energy that is used by a machine is called the ___input___. The result of this energy input is called the ___output___. While it is not a robotic system, a mechanism such as a bicycle can be explained with the diagram below.
+
+<p>
+<figure>
+  <img src="https://github.com/WHS-Robotics-Test-Org/Robotics_Engineering_Book/blob/master/Images/input_output.png?raw=true" alt="Input and Output" style="width:60%">
+  <figcaption><b><i>Fig. 4.? - A bicycle as a mechanical system.</b></i></figcaption>
+</figure>
+</p>
+
+### Types of Motion
+
+Mechanisms are concerned with motion. There are four main types of motion. These can be illustrated by means of human body movements.
+
+<p>
+<figure>
+  <img src="https://github.com/WHS-Robotics-Test-Org/Robotics_Engineering_Book/blob/master/Images/types_motion.png?raw=true" alt="Types of Motion" style="width:70%">
+  <figcaption><b><i>Fig. 4.? - Examples of various types of motion.</b></i></figcaption>
+</figure>
+</p>
+
+Motion that is transferred along a line is known as ___linear motion___.  Utilizing this system allows robotic designs to extend reach in all directions but is mainly used in attaining more height or reaching horizontally.  Motion which is a repetitive up-and-down or back-and-forth linear motion is known as ___reciprocating motion___.  This movement is commonly used in pumps.  ___Rotary motion___ is a circular movement of an object around a center (or point) of rotation and is the most commonly used motion in robotic systems.  Drive systems are usually based in rotary motion but other systems utilize it as well including lifting and collecting mechanisms.  Pendulums represent one application of ___oscillating motion___ which are used in robotics systems.
+
+## Levers
+
+One of the oldest mechanisms is the ___lever___. Stone Age people used them to move large objects.
+
+<p>
+<figure>
+  <img src="https://github.com/WHS-Robotics-Test-Org/Robotics_Engineering_Book/blob/master/Images/stone_age.png?raw=true" alt="Stone age lever" style="width:70%">
+  <figcaption><b><i>Fig. 4.? - Using a lever to move a heavy object.</b></i></figcaption>
+</figure>
+</p>
+
+A lever can be described as a long rigid object with a pivot point somewhere along its length. The pivot is a fixed point about which the lever rotates. The pivot is also known as the fulcrum. Levers are used to do two things: they can move a large load with only a little effort, or they can increase or amplify movement. A seesaw is a simple example of a lever.
+
+<p>
+<figure>
+  <img src="https://github.com/WHS-Robotics-Test-Org/Robotics_Engineering_Book/blob/master/Images/seesaw.png?raw=true" alt="seesaw" style="width:70%">
+  <figcaption><b><i>Fig. 4.? - A seesaw is an example of a simple lever.</b></i></figcaption>
+</figure>
+</p>
+
+### Classes and Categories
+
+Levers are classified by the relative positions of the ___fulcrum___ (the point of ___fixed pivot___), ___effort___ (the ___input force___) and ___resistance___ (or ___load___). It is common to call the input force the effort and the output force the load or the resistance. This allows the identification of three classes of levers by the relative locations of the fulcrum, the resistance and the effort.
+
+With a ___Class one lever___, the fulcrum is between the effort and resistance. The effort is applied on one side of the fulcrum and the resistance (or load) on the other side, for example, a seesaw, a crowbar or a pair of scissors, a common balance , a claw hammer. Mechanical advantage may be greater than, less than, or equal to 1.
+
+<p>
+<figure>
+  <img src="https://github.com/WHS-Robotics-Test-Org/Robotics_Engineering_Book/blob/master/Images/class_1.png?raw=true" alt="class one lever" style="width:70%">
+  <figcaption><b><i>Fig. 4.? - A class one lever and example.</b></i></figcaption>
+</figure>
+</p>
+
+A ___class two lever___ places resistance (or load) between the effort and fulcrum. The effort is applied on one side of the resistance and the fulcrum is located on the other side, e.g. in a wheelbarrow, a nutcracker, a bottle opener or the brake pedal of a car, the load arm is smaller than the effort arm, and the mechanical advantage is always greater than one. It is also called force multiplier lever.
+
+<p>
+<figure>
+  <img src="https://github.com/WHS-Robotics-Test-Org/Robotics_Engineering_Book/blob/master/Images/class_2.png?raw=true" alt="class two lever" style="width:70%">
+  <figcaption><b><i>Fig. 4.? - A class two lever and example.</b></i></figcaption>
+</figure>
+</p>
+
+Utilizing a ___class three lever___ places the effort between the fulcrum and resistance. The resistance (or load) is on one side of the effort and the fulcrum is located on the other side, for example, a pair of tweezers, a hammer, a pair of tongs, fishing rod, common balance[7] or the mandible of our skull. The effort arm is smaller than the load arm. Mechanical advantage is always less than 1. It is also called speed multiplier lever.
+
+<p>
+<figure>
+  <img src="https://github.com/WHS-Robotics-Test-Org/Robotics_Engineering_Book/blob/master/Images/class_3.png?raw=true" alt="class three lever" style="width:70%">
+  <figcaption><b><i>Fig. 4.? - A class three lever and example.</b></i></figcaption>
+</figure>
+</p>
+
+
+
+
+
+
+
+### Mechanical Advantage
+
+### Efficiency
+
+### Moments
+
+## Rotary Motion
+
+### Drive Systems
+
+### Pulleys, Sprockets and Gears
+
+Pulleys, sprockets and gears are used to transfer rotary motion from one place to another. All are wheels. Pulleys are wheels with grooves in the rims, in which a belt or rope can run. Pulleys can transfer rotary motion from one shaft to another or can be used to lift heavy loads. Gears are wheels with teeth evenly spaced around the rims. Several gears can be placed, so that their teeth interlock, or mesh. When two or more gears are used together, they form what is called a gear train. Gears can be used to change the speed and direction in which something rotates. When chains are used to connect the “gears”, a chain and sprocket system is formed, for example on bicycles and motorcycles. Sprocket systems share properties of both of the other systems.
+
+In figure 4.3 the direction of rotation of the pulleys is opposite to each other. The mechanical advantage is gained by the variation in the size (diameter) of the pulleys.
+<p>
+<figure>
+  <img src="https://github.com/WHS-Robotics-Test-Org/Robotics_Engineering_Book/blob/master/Images/simple_pulley.png?raw=true" alt="Simple Pulley" style="width:80%">
+  <figcaption><b><i>Fig. 4.3 - Simple Pulley System.</b></i></figcaption>
+</figure>
+</p>
+
+<p>
+Figure 4.4 illustrates a pulley system which keeps the direction of rotation of both pulleys the same.  All calculations made on a twisted pulley are the same as a simple pulley system.
+</p>
+<p>
+<figure>
+  <img src="https://github.com/WHS-Robotics-Test-Org/Robotics_Engineering_Book/blob/master/Images/twisted_pulley.png?raw=true" alt="Twisted Pulley" style="width:80%">
+  <figcaption><b><i>Fig. 4.4 - Twisted Pulley System.</b></i></figcaption>
+</figure>
+</p>
+
+<p>
+<figure>
+  <img src="https://github.com/WHS-Robotics-Test-Org/Robotics_Engineering_Book/blob/master/Images/compound_pulley.png?raw=true" alt="Compound Pulley" style="width:80%">
+  <figcaption><b><i>Fig. 4.5 - Compound Pulley System.</b></i></figcaption>
+</figure>
+</p>
+
+<p>
+<figure>
+  <img src="https://github.com/WHS-Robotics-Test-Org/Robotics_Engineering_Book/blob/master/Images/two_gears.png?raw=true" alt="Two Gears" style="width:80%">
+  <figcaption><b><i>Fig. 4.6 - Simple Gear System.</b></i></figcaption>
+</figure>
+</p>
+
+<p>
+<figure>
+  <img src="https://github.com/WHS-Robotics-Test-Org/Robotics_Engineering_Book/blob/master/Images/gear_train.png?raw=true" alt="Gear Train" style="width:80%">
+  <figcaption><b><i>Fig. 4.7 - Gear Train System.</b></i></figcaption>
+</figure>
+</p>
+
+<p>
+<figure>
+  <img src="https://github.com/WHS-Robotics-Test-Org/Robotics_Engineering_Book/blob/master/Images/compound_gears.png?raw=true" alt="Compound Gear" style="width:80%">
+  <figcaption><b><i>Fig. 4.8 - Compound Gear System.</b></i></figcaption>
+</figure>
+</p>
+
+<p>
+<figure>
+  <img src="https://github.com/WHS-Robotics-Test-Org/Robotics_Engineering_Book/blob/master/Images/rack_pinion.png?raw=true" alt="Rack and Pinion" style="width:80%">
+  <figcaption><b><i>Fig. 4.9 - Rack and Pinion System.</b></i></figcaption>
+</figure>
+</p>
+
+<p>
+<figure>
+  <img src="https://github.com/WHS-Robotics-Test-Org/Robotics_Engineering_Book/blob/master/Images/worm_gear.png?raw=true" alt="Simple Pulley" style="width:60%">
+  <figcaption><b><i>Fig. 4.10 - Worm Gear System.</b></i></figcaption>
+</figure>
+</p>
+
+<p>
+<figure>
+  <img src="https://github.com/WHS-Robotics-Test-Org/Robotics_Engineering_Book/blob/master/Images/bevel_gears.png?raw=true" alt="Bevel Gears" style="width:60%">
+  <figcaption><b><i>Fig. 4.11 - Bevel Gear System.</b></i></figcaption>
+</figure>
+</p>
+
+
+The illustration below shows gears fixed to parallel shafts, forming a simple gear train. The gear fixed on the drive shaft is called the ___driver gear___ and is connected to the ___driven gear___. The shafts will turn in opposite directions and, because the gears have different sizes, they will turn at different speeds.
+
+<p>
+<figure>
+  <img src="https://github.com/WHS-Robotics-Test-Org/Robotics_Engineering_Book/blob/master/Images/gear_systems.png?raw=true" alt="Driver and Driven Gears" style="width:60%">
+  <figcaption><b><i>Fig. 4.12 - Driver and Driven Gears in a Simple Gear System.</b></i></figcaption>
+</figure>
+</p>
+
+The difference in their speeds (velocity ratio) can be calculated from the number of teeth on the driver gear (Teeth~1~) compared to the driven gear (Teeth~2~).
+
+$$VR = (Teeth_2/Teeth_1) = (40/20) = 2:1$$
+The ___velocity ratio___ (VR) in this example may be expressed as 2:1 (say "two to one") or simply as 2.  This means that in this case the driver shaft must turn twice for the driven shaft to complete one turn.
+
+Similarly, the velocity ratio of a pulley system may be calculated with essentially the same formula.  Pulley systems use a belt to transmit motion and force from the driver shaft to the driven shaft. Cars use a pulley system with V-belts running in grooves on the pulley wheels. Speed changes are made by using different sizes of pulleys on the driver and driven shafts respectively. By comparing the sizes of the two pulleys you can calculate the velocity ratio (VR) of the system.  Instead of using the number of teeth, the difference in pulley speeds can be calculated by comparing the diameter of the driver pulley (Size~1~) to the diameter of the driven pulley (Size~2~).
+
+$$VR = (Size_2/Size_1)=(25/100)=1:4$$
+The velocity ration in this example is expressed as 1:4.  This means that one turn of the driver shaft will give four turns of the driven shaft.
+
+Once we know the velocity ratio of the gears we are working with, we can begin to predict ___output speed___ (S~O~) for a given ___input speed___ (S~I~).
+
+$$S_O=(S_I/VR)=(2000rpm/3:1)=6000rpm$$
+In this case the velocity ratio is 3:1 and the input speed is 2000 ___revolutions per minute___ (rpm).  The resulting output speed is 6,000 rpm.
+
+## Linear Motion
+
+### Rack and Pinion Systems
+
 ## Computer Aided Design
+
+The concepts learned in this unit require planning and modeling to implement effectively.  It is useful to "tinker" with mechanical parts in order to be able to visualize the system itself.  All engineering, however, includes a significant design element.  In most cases, we need to sketch out our design on a piece of paper or board to give the solution to our problem some conceptual scale.
 
 Once you have your design down on paper, it is time to create it like a real mechatronics engineer.  For this section you will learn to use <a href="https://www.onshape.com/" target ="_blank">OnShape</a>, a modern and full-scale computer aided design (CAD) system.  OnShape was founded by two engineers at SolidWorks which is still considered the gold standard of CAD.  SolidWorks comes with a hefty price tag, even for students.  OnShape is free to secondary schools.  As a result, we will use it.  Once year learn this tool, switching to other CAD software will be relatively painless.  In addition, it is entirely web based so you can use it as long as you have an internet connection and a web browser.
 
@@ -349,7 +559,10 @@ If you have not done so already, head to the [OnShape Account Setup] section of 
 
 <img src="https://github.com/stcline/Hosted_Images/blob/master/Robotics_Engineering/onshape_fun.PNG?raw=true">
 
-<b>Assignment 4.2</b><br>
+<b>Assignments 4.2.1 to 4.2.5</b><br>
+
+For this part of our course you may move at your own pace to complete these assignments.  Each one requires you to work through the CAD concepts and skills listed in the OnShape courses below.
+
 Complete the first five courses in this learning pathway:
 <ol>
   <li>Navigating Onshape</li>
@@ -885,6 +1098,10 @@ In case you need to use Mac or Linux for your host computer, the process is very
 <!-- ### Setting up SSH for Mac -->
 
 <!-- ### Setting up SSH for Linux -->
+
+### References
+
+<!-- Put list from Zotero Here -->
 
 <!--chapter:end:08-materials.Rmd-->
 

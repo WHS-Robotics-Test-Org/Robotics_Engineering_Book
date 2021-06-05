@@ -105,3 +105,7 @@ In case you need to use Mac or Linux for your host computer, the process is very
 <!-- ### Setting up SSH for Mac -->
 
 <!-- ### Setting up SSH for Linux -->
+
+### References
+
+<!-- Put list from Zotero Here -->
