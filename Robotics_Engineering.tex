@@ -327,11 +327,13 @@ The inspiration for this course at Windsor High School is actually a course in t
 \hypertarget{parts-of-a-robotic-system}{%
 \section{Parts of a Robotic System}\label{parts-of-a-robotic-system}}
 
-We need to be able to determine what components will be necessary in our robot design. To do this, an overview of the various part types is necessary. At the end of this chapter, you will create a design on OnShape which will serve as the basis for your capstone project next semester. Use this as an opportunity to start thinking about what you will do in creating a robotic system.
+We need to be able to determine what components will be necessary in our robot design. To do this, an overview of the various part types is necessary. We will define the numerous mechanisms that may be used in our designs as well as the component systems that make a robot. At the end of this chapter, you will create a design on OnShape which will serve as the basis for your capstone project next semester. Use this as an opportunity to start thinking about what you will do in creating a robotic system.
 
 Steps to prepare for this work
 
 Start thinking about a problem you might like to solve. Is there something at home that could be improved? For example, last year I built a solar powered Raspberry Pi controlled garden watering system. Something like that has a definite use and provides a solution for my wife and I. Now that it works, when we go on vacation we don't worry that our garden gets watered.
+
+Fig. 4.? - A solar powered robotic watering system.
 
 Look for other examples. A good place to start is the Student Examples from the MECH 307 Course at CSU. Another good source is SparkFun Projects Examples. In additon, there are many websites that have Raspberry Pi ideas.
 
@@ -376,7 +378,7 @@ From these fours types of actuators, most robotic systems may develop a way of i
 \hypertarget{sensors}{%
 \subsection{Sensors}\label{sensors}}
 
-There are even more sensor types than there are actuator types. If we brows the Adafruit Sensor Page we see how limitless these possibilities are. For any type of sensor application there is, someone has though of a way to build it.
+There are even more sensor types than there are actuator types. If we browse the Adafruit Sensor Page we see how limitless these possibilities are. For any type of sensor application there is, someone has though of a way to build it.
 
 As excerpt from a robotics text explains, sensors are either proprioceptive or exteroceptive and, at the same time, either passive or active. This chart is taken from that text:
 
@@ -447,7 +449,7 @@ One of the oldest mechanisms is the \textbf{\emph{lever}}. Stone Age people used
 
 Fig. 4.? - Using a lever to move a heavy object.
 
-A lever can be described as a long rigid object with a pivot point somewhere along its length. The pivot is a fixed point about which the lever rotates. The pivot is also known as the fulcrum. Levers are used to do two things: they can move a large load with only a little effort, or they can increase or amplify movement. A seesaw is a simple example of a lever.
+A lever can be described as a long rigid object with a pivot point somewhere along its length. The pivot is a fixed point about which the lever rotates. The pivot is also known as the \textbf{\emph{fulcrum}}. Levers are used to do two things: they can move a large load with only a little effort, or they can increase or amplify movement. A seesaw is a simple example of a lever.
 
 Fig. 4.? - A seesaw is an example of a simple lever.
 
@@ -464,18 +466,39 @@ A \textbf{\emph{class two lever}} places resistance (or load) between the effort
 
 Fig. 4.? - A class two lever and example.
 
-Utilizing a \textbf{\emph{class three lever}} places the effort between the fulcrum and resistance. The resistance (or load) is on one side of the effort and the fulcrum is located on the other side, for example, a pair of tweezers, a hammer, a pair of tongs, fishing rod, common balance{[}7{]} or the mandible of our skull. The effort arm is smaller than the load arm. Mechanical advantage is always less than 1. It is also called speed multiplier lever.
+Utilizing a \textbf{\emph{class three lever}} places the effort between the fulcrum and resistance. The resistance (or load) is on one side of the effort and the fulcrum is located on the other side, for example, a pair of tweezers, a hammer, a pair of tongs, fishing rod, common balance or the mandible of our skull. The effort arm is smaller than the load arm. Mechanical advantage is always less than 1. It is also called speed multiplier lever.
 
 Fig. 4.? - A class three lever and example.
 
 \hypertarget{mechanical-advantage}{%
 \subsection{Mechanical Advantage}\label{mechanical-advantage}}
 
+We use levers every day because they make it is easier to get work done. They give us \textbf{\emph{mechanical advantage}} (MA) which means that you can move a large load using a small effort. The MA in the example below is found by comparing the weight of the load with the effort needed to move it. (Remember 1kg = 10 Newton)
+
+\[MA=(Load/Effort)=400N/100N=4:1 = 4\]
+
+If you look at wheelbarrow example again you will see that the distance the effort has to move is much further that that of the load. By comparing the two distances you get the velocity ratio (VR).
+
+Fig. 4.? - A wheel barrow used to lift a heavy load.
+
 \hypertarget{efficiency}{%
 \subsection{Efficiency}\label{efficiency}}
 
+Mechanisms are not always 100\% efficient due to factors such as parts that bend, friction etc.
+The scientific formula for the calculation of the efficiency of a mechanism is as follows:
+
+\[Efficiency = (MA/VR)*100\%\]
+
 \hypertarget{moments}{%
 \subsection{Moments}\label{moments}}
+
+If a seesaw is not moving but remains level, it is said to be balanced. The forces on either side of the fulcrum are equal and opposite. If the force on one end of the seesaw is greater than the other, or if the fulcrum is not in the center, then the seesaw will rotate around the fulcrum. This turning force is known as a \textbf{\emph{moment}}.
+
+Fig. 4.? - The turning of the seesaw about the fulcrum illustrates a moment.
+
+Moments can be used to work out unknown weights or distances of movement. The figure below shows how to calculate the moment for a very large spanner.
+
+Fig. 4.? - A spanner wrench used to calculate a moment.
 
 \hypertarget{rotary-motion}{%
 \section{Rotary Motion}\label{rotary-motion}}
