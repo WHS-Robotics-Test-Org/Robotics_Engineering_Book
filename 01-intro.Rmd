@@ -75,3 +75,5 @@ In order to better understand the field of mechatronics, you will choose one per
 Assignment: The Innovators Project
 
 ## The Metric System
+
+Be sure to include Newtons here.

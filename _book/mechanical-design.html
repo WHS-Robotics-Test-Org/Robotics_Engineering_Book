@@ -24,7 +24,7 @@
 <meta name="author" content="Steve Cline" />
 
 
-<meta name="date" content="2021-06-04" />
+<meta name="date" content="2021-06-05" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -106,13 +106,13 @@
 <li class="chapter" data-level="4.3.4" data-path="mechanical-design.html"><a href="mechanical-design.html#moments"><i class="fa fa-check"></i><b>4.3.4</b> Moments</a></li>
 </ul></li>
 <li class="chapter" data-level="4.4" data-path="mechanical-design.html"><a href="mechanical-design.html#rotary-motion"><i class="fa fa-check"></i><b>4.4</b> Rotary Motion</a><ul>
-<li class="chapter" data-level="4.4.1" data-path="mechanical-design.html"><a href="mechanical-design.html#drive-systems"><i class="fa fa-check"></i><b>4.4.1</b> Drive Systems</a></li>
-<li class="chapter" data-level="4.4.2" data-path="mechanical-design.html"><a href="mechanical-design.html#pulleys-sprockets-and-gears"><i class="fa fa-check"></i><b>4.4.2</b> Pulleys, Sprockets and Gears</a></li>
+<li class="chapter" data-level="4.4.1" data-path="mechanical-design.html"><a href="mechanical-design.html#pulleys-sprockets-and-gears"><i class="fa fa-check"></i><b>4.4.1</b> Pulleys, Sprockets and Gears</a></li>
 </ul></li>
 <li class="chapter" data-level="4.5" data-path="mechanical-design.html"><a href="mechanical-design.html#linear-motion"><i class="fa fa-check"></i><b>4.5</b> Linear Motion</a><ul>
 <li class="chapter" data-level="4.5.1" data-path="mechanical-design.html"><a href="mechanical-design.html#rack-and-pinion-systems"><i class="fa fa-check"></i><b>4.5.1</b> Rack and Pinion Systems</a></li>
 </ul></li>
-<li class="chapter" data-level="4.6" data-path="mechanical-design.html"><a href="mechanical-design.html#computer-aided-design"><i class="fa fa-check"></i><b>4.6</b> Computer Aided Design</a></li>
+<li class="chapter" data-level="4.6" data-path="mechanical-design.html"><a href="mechanical-design.html#drive-systems"><i class="fa fa-check"></i><b>4.6</b> Drive Systems</a></li>
+<li class="chapter" data-level="4.7" data-path="mechanical-design.html"><a href="mechanical-design.html#computer-aided-design"><i class="fa fa-check"></i><b>4.7</b> Computer Aided Design</a></li>
 </ul></li>
 <li class="chapter" data-level="5" data-path="python-programming.html"><a href="python-programming.html"><i class="fa fa-check"></i><b>5</b> Python Programming</a><ul>
 <li class="chapter" data-level="5.1" data-path="python-programming.html"><a href="python-programming.html#setting-up-the-raspberry-pi"><i class="fa fa-check"></i><b>5.1</b> Setting up the Raspberry Pi</a><ul>
@@ -198,8 +198,8 @@ Look for other examples. A good place to start is the <a href="https://video-dem
 Think about what makes you excited to do this project. What would you have fun doing for four months next semester?
 </li>
 </ol>
-<p>Write down some ideas so that, you may come back to them later as you learn more</p>
-<p>Now that we have some ideas, let’s learn about the various types of parts available to us.</p>
+<p>Write down some ideas so that, you may come back to them later as you learn more.</p>
+<p><em>Now that we have some ideas, let’s learn about the various types of parts available to us.</em></p>
 <div id="power-supply" class="section level3">
 <h3><span class="header-section-number">4.1.1</span> Power Supply</h3>
 <p>A major consideration is power. Most of the systems we design need to be efficient in their use of power. We are not always able to connect to an outlet. For example, home surveillance cameras are small and easy to install in many different locations. However, if we had to connect them to an AC power source, the list of possible locations for installation could be greatly reduced. The solution is a battery pack. How do we decide which battery though? A surveillance camera might need to run for weeks at a time without changing the battery. As a result, a high quality lithium ion source would probably make the most sense. The drawback to this compact and powerful design is, of course, price. These are the types of trade-offs we must consider.</p>
@@ -255,7 +255,7 @@ Linear Slides
 <div id="microprocessors" class="section level3">
 <h3><span class="header-section-number">4.1.4</span> Microprocessors</h3>
 <p>For most students, the Raspberry Pi will function as the microprocessor for the course. Students learn to interact with the Pi using the command line and Python. In addition, the Raspberry Pi offers many advantages over other microprocessors like Arduinos. One of the main advantages is the built in wifi capabilities. This allows for remote programming and true Internet of Things (IoT) capabilites. Still, some may choose a different processor, maybe even a different version of the Pi.</p>
-<p>A <a href="https://www.raspberrypi.org/products/raspberry-pi-zero-w/" target ="_blank">Raspberry Pi Zero W</a> is an extremely compact and low cost alternative to the Rapberry Pi 3 we use in class. It is made for low-power, compact IoT applicaitons and should be considered. While the processor speed is slower than larger Pis, it might be just the fit for your project. Compact versions of other processors are available as well. <a href="https://en.wikipedia.org/wiki/Comparison_of_single-board_microcontrollers" target ="_blank">This list</a> is quite extensive and should be considered.</p>
+<p>A <a href="https://www.raspberrypi.org/products/raspberry-pi-zero-w/" target ="_blank">Raspberry Pi Zero W</a> is an extremely compact and low cost alternative to the Rapberry Pi 4 we use in class. It is made for low-power, compact IoT applicaitons and should be considered. While the processor speed is slower than larger Pis, it might be just the fit for your project. The Raspberry Pi Foundation released a new microcontroller in the last year called the <a href="https://www.raspberrypi.org/products/raspberry-pi-pico/" target = "_blank">Pico</a>. It is a great alternative if a full OS is not needed on your project. Compact versions of other processors are available as well. <a href="https://en.wikipedia.org/wiki/Comparison_of_single-board_microcontrollers" target ="_blank">This list</a> is quite extensive and should be considered.</p>
 </div>
 <div id="structural-parts" class="section level3">
 <h3><span class="header-section-number">4.1.5</span> Structural Parts</h3>
@@ -292,8 +292,6 @@ Linear Slides
 </li>
 </ul>
 <p><br><b><i>NOTE: For any vendors, check before you buy. We have educational discounts with most all of them.</b></i></p>
-<p><b>Assignment 4.2</b><br>
-On graph paper draw a design for your expected capstone project. You should include at least three different angles for your drawing (two sides and a top). You should include dimensions and labels of each part. On a Google spreadsheet, make a list of all parts you think you might need. In a one-page typed summary describe your design.</p>
 </div>
 </div>
 <div id="mechanisms-and-motion" class="section level2">
@@ -348,7 +346,7 @@ On graph paper draw a design for your expected capstone project. You should incl
 <div id="classes-and-categories" class="section level3">
 <h3><span class="header-section-number">4.3.1</span> Classes and Categories</h3>
 <p>Levers are classified by the relative positions of the <strong><em>fulcrum</em></strong> (the point of <strong><em>fixed pivot</em></strong>), <strong><em>effort</em></strong> (the <strong><em>input force</em></strong>) and <strong><em>resistance</em></strong> (or <strong><em>load</em></strong>). It is common to call the input force the effort and the output force the load or the resistance. This allows the identification of three classes of levers by the relative locations of the fulcrum, the resistance and the effort.</p>
-<p>With a <strong><em>Class one lever</em></strong>, the fulcrum is between the effort and resistance. The effort is applied on one side of the fulcrum and the resistance (or load) on the other side, for example, a seesaw, a crowbar or a pair of scissors, a common balance , a claw hammer. Mechanical advantage may be greater than, less than, or equal to 1.</p>
+<p>With a <strong><em>class one lever</em></strong>, the fulcrum is between the effort and resistance. The effort is applied on one side of the fulcrum and the resistance (or load) on the other side, for example, a seesaw, a crowbar or a pair of scissors, a common balance , a claw hammer. Mechanical advantage may be greater than, less than, or equal to 1.</p>
 <p>
 <figure>
 <img src="https://github.com/WHS-Robotics-Test-Org/Robotics_Engineering_Book/blob/master/Images/class_1.png?raw=true" alt="class one lever" style="width:70%">
@@ -379,8 +377,9 @@ On graph paper draw a design for your expected capstone project. You should incl
 <div id="mechanical-advantage" class="section level3">
 <h3><span class="header-section-number">4.3.2</span> Mechanical Advantage</h3>
 <p>We use levers every day because they make it is easier to get work done. They give us <strong><em>mechanical advantage</em></strong> (MA) which means that you can move a large load using a small effort. The MA in the example below is found by comparing the weight of the load with the effort needed to move it. (Remember 1kg = 10 Newton)</p>
-<p><span class="math display">\[MA=(Load/Effort)=400N/100N=4:1 = 4\]</span></p>
+<p><span class="math display">\[MA=(Load/Effort)=300N/100N=3:1 = 3\]</span></p>
 <p>If you look at wheelbarrow example again you will see that the distance the effort has to move is much further that that of the load. By comparing the two distances you get the velocity ratio (VR).</p>
+<p><span class="math display">\[VR=(D_2/D_1)=400mm/100mm=4:1=4\]</span></p>
 <p>
 <figure>
 <img src="https://github.com/WHS-Robotics-Test-Org/Robotics_Engineering_Book/blob/master/Images/Wheel_barrow.png?raw=true" alt="Wheel barrow example" style="width:70%">
@@ -394,11 +393,13 @@ On graph paper draw a design for your expected capstone project. You should incl
 <h3><span class="header-section-number">4.3.3</span> Efficiency</h3>
 <p>Mechanisms are not always 100% efficient due to factors such as parts that bend, friction etc.
 The scientific formula for the calculation of the efficiency of a mechanism is as follows:</p>
-<p><span class="math display">\[Efficiency = (MA/VR)*100\%\]</span></p>
+<p><span class="math display">\[Efficiency = (MA/VR)*100\%\]</span>
+For the example of the wheel barrow above we can calculate efficiency using this formula.</p>
+<p><span class="math display">\[Efficiency=(3/4)*100\%=75\%\]</span></p>
 </div>
 <div id="moments" class="section level3">
 <h3><span class="header-section-number">4.3.4</span> Moments</h3>
-<p>If a seesaw is not moving but remains level, it is said to be balanced. The forces on either side of the fulcrum are equal and opposite. If the force on one end of the seesaw is greater than the other, or if the fulcrum is not in the center, then the seesaw will rotate around the fulcrum. This turning force is known as a <strong><em>moment</em></strong>.</p>
+<p>If a seesaw is not moving but remains level, it is said to be <strong><em>balanced</em></strong>. The forces on either side of the fulcrum are equal and opposite. If the force on one end of the seesaw is greater than the other, or if the fulcrum is not in the center, then the seesaw will rotate around the fulcrum. This turning force is known as a <strong><em>moment</em></strong>.</p>
 <p>
 <figure>
 <img src="https://github.com/WHS-Robotics-Test-Org/Robotics_Engineering_Book/blob/master/Images/moment_seesaw.png?raw=true" alt="seesaw as a moment" style="width:70%">
@@ -416,17 +417,23 @@ The scientific formula for the calculation of the efficiency of a mechanism is a
 </figcaption>
 </figure>
 </p>
+<p>We can calculate ways to create a balanced situation by applying these principles. Consider the seesaw example here:</p>
+<p>
+<figure>
+<img src="https://github.com/WHS-Robotics-Test-Org/Robotics_Engineering_Book/blob/master/Images/balanced.png?raw=true" alt="balanced seesaw" style="width:70%">
+<figcaption>
+<b><i>Fig. 4.? - The system here is balanced by moving the fulcrum to the correct position.</b></i>
+</figcaption>
+</figure>
+</p>
 </div>
 </div>
 <div id="rotary-motion" class="section level2">
 <h2><span class="header-section-number">4.4</span> Rotary Motion</h2>
-<div id="drive-systems" class="section level3">
-<h3><span class="header-section-number">4.4.1</span> Drive Systems</h3>
-</div>
 <div id="pulleys-sprockets-and-gears" class="section level3">
-<h3><span class="header-section-number">4.4.2</span> Pulleys, Sprockets and Gears</h3>
+<h3><span class="header-section-number">4.4.1</span> Pulleys, Sprockets and Gears</h3>
 <p>Pulleys, sprockets and gears are used to transfer rotary motion from one place to another. All are wheels. Pulleys are wheels with grooves in the rims, in which a belt or rope can run. Pulleys can transfer rotary motion from one shaft to another or can be used to lift heavy loads. Gears are wheels with teeth evenly spaced around the rims. Several gears can be placed, so that their teeth interlock, or mesh. When two or more gears are used together, they form what is called a gear train. Gears can be used to change the speed and direction in which something rotates. When chains are used to connect the “gears”, a chain and sprocket system is formed, for example on bicycles and motorcycles. Sprocket systems share properties of both of the other systems.</p>
-In figure 4.3 the direction of rotation of the pulleys is opposite to each other. The mechanical advantage is gained by the variation in the size (diameter) of the pulleys.
+In figure 4.3 the direction of rotation of the pulleys is the same for each pulley. The <strong><em>driver pulley</em></strong> is attached to the drive system while the <strong><em>driven pulley</em></strong> is attached to the actuational output. The mechanical advantage is gained by the variation in the size (diameter) of the pulleys. This mechanical advantage may be used to increase either velocity of rotation or <strong><em>torque</em></strong> (rotational force).
 <p>
 <figure>
 <img src="https://github.com/WHS-Robotics-Test-Org/Robotics_Engineering_Book/blob/master/Images/simple_pulley.png?raw=true" alt="Simple Pulley" style="width:80%">
@@ -436,7 +443,7 @@ In figure 4.3 the direction of rotation of the pulleys is opposite to each other
 </figure>
 </p>
 <p>
-Figure 4.4 illustrates a pulley system which keeps the direction of rotation of both pulleys the same. All calculations made on a twisted pulley are the same as a simple pulley system.
+Figure 4.4 illustrates a pulley system which switches the direction of each pulley. All calculations made on a twisted pulley are the same as a simple pulley system.
 </p>
 <p>
 <figure>
@@ -446,14 +453,7 @@ Figure 4.4 illustrates a pulley system which keeps the direction of rotation of 
 </figcaption>
 </figure>
 </p>
-<p>
-<figure>
-<img src="https://github.com/WHS-Robotics-Test-Org/Robotics_Engineering_Book/blob/master/Images/compound_pulley.png?raw=true" alt="Compound Pulley" style="width:80%">
-<figcaption>
-<b><i>Fig. 4.5 - Compound Pulley System.</b></i>
-</figcaption>
-</figure>
-</p>
+<p>Unlike pulleys, the <strong><em>driven gear</em></strong> which is attached to the actuation device rotates in the opposite direction as the <strong><em>driver gear</em></strong>.</p>
 <p>
 <figure>
 <img src="https://github.com/WHS-Robotics-Test-Org/Robotics_Engineering_Book/blob/master/Images/two_gears.png?raw=true" alt="Two Gears" style="width:80%">
@@ -462,11 +462,22 @@ Figure 4.4 illustrates a pulley system which keeps the direction of rotation of 
 </figcaption>
 </figure>
 </p>
+<p>By placing an <strong><em>idler gear</em></strong> of the same size as either of the other two gears, the direction of the driven gear may be reversed so that it rotates in the same way as the driver gear.</p>
 <p>
 <figure>
 <img src="https://github.com/WHS-Robotics-Test-Org/Robotics_Engineering_Book/blob/master/Images/gear_train.png?raw=true" alt="Gear Train" style="width:80%">
 <figcaption>
 <b><i>Fig. 4.7 - Gear Train System.</b></i>
+</figcaption>
+</figure>
+</p>
+<p>This configureation is known as a <strong><em>gear train</em></strong>.</p>
+<p>In order to increase the velocity ratio or mechanical advantage of a pulley or gear system, compound pulley and gear trains may be constructed.</p>
+<p>
+<figure>
+<img src="https://github.com/WHS-Robotics-Test-Org/Robotics_Engineering_Book/blob/master/Images/compound_pulley.png?raw=true" alt="Compound Pulley" style="width:80%">
+<figcaption>
+<b><i>Fig. 4.5 - Compound Pulley System.</b></i>
 </figcaption>
 </figure>
 </p>
@@ -478,6 +489,38 @@ Figure 4.4 illustrates a pulley system which keeps the direction of rotation of 
 </figcaption>
 </figure>
 </p>
+<p><strong>A NOTE ABOUT SPROCKETS AND CHAINS:</strong> As previously mentioned, sprockets and chains combine characteristics of the both gears and pulleys. While the <strong><em>driver sprocket</em></strong> and the <strong><em>driven sprocket</em></strong> move in the same direction like pulleys, they have teeth which a chain can fit into to provide added stregth to the system, as in the case of gears. Considerations for choosing the correct system for your application are below:</p>
+<p>Advantages of tooth gears and chains:</p>
+<ul>
+<li>Greater forces can be transferred</li>
+<li>Chains do not slip/slide</li>
+<li>Chains can be disassembled for removal</li>
+</ul>
+<p>Advantages of pulleys and belts:</p>
+<ul>
+<li>Belts are not noisy</li>
+<li>Belts can be stretched for fitting and for removal</li>
+<li>Crossed belts can change the direction of rotation</li>
+</ul>
+<p>All of the formulas in the next section are the same for sprockets as for pulleys and gears. Typically, the number of teeth on the sprocket are used to calculate the velocity ratio as in the case of gears.</p>
+<p>The illustration below shows gears fixed to parallel shafts, forming a simple gear train. The gear fixed on the drive shaft is called the driver gear and is connected to the driven gear. The shafts will turn in opposite directions and, because the gears have different sizes, they will turn at different speeds.</p>
+<p>
+<figure>
+<img src="https://github.com/WHS-Robotics-Test-Org/Robotics_Engineering_Book/blob/master/Images/gear_systems.png?raw=true" alt="Driver and Driven Gears" style="width:60%">
+<figcaption>
+<b><i>Fig. 4.12 - Driver and Driven Gears in a Simple Gear System.</b></i>
+</figcaption>
+</figure>
+</p>
+<p>The difference in their speeds (velocity ratio) can be calculated from the number of teeth on the driver gear (Teeth<sub>1</sub>) compared to the driven gear (Teeth<sub>2</sub>).</p>
+<p><span class="math display">\[VR = (Teeth_2/Teeth_1) = (40/20) = 2:1\]</span>
+The <strong><em>velocity ratio</em></strong> (VR) in this example may be expressed as 2:1 (say “two to one”) or simply as 2. This means that in this case the driver shaft must turn twice for the driven shaft to complete one turn.</p>
+<p>Similarly, the velocity ratio of a pulley system may be calculated with essentially the same formula. Pulley systems use a belt to transmit motion and force from the driver shaft to the driven shaft. Cars use a pulley system with V-belts running in grooves on the pulley wheels. Speed changes are made by using different sizes of pulleys on the driver and driven shafts respectively. By comparing the sizes of the two pulleys you can calculate the velocity ratio (VR) of the system. Instead of using the number of teeth, the difference in pulley speeds can be calculated by comparing the diameter of the driver pulley (Size<sub>1</sub>) to the diameter of the driven pulley (Size<sub>2</sub>).</p>
+<p><span class="math display">\[VR = (Size_2/Size_1)=(25/100)=1:4\]</span>
+The velocity ration in this example is expressed as 1:4. This means that one turn of the driver shaft will give four turns of the driven shaft.</p>
+<p>Once we know the velocity ratio of the gears we are working with, we can begin to predict <strong><em>output speed</em></strong> (S<sub>O</sub>) for a given <strong><em>input speed</em></strong> (S<sub>I</sub>).</p>
+<p><span class="math display">\[S_O=(S_I/VR)=(2000rpm/3:1)=6000rpm\]</span>
+In this case the velocity ratio is 3:1 and the input speed is 2000 <strong><em>revolutions per minute</em></strong> (rpm). The resulting output speed is 6,000 rpm.</p>
 <p>
 <figure>
 <img src="https://github.com/WHS-Robotics-Test-Org/Robotics_Engineering_Book/blob/master/Images/rack_pinion.png?raw=true" alt="Rack and Pinion" style="width:80%">
@@ -502,24 +545,6 @@ Figure 4.4 illustrates a pulley system which keeps the direction of rotation of 
 </figcaption>
 </figure>
 </p>
-<p>The illustration below shows gears fixed to parallel shafts, forming a simple gear train. The gear fixed on the drive shaft is called the <strong><em>driver gear</em></strong> and is connected to the <strong><em>driven gear</em></strong>. The shafts will turn in opposite directions and, because the gears have different sizes, they will turn at different speeds.</p>
-<p>
-<figure>
-<img src="https://github.com/WHS-Robotics-Test-Org/Robotics_Engineering_Book/blob/master/Images/gear_systems.png?raw=true" alt="Driver and Driven Gears" style="width:60%">
-<figcaption>
-<b><i>Fig. 4.12 - Driver and Driven Gears in a Simple Gear System.</b></i>
-</figcaption>
-</figure>
-</p>
-<p>The difference in their speeds (velocity ratio) can be calculated from the number of teeth on the driver gear (Teeth<sub>1</sub>) compared to the driven gear (Teeth<sub>2</sub>).</p>
-<p><span class="math display">\[VR = (Teeth_2/Teeth_1) = (40/20) = 2:1\]</span>
-The <strong><em>velocity ratio</em></strong> (VR) in this example may be expressed as 2:1 (say “two to one”) or simply as 2. This means that in this case the driver shaft must turn twice for the driven shaft to complete one turn.</p>
-<p>Similarly, the velocity ratio of a pulley system may be calculated with essentially the same formula. Pulley systems use a belt to transmit motion and force from the driver shaft to the driven shaft. Cars use a pulley system with V-belts running in grooves on the pulley wheels. Speed changes are made by using different sizes of pulleys on the driver and driven shafts respectively. By comparing the sizes of the two pulleys you can calculate the velocity ratio (VR) of the system. Instead of using the number of teeth, the difference in pulley speeds can be calculated by comparing the diameter of the driver pulley (Size<sub>1</sub>) to the diameter of the driven pulley (Size<sub>2</sub>).</p>
-<p><span class="math display">\[VR = (Size_2/Size_1)=(25/100)=1:4\]</span>
-The velocity ration in this example is expressed as 1:4. This means that one turn of the driver shaft will give four turns of the driven shaft.</p>
-<p>Once we know the velocity ratio of the gears we are working with, we can begin to predict <strong><em>output speed</em></strong> (S<sub>O</sub>) for a given <strong><em>input speed</em></strong> (S<sub>I</sub>).</p>
-<p><span class="math display">\[S_O=(S_I/VR)=(2000rpm/3:1)=6000rpm\]</span>
-In this case the velocity ratio is 3:1 and the input speed is 2000 <strong><em>revolutions per minute</em></strong> (rpm). The resulting output speed is 6,000 rpm.</p>
 </div>
 </div>
 <div id="linear-motion" class="section level2">
@@ -528,8 +553,12 @@ In this case the velocity ratio is 3:1 and the input speed is 2000 <strong><em>r
 <h3><span class="header-section-number">4.5.1</span> Rack and Pinion Systems</h3>
 </div>
 </div>
+<div id="drive-systems" class="section level2">
+<h2><span class="header-section-number">4.6</span> Drive Systems</h2>
+<!-- Use this webiste as a foundation: https://gm0.org/en/stable/docs/robot-design/drivetrains/tank.html -->
+</div>
 <div id="computer-aided-design" class="section level2">
-<h2><span class="header-section-number">4.6</span> Computer Aided Design</h2>
+<h2><span class="header-section-number">4.7</span> Computer Aided Design</h2>
 <p>The concepts learned in this unit require planning and modeling to implement effectively. It is useful to “tinker” with mechanical parts in order to be able to visualize the system itself. All engineering, however, includes a significant design element. In most cases, we need to sketch out our design on a piece of paper or board to give the solution to our problem some conceptual scale.</p>
 <p>Once you have your design down on paper, it is time to create it like a real mechatronics engineer. For this section you will learn to use <a href="https://www.onshape.com/" target ="_blank">OnShape</a>, a modern and full-scale computer aided design (CAD) system. OnShape was founded by two engineers at SolidWorks which is still considered the gold standard of CAD. SolidWorks comes with a hefty price tag, even for students. OnShape is free to secondary schools. As a result, we will use it. Once year learn this tool, switching to other CAD software will be relatively painless. In addition, it is entirely web based so you can use it as long as you have an internet connection and a web browser.</p>
 <p>If you have not done so already, head to the <a href="course-materials-and-instructions.html#onshape-account-setup">OnShape Account Setup</a> section of the course book. Follow those instructions. After you have done this, log on to your account and follow these instructions:</p>

@@ -80,7 +80,7 @@
 
 \title{Robotics Engineering}
 \author{Steve Cline}
-\date{2021-06-04}
+\date{2021-06-05}
 
 \begin{document}
 \maketitle
@@ -187,6 +187,8 @@ Assignment: The Innovators Project
 
 \hypertarget{the-metric-system}{%
 \section{The Metric System}\label{the-metric-system}}
+
+Be sure to include Newtons here.
 
 \hypertarget{electrical-concepts}{%
 \chapter{Electrical Concepts}\label{electrical-concepts}}
@@ -339,9 +341,9 @@ Look for other examples. A good place to start is the Student Examples from the 
 
 Think about what makes you excited to do this project. What would you have fun doing for four months next semester?
 
-Write down some ideas so that, you may come back to them later as you learn more
+Write down some ideas so that, you may come back to them later as you learn more.
 
-Now that we have some ideas, let's learn about the various types of parts available to us.
+\emph{Now that we have some ideas, let's learn about the various types of parts available to us.}
 
 \hypertarget{power-supply}{%
 \subsection{Power Supply}\label{power-supply}}
@@ -389,7 +391,7 @@ Fig. 4.1 - Table Illustrating Classifications of Robotics Sensors.
 
 For most students, the Raspberry Pi will function as the microprocessor for the course. Students learn to interact with the Pi using the command line and Python. In addition, the Raspberry Pi offers many advantages over other microprocessors like Arduinos. One of the main advantages is the built in wifi capabilities. This allows for remote programming and true Internet of Things (IoT) capabilites. Still, some may choose a different processor, maybe even a different version of the Pi.
 
-A Raspberry Pi Zero W is an extremely compact and low cost alternative to the Rapberry Pi 3 we use in class. It is made for low-power, compact IoT applicaitons and should be considered. While the processor speed is slower than larger Pis, it might be just the fit for your project. Compact versions of other processors are available as well. This list is quite extensive and should be considered.
+A Raspberry Pi Zero W is an extremely compact and low cost alternative to the Rapberry Pi 4 we use in class. It is made for low-power, compact IoT applicaitons and should be considered. While the processor speed is slower than larger Pis, it might be just the fit for your project. The Raspberry Pi Foundation released a new microcontroller in the last year called the Pico. It is a great alternative if a full OS is not needed on your project. Compact versions of other processors are available as well. This list is quite extensive and should be considered.
 
 \hypertarget{structural-parts}{%
 \subsection{Structural Parts}\label{structural-parts}}
@@ -417,9 +419,6 @@ RobotShop: If you are looking for a kit, to get started
 SparkFun: Based in Niwot, you can go visit them and pick up your parts or take the tour to get some ideas
 
 NOTE: For any vendors, check before you buy. We have educational discounts with most all of them.
-
-Assignment 4.2
-On graph paper draw a design for your expected capstone project. You should include at least three different angles for your drawing (two sides and a top). You should include dimensions and labels of each part. On a Google spreadsheet, make a list of all parts you think you might need. In a one-page typed summary describe your design.
 
 \hypertarget{mechanisms-and-motion}{%
 \section{Mechanisms and Motion}\label{mechanisms-and-motion}}
@@ -458,7 +457,7 @@ Fig. 4.? - A seesaw is an example of a simple lever.
 
 Levers are classified by the relative positions of the \textbf{\emph{fulcrum}} (the point of \textbf{\emph{fixed pivot}}), \textbf{\emph{effort}} (the \textbf{\emph{input force}}) and \textbf{\emph{resistance}} (or \textbf{\emph{load}}). It is common to call the input force the effort and the output force the load or the resistance. This allows the identification of three classes of levers by the relative locations of the fulcrum, the resistance and the effort.
 
-With a \textbf{\emph{Class one lever}}, the fulcrum is between the effort and resistance. The effort is applied on one side of the fulcrum and the resistance (or load) on the other side, for example, a seesaw, a crowbar or a pair of scissors, a common balance , a claw hammer. Mechanical advantage may be greater than, less than, or equal to 1.
+With a \textbf{\emph{class one lever}}, the fulcrum is between the effort and resistance. The effort is applied on one side of the fulcrum and the resistance (or load) on the other side, for example, a seesaw, a crowbar or a pair of scissors, a common balance , a claw hammer. Mechanical advantage may be greater than, less than, or equal to 1.
 
 Fig. 4.? - A class one lever and example.
 
@@ -475,9 +474,11 @@ Fig. 4.? - A class three lever and example.
 
 We use levers every day because they make it is easier to get work done. They give us \textbf{\emph{mechanical advantage}} (MA) which means that you can move a large load using a small effort. The MA in the example below is found by comparing the weight of the load with the effort needed to move it. (Remember 1kg = 10 Newton)
 
-\[MA=(Load/Effort)=400N/100N=4:1 = 4\]
+\[MA=(Load/Effort)=300N/100N=3:1 = 3\]
 
 If you look at wheelbarrow example again you will see that the distance the effort has to move is much further that that of the load. By comparing the two distances you get the velocity ratio (VR).
+
+\[VR=(D_2/D_1)=400mm/100mm=4:1=4\]
 
 Fig. 4.? - A wheel barrow used to lift a heavy load.
 
@@ -488,11 +489,14 @@ Mechanisms are not always 100\% efficient due to factors such as parts that bend
 The scientific formula for the calculation of the efficiency of a mechanism is as follows:
 
 \[Efficiency = (MA/VR)*100\%\]
+For the example of the wheel barrow above we can calculate efficiency using this formula.
+
+\[Efficiency=(3/4)*100\%=75\%\]
 
 \hypertarget{moments}{%
 \subsection{Moments}\label{moments}}
 
-If a seesaw is not moving but remains level, it is said to be balanced. The forces on either side of the fulcrum are equal and opposite. If the force on one end of the seesaw is greater than the other, or if the fulcrum is not in the center, then the seesaw will rotate around the fulcrum. This turning force is known as a \textbf{\emph{moment}}.
+If a seesaw is not moving but remains level, it is said to be \textbf{\emph{balanced}}. The forces on either side of the fulcrum are equal and opposite. If the force on one end of the seesaw is greater than the other, or if the fulcrum is not in the center, then the seesaw will rotate around the fulcrum. This turning force is known as a \textbf{\emph{moment}}.
 
 Fig. 4.? - The turning of the seesaw about the fulcrum illustrates a moment.
 
@@ -500,40 +504,71 @@ Moments can be used to work out unknown weights or distances of movement. The fi
 
 Fig. 4.? - A spanner wrench used to calculate a moment.
 
+We can calculate ways to create a balanced situation by applying these principles. Consider the seesaw example here:
+
+Fig. 4.? - The system here is balanced by moving the fulcrum to the correct position.
+
 \hypertarget{rotary-motion}{%
 \section{Rotary Motion}\label{rotary-motion}}
-
-\hypertarget{drive-systems}{%
-\subsection{Drive Systems}\label{drive-systems}}
 
 \hypertarget{pulleys-sprockets-and-gears}{%
 \subsection{Pulleys, Sprockets and Gears}\label{pulleys-sprockets-and-gears}}
 
 Pulleys, sprockets and gears are used to transfer rotary motion from one place to another. All are wheels. Pulleys are wheels with grooves in the rims, in which a belt or rope can run. Pulleys can transfer rotary motion from one shaft to another or can be used to lift heavy loads. Gears are wheels with teeth evenly spaced around the rims. Several gears can be placed, so that their teeth interlock, or mesh. When two or more gears are used together, they form what is called a gear train. Gears can be used to change the speed and direction in which something rotates. When chains are used to connect the ``gears'', a chain and sprocket system is formed, for example on bicycles and motorcycles. Sprocket systems share properties of both of the other systems.
 
-In figure 4.3 the direction of rotation of the pulleys is opposite to each other. The mechanical advantage is gained by the variation in the size (diameter) of the pulleys.
+In figure 4.3 the direction of rotation of the pulleys is the same for each pulley. The \textbf{\emph{driver pulley}} is attached to the drive system while the \textbf{\emph{driven pulley}} is attached to the actuational output. The mechanical advantage is gained by the variation in the size (diameter) of the pulleys. This mechanical advantage may be used to increase either velocity of rotation or \textbf{\emph{torque}} (rotational force).
 
 Fig. 4.3 - Simple Pulley System.
 
-Figure 4.4 illustrates a pulley system which keeps the direction of rotation of both pulleys the same. All calculations made on a twisted pulley are the same as a simple pulley system.
+Figure 4.4 illustrates a pulley system which switches the direction of each pulley. All calculations made on a twisted pulley are the same as a simple pulley system.
 
 Fig. 4.4 - Twisted Pulley System.
 
-Fig. 4.5 - Compound Pulley System.
+Unlike pulleys, the \textbf{\emph{driven gear}} which is attached to the actuation device rotates in the opposite direction as the \textbf{\emph{driver gear}}.
 
 Fig. 4.6 - Simple Gear System.
 
+By placing an \textbf{\emph{idler gear}} of the same size as either of the other two gears, the direction of the driven gear may be reversed so that it rotates in the same way as the driver gear.
+
 Fig. 4.7 - Gear Train System.
+
+This configureation is known as a \textbf{\emph{gear train}}.
+
+In order to increase the velocity ratio or mechanical advantage of a pulley or gear system, compound pulley and gear trains may be constructed.
+
+Fig. 4.5 - Compound Pulley System.
 
 Fig. 4.8 - Compound Gear System.
 
-Fig. 4.9 - Rack and Pinion System.
+\textbf{A NOTE ABOUT SPROCKETS AND CHAINS:} As previously mentioned, sprockets and chains combine characteristics of the both gears and pulleys. While the \textbf{\emph{driver sprocket}} and the \textbf{\emph{driven sprocket}} move in the same direction like pulleys, they have teeth which a chain can fit into to provide added stregth to the system, as in the case of gears. Considerations for choosing the correct system for your application are below:
 
-Fig. 4.10 - Worm Gear System.
+Advantages of tooth gears and chains:
 
-Fig. 4.11 - Bevel Gear System.
+\begin{itemize}
+\tightlist
+\item
+  Greater forces can be transferred
+\item
+  Chains do not slip/slide
+\item
+  Chains can be disassembled for removal
+\end{itemize}
 
-The illustration below shows gears fixed to parallel shafts, forming a simple gear train. The gear fixed on the drive shaft is called the \textbf{\emph{driver gear}} and is connected to the \textbf{\emph{driven gear}}. The shafts will turn in opposite directions and, because the gears have different sizes, they will turn at different speeds.
+Advantages of pulleys and belts:
+
+\begin{itemize}
+\tightlist
+\item
+  Belts are not noisy
+\item
+  Belts can be stretched for fitting and for removal
+\item
+  Crossed belts can change the direction of rotation
+\end{itemize}
+
+All of the formulas in the next section are the same for sprockets as for pulleys and gears. Typically, the number of teeth on the sprocket are used to calculate the velocity ratio as in the case of gears.
+
+The illustration below shows gears fixed to parallel shafts, forming a simple gear train. The gear fixed on the drive shaft is called the driver gear and is connected to the driven gear. The shafts will turn in opposite directions and, because the gears have different sizes, they will turn at different speeds.
 
 Fig. 4.12 - Driver and Driven Gears in a Simple Gear System.
 
@@ -552,11 +587,20 @@ Once we know the velocity ratio of the gears we are working with, we can begin t
 \[S_O=(S_I/VR)=(2000rpm/3:1)=6000rpm\]
 In this case the velocity ratio is 3:1 and the input speed is 2000 \textbf{\emph{revolutions per minute}} (rpm). The resulting output speed is 6,000 rpm.
 
+Fig. 4.9 - Rack and Pinion System.
+
+Fig. 4.10 - Worm Gear System.
+
+Fig. 4.11 - Bevel Gear System.
+
 \hypertarget{linear-motion}{%
 \section{Linear Motion}\label{linear-motion}}
 
 \hypertarget{rack-and-pinion-systems}{%
 \subsection{Rack and Pinion Systems}\label{rack-and-pinion-systems}}
+
+\hypertarget{drive-systems}{%
+\section{Drive Systems}\label{drive-systems}}
 
 \hypertarget{computer-aided-design}{%
 \section{Computer Aided Design}\label{computer-aided-design}}
